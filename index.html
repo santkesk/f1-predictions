@@ -2,10 +2,11 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>F1 Ennustukset - Etusivu</title>
   
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="frontpage">
   <header>
@@ -85,7 +86,7 @@
     const distance = targetDate - now;
 
     if (distance < 0) {
-      countdownElement.innerHTML = "The season has started!";
+      countdownElement.innerHTML = "<div>Kausi on alkanut!</div>";
       clearInterval(interval);
       return;
     }
@@ -106,8 +107,8 @@
   updateCountdown(); // initial call
 </script>
 
-  <footer class="container">
-    <p></p>
+  <footer>
+    <p>F1 Ennustukset</p>
   </footer>
 
 </body>

@@ -8,6 +8,18 @@ body {
   padding: 0;
 }
 
+/* Links: the same style everywhere in the content */
+
+a {
+  color: #d71920;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #a50f15;
+}
+
 /* Hero Section */
 
 .hero {
@@ -57,6 +69,7 @@ body {
 }
 .btn-primary:hover {
   background: #a50f15;
+  color: white;
 }
 
 /* Feature Boxes */
@@ -79,10 +92,6 @@ body {
 .feature-box:hover {
   transform: translateY(-5px);
 }
-.feature-box h3 a {
-  color: #d71920;
-  text-decoration: none;
-}
 
 /* Countdown */
 
@@ -93,6 +102,7 @@ body {
 .countdown {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   font-family: 'Roboto Mono', monospace;
   font-size: 2em;
@@ -113,6 +123,8 @@ body {
 /* Header styles */
 
 header {
+  position: relative;
+  z-index: 100; /* keeps the dropdown above the hero image etc. */
   padding: 10px;
   background: #d71920;
   color: white;
@@ -136,12 +148,15 @@ header h1 {
 
 /* Navigation styles */
 
-nav a {
-  margin: 0 0px;
+header nav a {
   color: white;
+  font-weight: normal;
   text-decoration: none;
 }
-nav a.active {
+header nav a:hover {
+  color: white;
+}
+header nav a.active {
   font-weight: bold;
   text-decoration: underline;
 }
@@ -175,7 +190,9 @@ nav a.active {
   position: absolute;
   top: 100%; /* show below the parent link */
   left: 0;
-  width: 100%;
+  z-index: 200;
+  min-width: 100%;
+  white-space: nowrap;
   background: #d71920;
   list-style: none;
   padding:0;
@@ -193,19 +210,15 @@ nav a.active {
   background: #a50f15;
 }
 
-.has-dropdown:hover .dropdown {
+.has-dropdown:hover .dropdown,
+.has-dropdown:focus-within .dropdown {
   display: block;
 }
 
 .breadcrumb {
   font-size: 0.9em;
   margin: 0 0 50px;
-  color: #d71920;
-}
-
-.breadcrumb a {
-  color: black;
-  text-decoration: none;
+  color: #555;
 }
 
 .frontpage-main {
@@ -223,6 +236,10 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
+}
+
+footer p {
+  margin: 0;
 }
 
 /* Prediction page styles */
@@ -296,11 +313,20 @@ input[type="checkbox"], input[type="radio"] {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.points-info p {
+  font-weight: normal;
+}
+
 .points-info h4 {
   margin-top: 0;
   margin-bottom: 0.5em;
   font-size: 1em;
   color: #d71920;
+}
+
+/* the bingo event picker is opened from script */
+#eventPicker {
+  display: none;
 }
 
 .bingo-grid {
@@ -439,6 +465,18 @@ button[type="submit"]:hover {
 
 /* Statistics page styles */
 
+/* Highlight top 3 */
+.gold { background-color: #ffd700 !important; }
+.silver { background-color: #c0c0c0 !important; }
+.bronze { background-color: #cd7f32 !important; }
+
+/* Non-participation */
+.no-participation { background-color: #e0e0e0 !important; color: #666; }
+
+canvas {
+  max-width: 100%;
+}
+
 .stats-card {
   background: #f9f9f9;
   border-left: 5px solid #d71920;
@@ -538,11 +576,16 @@ table {
   display: none; /* hide default marker if you want custom */
 }
 
+.results-section summary::marker {
+  content: "";
+}
+
 .results-section summary::before {
-  content: "▶ ";
+  content: "▶";
   display: inline-block;
-  margin-right: 0.5em;
-  transform: rotate(0deg);
+  width: 1.2em;
+  margin-right: 0.3em;
+  text-align: center;
   transition: transform 0.2s;
 }
 
@@ -550,33 +593,30 @@ table {
   transform: rotate(90deg);
 }
 
+.results-total {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
 
 /* Info page styles */
 
+/* Cards are stacked by default. On wide screens they form a two-column
+   "starting grid" (see the min-width media query at the end of this file). */
 .team-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px 20px;
-  align-items: start;
-}
-
-.team-row:nth-child(2n) {
-  margin-top: 100px; /* offset every second card */
+  grid-template-columns: minmax(0, 1fr); /* minmax(0, ...) lets the cards shrink to the screen */
+  gap: 2em 20px;
 }
 
 .team-row {
-  flex: 1 1 300px;
   display: flex;
   flex-direction: column; /* stack title, image, table vertically */
   gap: 10px;
   padding: 20px;
-  background-color: #ffffff; /* card background */
-  border-radius: 10px;       /* rounded corners */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* subtle shadow */
-  margin-bottom: 2em;        /* space between cards */
-  max-width: 600px;           /* optional: limit card width */
-  align-items: stretch; /* default, just to be explicit */
-  height: auto;         /* make sure it only grows as needed */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .team-row .team-img {
@@ -606,6 +646,10 @@ table {
 .driver-stats th {
   border: 0px solid #ccc;
 }
+.driver-stats thead tr {
+  background: var(--team, #ddd);
+  color: var(--team-text, #000);
+}
 .driver-stats td:first-child {
   font-weight: bold;
   text-align: left;
@@ -613,7 +657,12 @@ table {
 
 .team-img-container {
   position: relative;
-  display: inline-block;
+  display: block;
+}
+
+.team-img-container a {
+  display: block;
+  text-decoration: none;
 }
 
 .team-img {
@@ -628,7 +677,7 @@ table {
   left: 0;
   width: 100%;
   color: white;
-  font-size: 4em;
+  font-size: clamp(2rem, 5vw, 4rem);
   text-align: center;
   margin: 0;
   padding: 0.2em 0;
@@ -696,17 +745,17 @@ table {
 /* Teams pages styles */
 
 .team-page { --team: #d71920; }
-.team-mclaren { --team: #f89436; }
-.team-ferrari { --team: #d42929; }
-.team-redbull { --team: #1d146b; }
-.team-mercedes { --team: #2da393; }
-.team-astonmartin { --team: #076632; }
-.team-alpine { --team: #d462df; }
-.team-haas { --team: #9e9595; }
-.team-racingbulls { --team: #5154e7; }
-.team-williams { --team: #1a0fbb; }
-.team-sauber { --team: #47e947; }
-.team-cadillac { --team: #aaaaaa; }
+.team-mclaren { --team: #f89436; --team-text: #000; }
+.team-ferrari { --team: #d42929; --team-text: #fff; }
+.team-redbull { --team: #1d146b; --team-text: #fff; }
+.team-mercedes { --team: #2da393; --team-text: #000; }
+.team-astonmartin { --team: #076632; --team-text: #fff; }
+.team-alpine { --team: #d462df; --team-text: #000; }
+.team-haas { --team: #9e9595; --team-text: #000; }
+.team-racingbulls { --team: #5154e7; --team-text: #fff; }
+.team-williams { --team: #1a0fbb; --team-text: #fff; }
+.team-sauber { --team: #47e947; --team-text: #000; }
+.team-cadillac { --team: #aaaaaa; --team-text: #000; }
 
 .team-page main {
   width: 100%;
@@ -830,7 +879,7 @@ table {
 
 .stat-tiles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
   gap: 12px;
 }
 
@@ -923,25 +972,156 @@ table {
   border-bottom: 3px solid var(--dot);
   border-radius: 20px;
   color: #222;
+  font-weight: normal;
   text-decoration: none;
   transition: transform 0.2s;
 }
 
 .team-switcher a:hover {
+  color: #222;
   transform: translateY(-2px);
 }
 
-.team-switcher a.current {
+.team-switcher a.current,
+.team-switcher a.current:hover {
   background: var(--dot);
   color: white;
   font-weight: bold;
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
+/* Wide screens: info page cards in a two-column "starting grid".
+   Every card spans two grid rows; the cards in the right column start one row
+   lower, so they sit half a card below the left column without any fixed
+   pixel offset. */
+@media (min-width: 801px) {
+  .team-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .team-row {
+    grid-row: span 2;
+  }
+  .team-row:nth-child(odd) {
+    grid-column: 1;
+  }
+  .team-row:nth-child(even) {
+    grid-column: 2;
+  }
+  .team-row:nth-child(2) {
+    grid-row: 2 / span 2; /* the right column starts one row lower */
+  }
+}
+
+/* Seasons info: three tables side by side only on wide screens */
+@media (max-width: 1100px) {
+  .table-wrapper {
+    flex-basis: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Mobile */
 @media (max-width: 800px) {
-  .team-page main {
+  header h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  .header-top {
+    margin-bottom: 10px;
+  }
+
+  /* menu: one column, dropdown items always visible (no hover on touch screens) */
+  .nav-menu {
+    flex-direction: column;
+  }
+  .nav-menu > li {
+    margin-bottom: 0;
+  }
+  .dropdown {
+    display: block;
+    position: static;
+    min-width: 0;
+    padding-left: 1.5em;
+    background: transparent;
+  }
+  .dropdown li a {
+    padding: 6px 15px;
+    font-size: 0.95em;
+  }
+
+  main {
     padding: 1.5em 1em 3em;
   }
+
+  /* front page */
+  .hero-content h2 {
+    font-size: 2.2em;
+  }
+  .hero-content p {
+    font-size: 1.1em;
+  }
+  .features {
+    flex-direction: column;
+    margin: 20px 1em;
+  }
+  .countdown {
+    gap: 10px;
+    font-size: 1.4em;
+  }
+  .countdown div {
+    flex: 1 1 40%;
+    min-width: 0;
+    padding: 10px;
+  }
+
+  /* prediction form */
+  form section {
+    padding: 1em;
+  }
+  .section-content {
+    flex-direction: column;
+  }
+  .points-info {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .driver-buttons,
+  .team-buttons {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  select {
+    max-width: 100%;
+  }
+
+  /* statistics and results */
+  .stats-card {
+    padding: 1em;
+    overflow-x: auto;
+  }
+  .yearContainer {
+    flex-direction: column;
+  }
+  .results-section {
+    padding: 1em;
+  }
+
+  /* info page cards */
+  .team-row {
+    padding: 12px;
+  }
+  .driver-stats {
+    font-size: 0.85em;
+  }
+  .driver-stats th,
+  .driver-stats td {
+    padding: 6px 4px;
+  }
+  .driver-stats td:first-child {
+    hyphens: auto;
+    overflow-wrap: anywhere;
+  }
+
+  /* team pages */
   .team-grid {
     grid-template-columns: 1fr;
   }

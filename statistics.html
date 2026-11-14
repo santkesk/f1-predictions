@@ -2,6 +2,7 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>F1 Ennustukset - Tilastot</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -9,14 +10,6 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <!-- Graph -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    /* Highlight top 3 */
-    .gold { background-color: #ffd700 !important; }
-    .silver { background-color: #c0c0c0 !important; }
-    .bronze { background-color: #cd7f32 !important; }
-    /* Non-participation */
-    .no-participation { background-color: #e0e0e0 !important; color: #666; }
-  </style>
 </head>
 <body>
   <header>
@@ -35,6 +28,7 @@
             <ul class="dropdown">
                 <li><a href="results.html">Tulokset</a></li>
             </ul>
+            </li>
             <li class="has-dropdown">
             <a href="info.html">Tietoa talleista ja kuljettajista</a>
             <ul class="dropdown">
@@ -392,8 +386,8 @@ $(document).ready(function() {
 </script>
 
 
-  <footer class="container">
-    <p></p>
+  <footer>
+    <p>F1 Ennustukset</p>
   </footer>
 
 </body>
