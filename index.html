@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>F1 Ennustukset - Etusivu</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="frontpage">
+  <header>
+    <div class="header-top">
+      <a href="index.html">
+        <img class="responsive" src="images/logo.svg" alt="">
+      </a>
+      <h1>Ennustukset</h1>
+    </div>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Etusivu</a></li>
+            <li><a href="predictions.html">Ennustustaminen</a></li>
+            <li class="has-dropdown">
+                <a href="statistics.html">Tilastot</a>
+                <ul class="dropdown">
+                    <li><a href="results.html">Tulokset</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="info.html">Tietoa talleista ja kuljettajista</a>
+                <ul class="dropdown">
+                    <li><a href="seasonsinfo.html">Viime kausien tilastot</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+<main class="frontpage-main">
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/frontpage.jpg" alt="F1-kilpailun lähtö" class="hero-image">
+    <div class="hero-content">
+      <h2>F1 Ennustukset 2026</h2>
+      <p>Tee omat arvauksesi seuraavalle kaudelle!</p>
+      <a href="predictions.html" class="btn-primary">Tee ennustukset</a>
+    </div>
+  </section>
+
+  <!-- Feature Boxes -->
+  <section class="features">
+    <div class="feature-box">
+      <h3><a href="statistics.html">Tilastot</a></h3>
+      <p>Tarkastele aiempien vuosien tuloksia ja kokonaistilastoja.</p>
+    </div>
+    <div class="feature-box">
+      <h3><a href="info.html">Tietoa talleista ja kuljettajista</a></h3>
+      <p>Tutustu talleihin, kuskeihin ja viime kausien tilastoihin.</p>
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="countdown-section">
+    <h2>Aikaa kauden 2026 alkuun:</h2>
+    <div id="countdown" class="countdown">
+      <div><span id="days">0</span><small>päivää</small></div>
+      <div><span id="hours">0</span><small>tuntia</small></div>
+      <div><span id="minutes">0</span><small>minuuttia</small></div>
+      <div><span id="seconds">0</span><small>sekuntia</small></div>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Set your target date here
+  const targetDate = new Date("2026-03-08T16:00:00").getTime();
+
+  const countdownElement = document.getElementById("countdown");
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
+  const secondsEl = document.getElementById("seconds");
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance < 0) {
+      countdownElement.innerHTML = "The season has started!";
+      clearInterval(interval);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    daysEl.textContent = days;
+    hoursEl.textContent = hours;
+    minutesEl.textContent = minutes;
+    secondsEl.textContent = seconds;
+  }
+
+  // Update every second
+  const interval = setInterval(updateCountdown, 1000);
+  updateCountdown(); // initial call
+</script>
+
+  <footer class="container">
+    <p></p>
+  </footer>
+
+</body>
+</html>

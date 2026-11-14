@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>F1 Ennustukset - Tilastot</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <!-- Graph -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Highlight top 3 */
+    .gold { background-color: #ffd700 !important; }
+    .silver { background-color: #c0c0c0 !important; }
+    .bronze { background-color: #cd7f32 !important; }
+    /* Non-participation */
+    .no-participation { background-color: #e0e0e0 !important; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="index.html">
+        <img class="responsive" src="images/logo.svg" alt="">
+      </a>
+      <h1>Ennustukset</h1>
+    </div>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="predictions.html">Ennustustaminen</a></li>
+            <li class="has-dropdown">
+            <a href="statistics.html" class="active">Tilastot</a>
+            <ul class="dropdown">
+                <li><a href="results.html">Tulokset</a></li>
+            </ul>
+            <li class="has-dropdown">
+            <a href="info.html">Tietoa talleista ja kuljettajista</a>
+            <ul class="dropdown">
+                <li><a href="seasonsinfo.html">Viime kausien tilastot</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Tilastot</h2>
+    <p>Tältä sivulta löydät tilastot pelaajien menestyksestä edellisissä ennustuksissa.</p>
+    <p><a href="results.html">Täältä</a> voit katsoa pelaajien vastaukset edellisiin ennustuksiin.</p><br>
+    <section class="stats-card" id="yearly-stats">
+      <h3>Vuosittaiset sijoitukset</h3>
+      <table id="mainTable" class="display" cellspacing="0" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Pelaaja</th>
+            <th>2020</th>
+            <th>2021</th>
+            <th>2022</th>
+            <th>2023</th>
+            <th>2024</th>
+            <th>2025</th>
+            <th>2026</th>
+          </tr>
+        </thead>
+        <tbody>          <!--   2020       2021       2022       2023       2024       2025       2026 -->
+          <tr><td>Camilla</td> <td>5</td> <td></td>  <td>5</td> <td>6</td> <td></td>  <td></td>  <td></td> </tr>
+          <tr><td>Oskari </td> <td>2</td> <td>1</td> <td>2</td> <td>3</td> <td></td>  <td></td>  <td>x</td> </tr>
+          <tr><td>Ducky  </td> <td></td>  <td></td>  <td></td>  <td>5</td> <td>4</td> <td>1</td> <td>x</td> </tr>
+          <tr><td>Annika </td> <td></td>  <td></td>  <td>4</td> <td>2</td> <td></td>  <td></td>  <td>x</td> </tr>
+          <tr><td>Roope  </td> <td></td>  <td></td>  <td>7</td> <td></td>  <td></td>  <td></td>  <td></td> </tr>
+          <tr><td>Santeri</td> <td>3</td> <td>2</td> <td>1</td> <td>1</td> <td>1</td> <td>2</td> <td>x</td> </tr>
+          <tr><td>Marjo  </td> <td>4</td> <td>4</td> <td>3</td> <td>4</td> <td>2</td> <td>3</td> <td>x</td> </tr>
+          <tr><td>Kalle  </td> <td>1</td> <td>3</td> <td>6</td> <td>7</td> <td>3</td> <td>4</td> <td>x</td> </tr>
+        </tbody>
+      </table>
+      <canvas id="statsChart" width="800" height="400"></canvas>
+    </section>
+    <h3>Vuosittaiset tilastot</h3>
+    <section class="stats-card" id="2020-stats">
+    <h4>2020</h4>
+    <div class="yearContainer">
+      <table class="yearTable display" cellspacing="0" cellpadding="5">
+        <thead><tr><th>Nimi</th><th>Pisteet</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>Kalle</td><td>14</td><td>16 %</td></tr>
+          <tr><td>Oskari</td><td>12</td><td>14 %</td></tr>
+          <tr><td>Santeri</td><td>10</td><td>12 %</td></tr>
+          <tr><td>Marjo</td><td>9</td><td>10 %</td></tr>
+          <tr><td>Camilla</td><td>3</td><td>3 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+
+    <section class="stats-card" id="2021-stats">
+    <h4>2021</h4>
+    <div class="yearContainer">
+      <table class="yearTable display" cellspacing="0" cellpadding="5">
+        <thead><tr><th>Nimi</th><th>Pisteet</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>Oskari</td><td>33</td><td>25 %</td></tr>
+          <tr><td>Santeri</td><td>32</td><td>25 %</td></tr>
+          <tr><td>Kalle</td><td>9</td><td>7 %</td></tr>
+          <tr><td>Marjo</td><td>5</td><td>4 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+
+    <section class="stats-card" id="2022-stats">
+    <h4>2022</h4>
+    <div class="yearContainer">
+      <table class="yearTable display" cellspacing="0" cellpadding="5">
+        <thead><tr><th>Nimi</th><th>Pisteet</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>Santeri</td><td>44</td><td>21 %</td></tr>
+          <tr><td>Oskari</td><td>37</td><td>18 %</td></tr>
+          <tr><td>Marjo</td><td>32</td><td>16 %</td></tr>
+          <tr><td>Annika</td><td>30</td><td>15 %</td></tr>
+          <tr><td>Camilla</td><td>20</td><td>10 %</td></tr>
+          <tr><td>Kalle</td><td>12</td><td>6 %</td></tr>
+          <tr><td>Roope</td><td>4</td><td>2 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+
+    <section class="stats-card" id="2023-stats">
+    <h4>2023</h4>
+    <div class="yearContainer">
+      <table class="yearTable display" cellspacing="0" cellpadding="5">
+        <thead><tr><th>Nimi</th><th>Pisteet</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>Santeri</td><td>133</td><td>51 %</td></tr>
+          <tr><td>Annika</td><td>100</td><td>39 %</td></tr>
+          <tr><td>Oskari</td><td>93</td><td>36 %</td></tr>
+          <tr><td>Marjo</td><td>92</td><td>36 %</td></tr>
+          <tr><td>Ducky</td><td>91</td><td>35 %</td></tr>
+          <tr><td>Camilla</td><td>81</td><td>32 %</td></tr>
+          <tr><td>Kalle</td><td>64</td><td>25 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+
+    <section class="stats-card" id="2024-stats">
+    <h4>2024</h4>
+    <div class="yearContainer">
+      <table class="yearTable display" cellspacing="0" cellpadding="5">
+        <thead><tr><th>Nimi</th><th>Pisteet</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>Santeri</td><td>153</td><td>48 %</td></tr>
+          <tr><td>Marjo</td><td>137</td><td>43 %</td></tr>
+          <tr><td>Kalle</td><td>135</td><td>42 %</td></tr>
+          <tr><td>Ducky</td><td>101</td><td>31 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+
+    <section class="stats-card" id="2025-stats">
+    <h4>2025</h4>
+    <div class="yearContainer">
+      <table class="yearTable display" cellspacing="0" cellpadding="5">
+        <thead><tr><th>Nimi</th><th>Pisteet</th><th>%</th></tr></thead>
+        <tbody>
+          <tr><td>Ducky</td><td>191</td><td>60 %</td></tr>
+          <tr><td>Santeri</td><td>187</td><td>59 %</td></tr>
+          <tr><td>Marjo</td><td>183</td><td>58 %</td></tr>
+          <tr><td>Kalle</td><td>136</td><td>43 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+
+    <section class="stats-card" id="full-stats">
+    <h3>Kokonais­tilastot</h3>
+    <table id="statsTable" class="display" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Nimi</th>
+          <th>Voitot</th>
+          <th>2. sijat</th>
+          <th>3. sijat</th>
+          <th>Podiumit</th>
+          <th>Pisteet</th>
+          <th>Pisteet / Maksimipisteet</th>
+          <th>Pisteet / Vuosi</th>
+          <th>Vuodet</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Santeri</td><td>3</td><td>2</td><td>1</td><td>6</td> <td>559</td><td>43 %</td><td>93</td><td>6</td></tr>
+        <tr><td>Oskari </td><td>1</td><td>2</td><td>1</td><td>4</td> <td>175</td><td>26 %</td><td>44</td><td>4</td></tr>
+        <tr><td>Kalle  </td><td>1</td><td>0</td><td>2</td><td>3</td> <td>370</td><td>28 %</td><td>62</td><td>6</td></tr>
+        <tr><td>Marjo  </td><td>0</td><td>1</td><td>2</td><td>3</td> <td>458</td><td>35 %</td><td>76</td><td>6</td></tr>
+        <tr><td>Annika </td><td>0</td><td>1</td><td>0</td><td>1</td> <td>130</td><td>28 %</td><td>65</td><td>2</td></tr>
+        <tr><td>Ducky  </td><td>1</td><td>0</td><td>0</td><td>0</td> <td>383</td><td>43 %</td><td>128</td><td>3</td></tr>
+        <tr><td>Camilla</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>104</td><td>19 %</td><td>35</td><td>3</td></tr>
+        <tr><td>Roope  </td><td>0</td><td>0</td><td>0</td><td>0</td> <td>4</td>  <td>2 %</td> <td>4</td> <td>1</td></tr>
+      </tbody>
+    </table>
+    </section>
+  </main>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- DataTables JS -->
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function() {
+
+  // -------------------
+  // Main table
+  // -------------------
+  let table = $('#mainTable').DataTable({
+    paging: false,
+    searching: false,
+    ordering: false // disable sorting for rank table
+  });
+
+  // Highlight function
+  function highlightRanks() {
+    let columns = table.columns().indexes();
+    columns.each(function(colIdx) {
+      if (colIdx === 0) return; // skip "Pelaaja" column
+
+      let ranks = [];
+      table.column(colIdx).nodes().each(function(td) {
+        let val = $(td).text().trim();
+        if (val === "") {
+          $(td).addClass("no-participation");
+        } else {
+          $(td).removeClass("no-participation");
+          let num = parseInt(val);
+          if (!isNaN(num)) ranks.push({ cell: td, rank: num });
+        }
+      });
+
+      ranks.sort((a, b) => a.rank - b.rank);
+
+      if (ranks[0]) $(ranks[0].cell).addClass("gold");
+      if (ranks[1]) $(ranks[1].cell).addClass("silver");
+      if (ranks[2]) $(ranks[2].cell).addClass("bronze");
+    });
+  }
+
+  highlightRanks();
+
+  // -------------------
+  // Yearly tables with top3 highlighting
+  // -------------------
+  const playerColors = {
+    'Camilla': '#f4a7b9',
+    'Oskari': '#6ec6e7',
+    'Ducky': '#7fd48c',
+    'Annika': '#b28dd9',
+    'Roope': '#e57373',
+    'Santeri': '#4a90e2',
+    'Marjo': '#f9d65c',
+    'Kalle': '#f5a45d',
+  };
+
+  $('.yearTable').each(function(index) {
+    let $table = $(this).DataTable({
+      paging: false,
+      searching: false,
+      ordering: false
+    });
+
+    $table.on('draw', function() {
+      $($table.rows().nodes()).removeClass('gold silver bronze');
+      $($table.row(0).node()).addClass('gold');
+      $($table.row(1).node()).addClass('silver');
+      $($table.row(2).node()).addClass('bronze');
+    });
+
+    $table.draw();
+
+    // -------------------
+    // Create side-by-side chart
+    // -------------------
+    // Wrap table and chart in a container
+    let container = $('<div class="yearContainer"></div>');
+    $(this).before(container);
+    container.append($(this));
+
+    // Add canvas
+    let canvas = $('<canvas></canvas>');
+    container.append(canvas);
+
+    // Extract labels and scores
+    const labels = $(this).find('tbody tr').map(function() {
+      return $(this).find('td').eq(0).text();
+    }).get();
+
+    const scores = $(this).find('tbody tr').map(function() {
+      return parseInt($(this).find('td').eq(1).text());
+    }).get();
+
+    // Map colors
+    const colors = labels.map(name => playerColors[name] || 'gray');
+
+    // Reverse for highest score on top
+    labels.reverse();
+    scores.reverse();
+    colors.reverse();
+
+    new Chart(canvas[0].getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Pisteet',
+          data: scores,
+          backgroundColor: colors
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: $(this).prev('h4').text()
+          },
+          legend: { display: false }
+        },
+        scales: {
+          x: { beginAtZero: true }
+        }
+      }
+    });
+
+  });
+
+  // -------------------
+  // Stats table line chart
+  // -------------------
+  let statsTable = $('#statsTable').DataTable({
+    paging: false,
+    searching: false,
+    order: [
+      [1, 'desc'],
+      [2, 'desc'],
+      [3, 'desc'],
+      [5, 'desc']
+    ]
+  });
+
+  statsTable.on('draw', function() {
+    $(statsTable.rows().nodes()).removeClass('gold silver bronze');
+    $(statsTable.row(0).node()).addClass('gold');
+    $(statsTable.row(1).node()).addClass('silver');
+    $(statsTable.row(2).node()).addClass('bronze');
+  });
+
+  statsTable.draw();
+
+  // Stats line chart
+  const mainTable = document.getElementById('mainTable');
+  const years = Array.from(mainTable.querySelectorAll('thead th'))
+                     .slice(1)
+                     .map(th => th.textContent);
+  const players = Array.from(mainTable.querySelectorAll('tbody tr'))
+                       .map(tr => tr.cells[0].textContent);
+  const datasets = Array.from(mainTable.querySelectorAll('tbody tr')).map((tr,i) => {
+    return {
+      label: tr.cells[0].textContent,
+      data: Array.from(tr.cells).slice(1).map(td => td.textContent ? parseInt(td.textContent) : null),
+      fill: false,
+      borderWidth: 2,
+      tension: 0.2,
+      borderColor: ['pink','cyan','green','purple','red','blue','yellow','orange'][i % 8]
+    };
+  });
+
+  const ctx = document.getElementById('statsChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: { labels: years, datasets: datasets },
+    options: {
+      responsive: true,
+      plugins: { title: { display: true, text: 'Pelaajien tulokset vuosittain' } },
+      scales: { y: { reverse: true } }
+    }
+  });
+
+});
+</script>
+
+
+  <footer class="container">
+    <p></p>
+  </footer>
+
+</body>
+</html>
