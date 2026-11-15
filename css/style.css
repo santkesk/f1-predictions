@@ -804,6 +804,18 @@ main>p,
   position:absolute;right:0;bottom:0;width:min(29vw,380px);height:15px;background:repeating-linear-gradient(125deg,var(--red) 0 22px,var(--white) 22px 25px,transparent 25px 42px)
 }
 
+.hero-credit {
+  position:absolute;right:22px;bottom:26px;z-index:2;max-width:min(44vw,430px);padding:8px 12px;border-radius:999px;background:rgba(8,8,10,.58);backdrop-filter:blur(6px);color:var(--tone-e6e6e6);font-size:.72rem;line-height:1.35;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 24px rgba(0,0,0,.25)
+}
+
+.hero-credit a {
+  color:inherit;text-decoration:none
+}
+
+.hero-credit a:hover {
+  color:var(--white);text-decoration:underline;text-underline-offset:2px
+}
+
 .home-content {
   max-width:var(--max);padding:0 28px 64px;margin:auto
 }
@@ -1072,3 +1084,15 @@ html {
 [data-render] { min-width: 0; }
 .data-error { padding: var(--space-md); margin: var(--space-md) 0; border: 1px solid var(--red); border-radius: var(--radius-md); color: var(--text); background: var(--panel); }
 
+
+/* Info photo attribution and shared footer legal notice */
+.hub-item { min-width:0; display:flex; flex-direction:column; }
+.hub-item .hub-card { flex:1; }
+.hub-credit { color:var(--muted); font-size:.76rem; line-height:1.5; margin:8px 2px 0; font-weight:400; overflow-wrap:anywhere; }
+.hub-credit a, .footer-disclaimer a, .credit-index a { color:inherit; text-decoration:underline; text-underline-offset:2px; }
+.hub-credit span { display:block; font-size:.72rem; }
+.credit-index { margin-top:var(--space-xl); border-top:1px solid var(--line); padding-top:var(--space-md); color:var(--muted); font-size:.83rem; }
+.credit-index h3 { font-size:1rem; color:var(--text); }
+.credit-index p { font-size:inherit; font-weight:400; margin:8px 0; line-height:1.6; }
+.site-footer > .footer-disclaimer { display:block; margin-top:16px; border-top:1px solid var(--line); padding-top:12px; color:var(--muted); font-size:.75rem; line-height:1.6; }
+.site-footer .footer-disclaimer p { color:inherit; font-size:inherit; line-height:inherit; font-weight:400; margin:0 0 6px; text-align:left; }

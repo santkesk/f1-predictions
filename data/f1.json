@@ -6,8 +6,8 @@
     {
       "id": "mclaren",
       "name": "McLaren",
-      "image": "images/mclaren.jpg",
-      "imageAlt": "McLaren Team",
+      "image": "images/mclaren.webp",
+      "imageAlt": "McLaren – F1-auto Itävallan GP:ssä 2026",
       "engine": "Mercedes",
       "activeYears": "Formula 1:ssä 1966–",
       "overviewStats": {
@@ -46,13 +46,22 @@
             "Nopeimmat kierrokset": 18
           }
         }
-      ]
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 81 Piastri (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._81_Piastri_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      }
     },
     {
       "id": "ferrari",
       "name": "Ferrari",
-      "image": "images/ferrari.jpg",
-      "imageAlt": "Ferrari Team",
+      "image": "images/ferrari.webp",
+      "imageAlt": "Ferrari – F1-auto Itävallan GP:ssä 2026",
       "engine": "Ferrari",
       "activeYears": "Formula 1:ssä 1950–",
       "overviewStats": {
@@ -91,13 +100,22 @@
             "Nopeimmat kierrokset": 65
           }
         }
-      ]
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 44 Hamilton (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._44_Hamilton_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      }
     },
     {
       "id": "redbull",
       "name": "Red Bull",
-      "image": "images/redbull.jpg",
-      "imageAlt": "Red Bull Racing Team",
+      "image": "images/redbull.webp",
+      "imageAlt": "Red Bull – F1-auto Itävallan GP:ssä 2026",
       "engine": "Red Bull Ford",
       "activeYears": "Formula 1:ssä 1997–",
       "overviewStats": {
@@ -189,13 +207,22 @@
             117
           ]
         ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 3 Verstappen (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._3_Verstappen_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
       }
     },
     {
       "id": "mercedes",
       "name": "Mercedes",
-      "image": "images/mercedes.jpg",
-      "imageAlt": "Mercedes Team",
+      "image": "images/mercedes.webp",
+      "imageAlt": "Mercedes – F1-auto Itävallan GP:ssä 2026",
       "engine": "Mercedes",
       "activeYears": "Formula 1:ssä 1970–",
       "overviewStats": {
@@ -301,13 +328,22 @@
             137
           ]
         ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 12 Antonelli (3).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._12_Antonelli_(3).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
       }
     },
     {
       "id": "astonmartin",
       "name": "Aston Martin",
-      "image": "images/astonmartin.jpg",
-      "imageAlt": "Aston Martin Team",
+      "image": "images/astonmartin.webp",
+      "imageAlt": "Aston Martin – F1-auto Itävallan GP:ssä 2026",
       "engine": "Honda",
       "activeYears": "Formula 1:ssä 1991–",
       "overviewStats": {
@@ -420,13 +456,22 @@
             10
           ]
         ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 14 Alonso (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._14_Alonso_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
       }
     },
     {
       "id": "alpine",
       "name": "Alpine",
-      "image": "images/alpine.jpg",
-      "imageAlt": "Alpine Team",
+      "image": "images/alpine.webp",
+      "imageAlt": "Alpine – F1-auto Itävallan GP:ssä 2026",
       "engine": "Mercedes",
       "activeYears": "Formula 1:ssä 1981–",
       "overviewStats": {
@@ -532,13 +577,22 @@
             75
           ]
         ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 10 Gasly (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._10_Gasly_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
       }
     },
     {
       "id": "haas",
       "name": "Haas",
-      "image": "images/haas.jpg",
-      "imageAlt": "Haas Team",
+      "image": "images/haas.webp",
+      "imageAlt": "Haas – F1-auto Itävallan GP:ssä 2026",
       "engine": "Ferrari",
       "activeYears": "Formula 1:ssä 2016–",
       "overviewStats": {
@@ -577,13 +631,22 @@
             "Nopeimmat kierrokset": 0
           }
         }
-      ]
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 87 Bearman (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._87_Bearman_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      }
     },
     {
       "id": "racingbulls",
       "name": "Racing Bulls",
-      "image": "images/rb.jpg",
-      "imageAlt": "Racing Bulls Team",
+      "image": "images/racingbulls.webp",
+      "imageAlt": "Racing Bulls – F1-auto Itävallan GP:ssä 2026",
       "engine": "Red Bull Ford",
       "activeYears": "Formula 1:ssä 1985–",
       "overviewStats": {
@@ -682,13 +745,22 @@
             4
           ]
         ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 41 Lindblad (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._41_Lindblad_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
       }
     },
     {
       "id": "williams",
       "name": "Williams",
-      "image": "images/williams.jpg",
-      "imageAlt": "Williams Team",
+      "image": "images/williams.webp",
+      "imageAlt": "Williams – F1-auto Itävallan GP:ssä 2026",
       "engine": "Mercedes",
       "activeYears": "Formula 1:ssä 1978–",
       "overviewStats": {
@@ -728,13 +800,22 @@
             "Nopeimmat kierrokset": 4
           }
         }
-      ]
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 23 Albon (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._23_Albon_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      }
     },
     {
-      "id": "sauber",
-      "name": "Sauber",
-      "image": "images/audi.jpg",
-      "imageAlt": "Audi-tallin kuva",
+      "id": "audi",
+      "name": "Audi",
+      "image": "images/audi.webp",
+      "imageAlt": "Audi – F1-auto Itävallan GP:ssä 2026",
       "engine": "Audi",
       "activeYears": "Formula 1:ssä 1993–",
       "overviewStats": {
@@ -775,7 +856,7 @@
         }
       ],
       "aliases": [
-        "Audi"
+        "Sauber"
       ],
       "history": {
         "columns": [
@@ -836,13 +917,22 @@
             7
           ]
         ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 27 Hülkenberg (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._27_H%C3%BClkenberg_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
       }
     },
     {
       "id": "cadillac",
       "name": "Cadillac",
-      "image": "images/cadillac.jpg",
-      "imageAlt": "Cadillac",
+      "image": "images/cadillac.webp",
+      "imageAlt": "Cadillac – F1-auto Itävallan GP:ssä 2026",
       "engine": "Ferrari",
       "activeYears": "Formula 1:ssä 2026–",
       "overviewStats": {
@@ -881,7 +971,16 @@
             "Nopeimmat kierrokset": 12
           }
         }
-      ]
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 77 Bottas (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._77_Bottas_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      }
     }
   ],
   "driverTeamOrder": [
@@ -894,7 +993,7 @@
     "haas",
     "racingbulls",
     "williams",
-    "sauber",
+    "audi",
     "cadillac"
   ],
   "midfieldTeams": [
@@ -903,7 +1002,7 @@
     "haas",
     "racingbulls",
     "williams",
-    "sauber",
+    "audi",
     "cadillac"
   ],
   "checkboxTeamOrder": [
@@ -916,7 +1015,7 @@
     "haas",
     "racingbulls",
     "williams",
-    "sauber",
+    "audi",
     "cadillac"
   ],
   "historicalResults": [
@@ -3670,5 +3769,39 @@
         }
       ]
     }
-  ]
+  ],
+  "infoImages": [
+    {
+      "id": "teams",
+      "image": "images/teams.webp",
+      "title": "2026-08-23 Motorsport, Formel 1, Großer Preis der Niederlande 2026 STP 2908.jpg",
+      "author": "Steffen Prößdorf",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Stepro",
+      "source": "https://commons.wikimedia.org/wiki/File:2026-08-23_Motorsport,_Formel_1,_Gro%C3%9Fer_Preis_der_Niederlande_2026_STP_2908.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+    },
+    {
+      "id": "seasons",
+      "image": "images/seasons.webp",
+      "title": "2022 British Grand Prix (52382757010).jpg",
+      "author": "Jen Ross",
+      "authorUrl": "https://www.flickr.com/people/69527563@N05",
+      "source": "https://commons.wikimedia.org/wiki/File:2022_British_Grand_Prix_(52382757010).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+    }
+  ],
+  "heroImage": {
+    "image": "images/frontpage.webp",
+    "title": "FIA F1 Austria 2023 Race (1).jpg",
+    "author": "Lukas Raich",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+    "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2023_Race_(1).jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä tummennus ja responsiivinen rajaus."
+  }
 }

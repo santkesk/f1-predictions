@@ -282,7 +282,7 @@
   --team:var(--team-williams); --team-text: var(--white);
 }
 
-.team-sauber {
+.team-audi {
   --team:var(--team-audi); --team-text: var(--black);
 }
 
@@ -1447,6 +1447,14 @@ th[aria-sort=descending] .sort-btn:after {
 .team-haas { --team: var(--team-haas); }
 .team-racingbulls { --team: var(--team-racingbulls); }
 .team-williams { --team: var(--team-williams); }
-.team-sauber { --team: var(--team-sauber); }
+.team-audi { --team: var(--team-audi); }
 .team-cadillac { --team: var(--team-cadillac); }
 
+
+/* Photo attribution: visible below the photograph, outside its linked overlay. */
+.team-hero { margin-bottom: 0; }
+.photo-credit { font-size: .78rem; line-height: 1.55; color: var(--tone-eeeeee); margin: 8px 0 24px; overflow-wrap: anywhere; }
+.photo-credit a, .team-img-container .photo-credit a { display: inline; color: inherit; text-decoration: underline; }
+.team-img-container .photo-credit a::before, .team-img-container .photo-credit a::after { content: none; }
+.team-img-container .photo-credit { padding: 0 12px 8px; margin: 7px 0 0; }
+.photo-credit .photo-modifications { display: block; font-size: .72rem; }

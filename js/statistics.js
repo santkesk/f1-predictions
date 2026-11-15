@@ -192,6 +192,10 @@
     const links=el('div',{class:'stats-links'},el('a',{href:resultLink(`player=${encodeURIComponent(p.name)}`)},el('span',{},'ARKISTO'),el('strong',{},'Kaikki pelaajan vastaukset →')),el('a',{href:url('players.html')},el('span',{},'PELAAJAT'),el('strong',{},'Takaisin pelaajiin →')));
     render('player-profile',profile,playerMetrics,history,ongoing,section('Sijoitukset vuosittain',chart(model,[p],'rank')),section('Pisteet vuosittain',chart(model,[p],'points')),section('Osuus maksimipisteistä',chart(model,[p],'percent')),links);
   }
+  function photoCredit(team){
+    const c=team.imageCredit;if(!c)return null;
+    return el('p',{class:'photo-credit'},'© ',el('a',{href:c.authorUrl},c.author),' · ',el('a',{href:c.source,title:c.title},'Wikimedia Commons'),' · ',el('a',{href:c.licenseUrl},c.license),el('span',{class:'photo-modifications'},c.modifications));
+  }
   function renderTeams(data){
     render('teams',el('div',{class:'team-container'},data.teams.map(team=>{
       const rows=Object.entries(team.overviewStats).map(([label,v])=>[label,v,...team.drivers.map(d=>d.careerStats[label])]);
@@ -201,12 +205,12 @@
   function renderTeam(data){
     const team=data.teams.find(t=>t.id===document.body.dataset.id);if(!team)throw new Error('Tallia ei löydy');
     document.title=`F1 Ennustukset - ${team.name}`;
-    const img=el('img',{src:url(team.image),alt:team.name,class:'team-hero-img'});img.addEventListener('error',()=>img.hidden=true);
+    const img=el('img',{src:url(team.image),alt:team.imageAlt,class:'team-hero-img'});img.addEventListener('error',()=>img.hidden=true);
     const hero=el('section',{class:'team-hero'},img,el('h2',{},team.name),el('p',{class:'team-years'},team.activeYears));
     const grid=el('div',{class:'team-grid'},el('section',{class:'team-card'},el('h3',{},'Moottori'),el('p',{class:'engine-chip'},team.engine),el('h3',{},'Kuljettajat'),el('ul',{class:'driver-list'},team.drivers.map(d=>el('li',{},d.profileName||d.name)))),el('section',{class:'team-card'},el('h3',{},team.achievementHeading),el('div',{class:'stat-tiles'},Object.entries(team.achievements).map(([label,value])=>el('div',{class:'stat-tile'},el('span',{class:'stat-value'},value),el('span',{class:'stat-label'},label))))));
     const history=team.history?el('section',{class:'team-card team-history'},el('h3',{},'Tallin historia'),el('div',{class:'table-scroll'},makeTable(team.history.columns,team.history.rows,{class:'achievements-table'}))):null;
     const switcher=el('div',{class:'team-switcher'},el('h3',{},'Muut tallit'),data.teams.map(t=>el('a',{href:url(`Teams/${t.id}.html`),class:t.id===team.id?'current':null,'aria-current':t.id===team.id?'page':null,style:{'--dot':teamToken(t.id)}},t.name)));
-    render('team-profile',hero,grid,history,switcher);
+    render('team-profile',hero,photoCredit(team),grid,history,switcher);
   }
   function renderHistory(data){
     const categories=data.historicalResults;
