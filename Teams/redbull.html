@@ -1,114 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>F1 Ennustukset - Red Bull</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>F1 Ennustukset - Red Bull</title>
 
-  <link rel="stylesheet" href="../style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body class="info-page team-page team-redbull">
-  <header>
-    <div class="header-top">
-      <a href="../index.html">
-        <img class="responsive" src="../images/logo.svg" alt="">
-      </a>
-      <h1>Ennustukset</h1>
-    </div>
-    <nav>
-        <ul class="nav-menu">
-            <li><a href="../index.html">Etusivu</a></li>
-            <li><a href="../predictions.html">Ennustustaminen</a></li>
-            <li class="has-dropdown">
-                <a href="../statistics.html">Tilastot</a>
-                <ul class="dropdown">
-                    <li><a href="../results.html">Tulokset</a></li>
-                </ul>
-            </li>
-            <li class="has-dropdown">
-                <a href="../info.html" class="active">Tietoa talleista ja kuljettajista</a>
-                <ul class="dropdown">
-                    <li><a href="../seasonsinfo.html">Viime kausien tilastot</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-  </header>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
 
-  <main>
-    <nav class="breadcrumb">
-      <a href="../info.html">Tietoa talleista ja kuljettajista</a> ›
+
+<link href="../css/style.css" rel="stylesheet"/><link href="../css/statistics.css" rel="stylesheet"/><script defer="" src="../js/main.js"></script><script defer="" src="../js/statistics.js"></script></head>
+<body class="info-page team-page team-redbull" data-id="redbull" data-page="team-profile">
+<header class="site-header"><div class="header-inner">
+<a aria-label="F1 Ennustukset – etusivu" class="brand" href="../index.html"><span aria-hidden="true" class="brand-mark">F1<span></span></span><span class="brand-name">ENNUSTUKSET</span></a>
+<button aria-controls="site-navigation" aria-expanded="false" class="nav-toggle" hidden="" type="button">Valikko <span aria-hidden="true">☰</span></button>
+<nav aria-label="Päävalikko" id="site-navigation"><ul class="nav-menu">
+<li><a href="../index.html">Etusivu</a></li><li><a href="../predictions.html">Ennustustaminen</a></li>
+<li class="has-dropdown"><a href="../statistics.html">Tilastot</a><ul class="dropdown"><li><a href="../results.html">Tulokset</a></li><li><a href="../players.html">Pelaajat</a></li></ul></li>
+<li class="has-dropdown"><a class="active" href="../info.html">Tietoa</a><ul class="dropdown"><li><a href="../teams.html">Tallit ja kuljettajat</a></li><li><a href="../seasonsinfo.html">Viime kaudet</a></li></ul></li>
+</ul></nav>
+</div></header>
+<main><noscript><p class="data-error" role="alert">Ota JavaScript käyttöön, jotta sivun tiedot ja toiminnot voidaan ladata.</p></noscript>
+<nav class="breadcrumb">
+<a href="../info.html">Tietoa</a> › <a href="../teams.html">Tallit ja kuljettajat</a> ›
       <span>Red Bull</span>
-    </nav>
+</nav>
+<div aria-live="polite" data-render="team-profile">Ladataan tietoja…</div>
 
-    <section class="team-hero">
-      <img class="team-hero-img" src="../images/redbull.jpg" alt="Red Bull" onerror="this.style.display='none'">
-      <h2>Red Bull</h2>
-      <p class="team-years">Formula 1:ssä 1997–</p>
-    </section>
 
-    <div class="team-grid">
-      <section class="team-card">
-        <h3>Moottori</h3>
-        <p class="engine-chip">Red Bull Ford</p>
-        <h3>Kuljettajat</h3>
-        <ul class="driver-list">
-          <li>Max Verstappen</li>
-          <li>Yuki Tsunoda</li>
-        </ul>
-      </section>
 
-      <section class="team-card">
-        <h3>Saavutukset (kaikki nimet yhteensä)</h3>
-        <div class="stat-tiles">
-          <div class="stat-tile"><span class="stat-value">8</span><span class="stat-label">Maailmanmestaruudet</span></div>
-          <div class="stat-tile"><span class="stat-value">131</span><span class="stat-label">Voitot</span></div>
-          <div class="stat-tile"><span class="stat-value">313</span><span class="stat-label">Podiumit</span></div>
-          <div class="stat-tile"><span class="stat-value">148</span><span class="stat-label">Paalupaikat</span></div>
-          <div class="stat-tile"><span class="stat-value">117</span><span class="stat-label">Nopeimmat kierrokset</span></div>
-        </div>
-      </section>
-    </div>
-
-    <section class="team-card team-history">
-      <h3>Tallin historia</h3>
-      <div class="table-scroll">
-        <table class="achievements-table">
-          <thead>
-            <tr><th></th><th>Red Bull</th><th>Jaguar</th><th>Stewart</th><th>Kaikki</th></tr>
-          </thead>
-          <tbody>
-              <tr><td>Vuodet</td><td>2010–</td><td>2000–2004</td><td>1997–1999</td><td>1997–</td></tr>
-              <tr><td>Maailmanmestaruudet</td><td>8</td><td>0</td><td>0</td><td>8</td></tr>
-              <tr><td>Voitot</td><td>130</td><td>0</td><td>1</td><td>131</td></tr>
-              <tr><td>Podiumit</td><td>306</td><td>2</td><td>5</td><td>313</td></tr>
-              <tr><td>Paalupaikat</td><td>142</td><td>5</td><td>1</td><td>148</td></tr>
-              <tr><td>Nopeimmat kierrokset</td><td>113</td><td>4</td><td>0</td><td>117</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <div class="team-switcher">
-      <h3>Muut tallit</h3>
-      <a href="mclaren.html" style="--dot:#f89436">McLaren</a>
-      <a href="ferrari.html" style="--dot:#d42929">Ferrari</a>
-      <a href="redbull.html" class="current" style="--dot:#1d146b">Red Bull</a>
-      <a href="mercedes.html" style="--dot:#2da393">Mercedes</a>
-      <a href="astonmartin.html" style="--dot:#076632">Aston Martin</a>
-      <a href="alpine.html" style="--dot:#d462df">Alpine</a>
-      <a href="haas.html" style="--dot:#9e9595">Haas</a>
-      <a href="racingbulls.html" style="--dot:#5154e7">Racing Bulls</a>
-      <a href="williams.html" style="--dot:#1a0fbb">Williams</a>
-      <a href="sauber.html" style="--dot:#47e947">Sauber</a>
-      <a href="cadillac.html" style="--dot:#aaaaaa">Cadillac</a>
-    </div>
-  </main>
-
-  <footer>
-    <p>F1 Ennustukset</p>
-  </footer>
-
+</main>
+<footer class="site-footer"><div><span aria-hidden="true" class="footer-mark">//</span> <strong>F1 ENNUSTUKSET</strong><span class="footer-caption">Formula 1 · Ennustuspeli</span></div></footer>
 </body>
 </html>

@@ -1,0 +1,3674 @@
+{
+  "schemaVersion": 1,
+  "source": "Existing website snapshot, not a live Formula 1 feed. Historical figures and roster spellings preserved.",
+  "referenceSeason": 2026,
+  "teams": [
+    {
+      "id": "mclaren",
+      "name": "McLaren",
+      "image": "images/mclaren.jpg",
+      "imageAlt": "McLaren Team",
+      "engine": "Mercedes",
+      "activeYears": "Formula 1:ssä 1966–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 10,
+        "Voitot": 201,
+        "Podiumit": 551,
+        "Paalupaikat": 173,
+        "Nopeimmat kierrokset": 183
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 9,
+        "Voitot": 201,
+        "Podiumit": 551,
+        "Paalupaikat": 173,
+        "Nopeimmat kierrokset": 183
+      },
+      "drivers": [
+        {
+          "name": "Oscar Piastri",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 9,
+            "Podiumit": 23,
+            "Paalupaikat": 5,
+            "Nopeimmat kierrokset": 8
+          }
+        },
+        {
+          "name": "Lando Norris",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 9,
+            "Podiumit": 39,
+            "Paalupaikat": 13,
+            "Nopeimmat kierrokset": 18
+          }
+        }
+      ]
+    },
+    {
+      "id": "ferrari",
+      "name": "Ferrari",
+      "image": "images/ferrari.jpg",
+      "imageAlt": "Ferrari Team",
+      "engine": "Ferrari",
+      "activeYears": "Formula 1:ssä 1950–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 16,
+        "Voitot": 248,
+        "Podiumit": 834,
+        "Paalupaikat": 254,
+        "Nopeimmat kierrokset": 263
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 16,
+        "Voitot": 247,
+        "Podiumit": 829,
+        "Paalupaikat": 254,
+        "Nopeimmat kierrokset": 262
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 7,
+            "Podiumit": 35,
+            "Paalupaikat": 23,
+            "Nopeimmat kierrokset": 9
+          }
+        },
+        {
+          "name": "Lewis Hamilton",
+          "careerStats": {
+            "Maailmanmestaruudet": 7,
+            "Voitot": 103,
+            "Podiumit": 197,
+            "Paalupaikat": 104,
+            "Nopeimmat kierrokset": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": "redbull",
+      "name": "Red Bull",
+      "image": "images/redbull.jpg",
+      "imageAlt": "Red Bull Racing Team",
+      "engine": "Red Bull Ford",
+      "activeYears": "Formula 1:ssä 1997–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 6,
+        "Voitot": 126,
+        "Podiumit": 290,
+        "Paalupaikat": 109,
+        "Nopeimmat kierrokset": 101
+      },
+      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 8,
+        "Voitot": 131,
+        "Podiumit": 313,
+        "Paalupaikat": 148,
+        "Nopeimmat kierrokset": 117
+      },
+      "drivers": [
+        {
+          "name": "Max Verstappen",
+          "careerStats": {
+            "Maailmanmestaruudet": 3,
+            "Voitot": 61,
+            "Podiumit": 103,
+            "Paalupaikat": 39,
+            "Nopeimmat kierrokset": 32
+          }
+        },
+        {
+          "name": "Yuki Tsunoda",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          }
+        }
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Red Bull",
+          "Jaguar",
+          "Stewart",
+          "Kaikki"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2010–",
+            "2000–2004",
+            "1997–1999",
+            "1997–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            8,
+            0,
+            0,
+            8
+          ],
+          [
+            "Voitot",
+            130,
+            0,
+            1,
+            131
+          ],
+          [
+            "Podiumit",
+            306,
+            2,
+            5,
+            313
+          ],
+          [
+            "Paalupaikat",
+            142,
+            5,
+            1,
+            148
+          ],
+          [
+            "Nopeimmat kierrokset",
+            113,
+            4,
+            0,
+            117
+          ]
+        ]
+      }
+    },
+    {
+      "id": "mercedes",
+      "name": "Mercedes",
+      "image": "images/mercedes.jpg",
+      "imageAlt": "Mercedes Team",
+      "engine": "Mercedes",
+      "activeYears": "Formula 1:ssä 1970–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 8,
+        "Voitot": 130,
+        "Podiumit": 306,
+        "Paalupaikat": 142,
+        "Nopeimmat kierrokset": 113
+      },
+      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 10,
+        "Voitot": 163,
+        "Podiumit": 413,
+        "Paalupaikat": 164,
+        "Nopeimmat kierrokset": 137
+      },
+      "drivers": [
+        {
+          "name": "George Russell",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 1,
+            "Podiumit": 11,
+            "Paalupaikat": 1,
+            "Nopeimmat kierrokset": 6
+          }
+        },
+        {
+          "name": "Kimi Antonelli",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          }
+        }
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Mercedes",
+          "Brawn GP",
+          "Honda",
+          "BAR",
+          "Tyrrell",
+          "Kaikki"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2010–",
+            2009,
+            "2006–2008",
+            "1999–2005",
+            "1970–1998",
+            "1970–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            8,
+            1,
+            0,
+            0,
+            1,
+            10
+          ],
+          [
+            "Voitot",
+            130,
+            8,
+            1,
+            0,
+            24,
+            163
+          ],
+          [
+            "Podiumit",
+            306,
+            15,
+            4,
+            15,
+            73,
+            413
+          ],
+          [
+            "Paalupaikat",
+            142,
+            5,
+            1,
+            2,
+            14,
+            164
+          ],
+          [
+            "Nopeimmat kierrokset",
+            113,
+            4,
+            0,
+            0,
+            20,
+            137
+          ]
+        ]
+      }
+    },
+    {
+      "id": "astonmartin",
+      "name": "Aston Martin",
+      "image": "images/astonmartin.jpg",
+      "imageAlt": "Aston Martin Team",
+      "engine": "Honda",
+      "activeYears": "Formula 1:ssä 1991–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 9,
+        "Paalupaikat": 0,
+        "Nopeimmat kierrokset": 3
+      },
+      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 5,
+        "Podiumit": 38,
+        "Paalupaikat": 4,
+        "Nopeimmat kierrokset": 10
+      },
+      "drivers": [
+        {
+          "name": "Lance Stroll",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 3,
+            "Paalupaikat": 1,
+            "Nopeimmat kierrokset": 0
+          }
+        },
+        {
+          "name": "Fernando Alonso",
+          "careerStats": {
+            "Maailmanmestaruudet": 2,
+            "Voitot": 32,
+            "Podiumit": 106,
+            "Paalupaikat": 22,
+            "Nopeimmat kierrokset": 23
+          }
+        }
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Aston Martin",
+          "Racing Point",
+          "Force India",
+          "Spyker",
+          "Midland",
+          "Jordan",
+          "Kaikki"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2021–",
+            "2019–2020",
+            "2008–2018",
+            2007,
+            2006,
+            "1991–2005",
+            "1991–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "Voitot",
+            0,
+            1,
+            0,
+            0,
+            0,
+            4,
+            5
+          ],
+          [
+            "Podiumit",
+            9,
+            4,
+            6,
+            0,
+            0,
+            19,
+            38
+          ],
+          [
+            "Paalupaikat",
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            "Nopeimmat kierrokset",
+            3,
+            0,
+            5,
+            0,
+            0,
+            2,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "id": "alpine",
+      "name": "Alpine",
+      "image": "images/alpine.jpg",
+      "imageAlt": "Alpine Team",
+      "engine": "Mercedes",
+      "activeYears": "Formula 1:ssä 1981–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 1,
+        "Podiumit": 6,
+        "Paalupaikat": 0,
+        "Nopeimmat kierrokset": 1
+      },
+      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 3,
+        "Voitot": 65,
+        "Podiumit": 236,
+        "Paalupaikat": 66,
+        "Nopeimmat kierrokset": 75
+      },
+      "drivers": [
+        {
+          "name": "Pierre Gasly",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 1,
+            "Podiumit": 4,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 1
+          }
+        },
+        {
+          "name": "Franco Colapinto",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          }
+        }
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Alpine",
+          "Renault",
+          "Lotus",
+          "Benetton",
+          "Toleman",
+          "Kaikki"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2021–",
+            "2002–2011, 2016–2020",
+            "2012–2015",
+            "1986–2001",
+            "1981–1985",
+            "1981–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            0,
+            2,
+            0,
+            1,
+            0,
+            3
+          ],
+          [
+            "Voitot",
+            1,
+            35,
+            2,
+            27,
+            0,
+            65
+          ],
+          [
+            "Podiumit",
+            6,
+            103,
+            25,
+            102,
+            0,
+            236
+          ],
+          [
+            "Paalupaikat",
+            0,
+            51,
+            0,
+            15,
+            0,
+            66
+          ],
+          [
+            "Nopeimmat kierrokset",
+            1,
+            33,
+            5,
+            36,
+            0,
+            75
+          ]
+        ]
+      }
+    },
+    {
+      "id": "haas",
+      "name": "Haas",
+      "image": "images/haas.jpg",
+      "imageAlt": "Haas Team",
+      "engine": "Ferrari",
+      "activeYears": "Formula 1:ssä 2016–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 0,
+        "Paalupaikat": 1,
+        "Nopeimmat kierrokset": 3
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 0,
+        "Paalupaikat": 1,
+        "Nopeimmat kierrokset": 3
+      },
+      "drivers": [
+        {
+          "name": "Esteban Ocon",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 1,
+            "Podiumit": 4,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 1
+          }
+        },
+        {
+          "name": "Oliver Bearman",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "racingbulls",
+      "name": "Racing Bulls",
+      "image": "images/rb.jpg",
+      "imageAlt": "Racing Bulls Team",
+      "engine": "Red Bull Ford",
+      "activeYears": "Formula 1:ssä 1985–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 1,
+        "Paalupaikat": 0,
+        "Nopeimmat kierrokset": 0
+      },
+      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 2,
+        "Podiumit": 6,
+        "Paalupaikat": 1,
+        "Nopeimmat kierrokset": 4
+      },
+      "drivers": [
+        {
+          "name": "Isack Hadjar",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 1,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          }
+        },
+        {
+          "name": "Liam Lawson",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          }
+        }
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Racing Bulls",
+          "AlphaTauri",
+          "Toro Rosso",
+          "Minardi",
+          "Kaikki"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2024–",
+            "2020–2023",
+            "2006–2019",
+            "1985–2005",
+            "1985–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "Voitot",
+            0,
+            1,
+            1,
+            0,
+            2
+          ],
+          [
+            "Podiumit",
+            1,
+            2,
+            3,
+            0,
+            6
+          ],
+          [
+            "Paalupaikat",
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            "Nopeimmat kierrokset",
+            1,
+            2,
+            1,
+            0,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "id": "williams",
+      "name": "Williams",
+      "image": "images/williams.jpg",
+      "imageAlt": "Williams Team",
+      "engine": "Mercedes",
+      "activeYears": "Formula 1:ssä 1978–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 9,
+        "Voitot": 114,
+        "Podiumit": 314,
+        "Paalupaikat": 128,
+        "Nopeimmat kierrokset": 133
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 9,
+        "Voitot": 114,
+        "Podiumit": 314,
+        "Paalupaikat": 128,
+        "Nopeimmat kierrokset": 133
+      },
+      "drivers": [
+        {
+          "name": "Alex Albon",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 2,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          },
+          "profileName": "Alexander Albon"
+        },
+        {
+          "name": "Carlos Sainz",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 4,
+            "Podiumit": 28,
+            "Paalupaikat": 6,
+            "Nopeimmat kierrokset": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "sauber",
+      "name": "Sauber",
+      "image": "images/audi.jpg",
+      "imageAlt": "Audi-tallin kuva",
+      "engine": "Audi",
+      "activeYears": "Formula 1:ssä 1993–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 1,
+        "Paalupaikat": 0,
+        "Nopeimmat kierrokset": 0
+      },
+      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 2,
+        "Podiumit": 45,
+        "Paalupaikat": 2,
+        "Nopeimmat kierrokset": 7
+      },
+      "drivers": [
+        {
+          "name": "Nico Hülkenberg",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 1,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          }
+        },
+        {
+          "name": "Gabriel Bortoleto",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          }
+        }
+      ],
+      "aliases": [
+        "Audi"
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Audi",
+          "Sauber",
+          "Alfa Romeo",
+          "BMW",
+          "Kaikki"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2026–",
+            "1993–2005, 2010–2018, 2024–2025",
+            "2019–2023",
+            "2006–2009",
+            "1993–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "Voitot",
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          [
+            "Podiumit",
+            0,
+            28,
+            0,
+            17,
+            45
+          ],
+          [
+            "Paalupaikat",
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          [
+            "Nopeimmat kierrokset",
+            0,
+            5,
+            0,
+            2,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cadillac",
+      "name": "Cadillac",
+      "image": "images/cadillac.jpg",
+      "imageAlt": "Cadillac",
+      "engine": "Ferrari",
+      "activeYears": "Formula 1:ssä 2026–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 0,
+        "Paalupaikat": 0,
+        "Nopeimmat kierrokset": 0
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 0,
+        "Paalupaikat": 0,
+        "Nopeimmat kierrokset": 0
+      },
+      "drivers": [
+        {
+          "name": "Valtteri Bottas",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 10,
+            "Podiumit": 67,
+            "Paalupaikat": 20,
+            "Nopeimmat kierrokset": 19
+          }
+        },
+        {
+          "name": "Sergio Pérez",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 6,
+            "Podiumit": 39,
+            "Paalupaikat": 3,
+            "Nopeimmat kierrokset": 12
+          }
+        }
+      ]
+    }
+  ],
+  "driverTeamOrder": [
+    "mclaren",
+    "redbull",
+    "ferrari",
+    "mercedes",
+    "astonmartin",
+    "alpine",
+    "haas",
+    "racingbulls",
+    "williams",
+    "sauber",
+    "cadillac"
+  ],
+  "midfieldTeams": [
+    "astonmartin",
+    "alpine",
+    "haas",
+    "racingbulls",
+    "williams",
+    "sauber",
+    "cadillac"
+  ],
+  "checkboxTeamOrder": [
+    "mclaren",
+    "ferrari",
+    "redbull",
+    "mercedes",
+    "astonmartin",
+    "alpine",
+    "haas",
+    "racingbulls",
+    "williams",
+    "sauber",
+    "cadillac"
+  ],
+  "historicalResults": [
+    {
+      "id": "kausitilasto-1",
+      "title": "Kuljettajien maailmanmestaruus",
+      "description": "Paljonko pisteitä kukin kuljettaja saavutti kauden aikana.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "drivers-championship-2025-table",
+          "columns": [
+            "Sija",
+            "Kuljettaja",
+            "Talli",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              1,
+              "Lando Norris",
+              "McLaren Mercedes",
+              423
+            ],
+            [
+              2,
+              "Max Verstappen",
+              "Red Bull Honda RBPT",
+              421
+            ],
+            [
+              3,
+              "Oscar Piastri",
+              "McLaren Mercedes",
+              410
+            ],
+            [
+              4,
+              "George Russell",
+              "Mercedes",
+              319
+            ],
+            [
+              5,
+              "Charles Leclerc",
+              "Ferrari",
+              242
+            ],
+            [
+              6,
+              "Lewis Hamilton",
+              "Ferrari",
+              156
+            ],
+            [
+              7,
+              "Kimi Antonelli",
+              "Mercedes",
+              150
+            ],
+            [
+              8,
+              "Alexander Albon",
+              "Williams Mercedes",
+              73
+            ],
+            [
+              9,
+              "Carlos Sainz",
+              "Williams Mercedes",
+              64
+            ],
+            [
+              10,
+              "Fernando Alonso",
+              "Aston Martin Mercedes",
+              56
+            ],
+            [
+              11,
+              "Nico Hulkenberg",
+              "Sauber Ferrari",
+              51
+            ],
+            [
+              12,
+              "Isack Hadjar",
+              "Racing Bulls Honda RBPT",
+              51
+            ],
+            [
+              13,
+              "Oliver Bearman",
+              "Haas Ferrari",
+              41
+            ],
+            [
+              14,
+              "Liam Lawson",
+              "Racing Bulls Honda RBPT",
+              38
+            ],
+            [
+              15,
+              "Esteban Ocon",
+              "Haas Ferrari",
+              38
+            ],
+            [
+              16,
+              "Lance Stroll",
+              "Aston Martin Mercedes",
+              33
+            ],
+            [
+              17,
+              "Yuki Tsunoda",
+              "Red Bull Honda RBPT",
+              33
+            ],
+            [
+              18,
+              "Pierre Gasly",
+              "Alpine Renault",
+              22
+            ],
+            [
+              19,
+              "Gabriel Bortoleto",
+              "Sauber Ferrari",
+              19
+            ],
+            [
+              20,
+              "Franco Colapinto",
+              "Alpine Renault",
+              0
+            ],
+            [
+              21,
+              "Jack Doohan",
+              "Alpine Renault",
+              0
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "drivers-championship-2024-table",
+          "columns": [
+            "Sija",
+            "Kuljettaja",
+            "Talli",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              1,
+              "Max Verstappen",
+              "Red Bull Honda RBPT",
+              437
+            ],
+            [
+              2,
+              "Lando Norris",
+              "McLaren Mercedes",
+              374
+            ],
+            [
+              3,
+              "Charles Leclerc",
+              "Ferrari",
+              356
+            ],
+            [
+              4,
+              "Oscar Piastri",
+              "McLaren Mercedes",
+              292
+            ],
+            [
+              5,
+              "Carlos Sainz",
+              "Ferrari",
+              290
+            ],
+            [
+              6,
+              "George Russell",
+              "Mercedes",
+              245
+            ],
+            [
+              7,
+              "Lewis Hamilton",
+              "Mercedes",
+              223
+            ],
+            [
+              8,
+              "Sergio Perez",
+              "Red Bull Honda RBPT",
+              152
+            ],
+            [
+              9,
+              "Fernando Alonso",
+              "Aston Martin Mercedes",
+              70
+            ],
+            [
+              10,
+              "Pierre Gasly",
+              "Alpine Renault",
+              42
+            ],
+            [
+              11,
+              "Nico Hulkenberg",
+              "Haas Ferrari",
+              41
+            ],
+            [
+              12,
+              "Yuki Tsunoda",
+              "RB Honda RBPT",
+              30
+            ],
+            [
+              13,
+              "Lance Stroll",
+              "Aston Martin Mercedes",
+              24
+            ],
+            [
+              14,
+              "Esteban Ocon",
+              "Alpine Renault",
+              23
+            ],
+            [
+              15,
+              "Kevin Magnussen",
+              "Haas Ferrari",
+              16
+            ],
+            [
+              16,
+              "Alexander Albon",
+              "Williams Mercedes",
+              12
+            ],
+            [
+              17,
+              "Daniel Ricciardo",
+              "RB Honda RBPT",
+              12
+            ],
+            [
+              18,
+              "Oliver Bearman",
+              "Haas Ferrari",
+              7
+            ],
+            [
+              19,
+              "Franco Colapinto",
+              "Williams Mercedes",
+              5
+            ],
+            [
+              20,
+              "Zhou Guanyu",
+              "Sauber Ferrari",
+              4
+            ],
+            [
+              21,
+              "Liam Lawson",
+              "RB Honda RBPT",
+              4
+            ],
+            [
+              22,
+              "Valtteri Bottas",
+              "Sauber Ferrari",
+              0
+            ],
+            [
+              23,
+              "Logan Sargeant",
+              "Williams Mercedes",
+              0
+            ],
+            [
+              24,
+              "Jack Doohan",
+              "Alpine Renault",
+              0
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "drivers-championship-2023-table",
+          "columns": [
+            "Sija",
+            "Kuljettaja",
+            "Talli",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              1,
+              "Max Verstappen",
+              "Red Bull Honda RBPT",
+              575
+            ],
+            [
+              2,
+              "Sergio Perez",
+              "Red Bull Honda RBPT",
+              285
+            ],
+            [
+              3,
+              "Lewis Hamilton",
+              "Mercedes",
+              234
+            ],
+            [
+              4,
+              "Fernando Alonso",
+              "Aston Martin Mercedes",
+              206
+            ],
+            [
+              5,
+              "Charles Leclerc",
+              "Ferrari",
+              206
+            ],
+            [
+              6,
+              "Lando Norris",
+              "McLaren Mercedes",
+              205
+            ],
+            [
+              7,
+              "Carlos Sainz",
+              "Ferrari",
+              200
+            ],
+            [
+              8,
+              "George Russell",
+              "Mercedes",
+              175
+            ],
+            [
+              9,
+              "Oscar Piastri",
+              "McLaren Mercedes",
+              97
+            ],
+            [
+              10,
+              "Lance Stroll",
+              "Aston Martin Mercedes",
+              74
+            ],
+            [
+              11,
+              "Pierre Gasly",
+              "Alpine Renault",
+              62
+            ],
+            [
+              12,
+              "Esteban Ocon",
+              "Alpine Renault",
+              58
+            ],
+            [
+              13,
+              "Alexander Albon",
+              "Williams Mercedes",
+              27
+            ],
+            [
+              14,
+              "Yuki Tsunoda",
+              "AlphaTauri Honda RBPT",
+              17
+            ],
+            [
+              15,
+              "Valtteri Bottas",
+              "Alfa Romeo Ferrari",
+              10
+            ],
+            [
+              16,
+              "Nico Hulkenberg",
+              "Haas Ferrari",
+              9
+            ],
+            [
+              17,
+              "Daniel Ricciardo",
+              "AlphaTauri Honda RBPT",
+              6
+            ],
+            [
+              18,
+              "Zhou Guanyu",
+              "Alfa Romeo Ferrari",
+              6
+            ],
+            [
+              19,
+              "Kevin Magnussen",
+              "Haas Ferrari",
+              3
+            ],
+            [
+              20,
+              "Liam Lawson",
+              "AlphaTauri Honda RBPT",
+              2
+            ],
+            [
+              21,
+              "Logan Sargeant",
+              "Williams Mercedes",
+              1
+            ],
+            [
+              22,
+              "Nyck De Vries",
+              "AlphaTauri Honda RBPT",
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-2",
+      "title": "Voitot ja podiumit",
+      "description": "Kuinka monta voittoa ja podiumia kukin kuljettaja saavutti kauden aikana.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "wins-and-podiums-2025-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Voitot",
+            "Podiumit"
+          ],
+          "rows": [
+            [
+              "Max Verstappen",
+              "Red Bull",
+              8,
+              15
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              7,
+              18
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              7,
+              16
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              2,
+              9
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              0,
+              7
+            ],
+            [
+              "Kimi Antonelli",
+              "Mercedes",
+              0,
+              3
+            ],
+            [
+              "Carlos Sainz",
+              "Williams",
+              0,
+              2
+            ],
+            [
+              "Nico Hulkenberg",
+              "Sauber",
+              0,
+              1
+            ],
+            [
+              "Isack Hadjar",
+              "Racing Bulls",
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "wins-and-podiums-2024-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Voitot",
+            "Podiumit"
+          ],
+          "rows": [
+            [
+              "Max Verstappen",
+              "Red Bull",
+              9,
+              14
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              4,
+              13
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              3,
+              13
+            ],
+            [
+              "Carlos Sainz",
+              "Ferrari",
+              2,
+              8
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              2,
+              8
+            ],
+            [
+              "Lewis Hamilton",
+              "Mercedes",
+              2,
+              5
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              2,
+              4
+            ],
+            [
+              "Sergio Perez",
+              "Red Bull",
+              0,
+              4
+            ],
+            [
+              "Esteban Ocon",
+              "Alpine",
+              0,
+              1
+            ],
+            [
+              "Pierre Gasly",
+              "Alpine",
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "wins-and-podiums-2023-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Voitot",
+            "Podiumit"
+          ],
+          "rows": [
+            [
+              "Max Verstappen",
+              "Red Bull",
+              19,
+              21
+            ],
+            [
+              "Sergio Perez",
+              "Red Bull",
+              2,
+              9
+            ],
+            [
+              "Carlos Sainz",
+              "Ferrari",
+              1,
+              3
+            ],
+            [
+              "Fernando Alonso",
+              "Aston Martin",
+              0,
+              8
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              0,
+              7
+            ],
+            [
+              "Lewis Hamilton",
+              "Mercedes",
+              0,
+              6
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              0,
+              6
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              0,
+              2
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              0,
+              2
+            ],
+            [
+              "Esteban Ocon",
+              "Alpine",
+              0,
+              1
+            ],
+            [
+              "Pierre Gasly",
+              "Alpine",
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-3",
+      "title": "Paalupaikat ja nopeimmat kierrokset",
+      "description": "Kuinka monta paalupaikkaa ja nopeinta kierrosta kukin kuljettaja saavutti kauden aikana.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "poles-and-fastestlaps-2025-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Paalupaikat",
+            "NKt"
+          ],
+          "rows": [
+            [
+              "Max Verstappen",
+              "Red Bull",
+              8,
+              3
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              7,
+              6
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              6,
+              6
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              2,
+              3
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              1,
+              1
+            ],
+            [
+              "Kimi Antonelli",
+              "Mercedes",
+              0,
+              3
+            ],
+            [
+              "Lewis Hamilton",
+              "Ferrari",
+              0,
+              1
+            ],
+            [
+              "Alexander Albon",
+              "Williams",
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "poles-and-fastestlaps-2024-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Paalupaikat",
+            "NKt"
+          ],
+          "rows": [
+            [
+              "Lando Norris",
+              "McLaren",
+              8,
+              6
+            ],
+            [
+              "Max Verstappen",
+              "Red Bull",
+              8,
+              3
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              4,
+              2
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              3,
+              3
+            ],
+            [
+              "Lewis Hamilton",
+              "Mercedes",
+              0,
+              2
+            ],
+            [
+              "Fernando Alonso",
+              "Aston Martin",
+              0,
+              2
+            ],
+            [
+              "Carlos Sainz",
+              "Ferrari",
+              1,
+              1
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              0,
+              1
+            ],
+            [
+              "Sergio Perez",
+              "Red Bull",
+              0,
+              1
+            ],
+            [
+              "Daniel Ricciardo",
+              "RB",
+              0,
+              1
+            ],
+            [
+              "Esteban Ocon",
+              "Alpine",
+              0,
+              1
+            ],
+            [
+              "Kevin Magnussen",
+              "Haas",
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "poles-and-fastestlaps-2023-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Paalupaikat",
+            "NKt"
+          ],
+          "rows": [
+            [
+              "Max Verstappen",
+              "Red Bull",
+              12,
+              9
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              5,
+              0
+            ],
+            [
+              "Sergio Perez",
+              "Red Bull",
+              2,
+              2
+            ],
+            [
+              "Carlos Sainz",
+              "Ferrari",
+              2,
+              0
+            ],
+            [
+              "Lewis Hamilton",
+              "Mercedes",
+              0,
+              4
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              0,
+              2
+            ],
+            [
+              "Zhou Guanyu",
+              "Alfa Romeo",
+              0,
+              1
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              0,
+              1
+            ],
+            [
+              "Fernando Alonso",
+              "Aston Martin",
+              0,
+              1
+            ],
+            [
+              "Yuki Tsunoda",
+              "AlphaTauri",
+              0,
+              1
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-4",
+      "title": "Sprintit",
+      "description": "Kuinka kukin kuljettaja pärjäsi sprinttikilpailuissa kauden aikana.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "sprints-2025-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Voitot",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              "Max Verstappen",
+              "Red Bull",
+              2,
+              32
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              0,
+              30
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              2,
+              29
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              1,
+              29
+            ],
+            [
+              "Lewis Hamilton",
+              "Ferrari",
+              1,
+              21
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              0,
+              17
+            ],
+            [
+              "Kimi Antonelli",
+              "Mercedes",
+              0,
+              15
+            ],
+            [
+              "Yuki Tsunoda",
+              "Red Bull",
+              0,
+              12
+            ],
+            [
+              "Carlos Sainz",
+              "Williams",
+              0,
+              10
+            ],
+            [
+              "Fernando Alonso",
+              "Aston Martin",
+              0,
+              5
+            ],
+            [
+              "Esteban Ocon",
+              "Haas",
+              0,
+              4
+            ],
+            [
+              "Lance Stroll",
+              "Aston Martin",
+              0,
+              4
+            ],
+            [
+              "Alexander Albon",
+              "Williams",
+              0,
+              3
+            ],
+            [
+              "Oliver Bearman",
+              "Haas",
+              0,
+              2
+            ],
+            [
+              "Pierre Gasly",
+              "Alpine",
+              0,
+              2
+            ],
+            [
+              "Isack Hadjar",
+              "Racing Bulls",
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "sprints-2024-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Voitot",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              "Max Verstappen",
+              "Red Bull",
+              4,
+              38
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              1,
+              30
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              0,
+              29
+            ],
+            [
+              "Carlos Sainz",
+              "Ferrari",
+              0,
+              28
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              1,
+              27
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              0,
+              19
+            ],
+            [
+              "Lewis Hamilton",
+              "Mercedes",
+              0,
+              16
+            ],
+            [
+              "Sergio Perez",
+              "Red Bull",
+              0,
+              14
+            ],
+            [
+              "Daniel Ricciardo",
+              "RB",
+              0,
+              5
+            ],
+            [
+              "Nico Hulkenberg",
+              "Haas",
+              0,
+              5
+            ],
+            [
+              "Pierre Gasly",
+              "Alpine",
+              0,
+              2
+            ],
+            [
+              "Kevin Magnussen",
+              "Haas",
+              0,
+              2
+            ],
+            [
+              "Yuki Tsunoda",
+              "RB",
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "sprints-2023-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Voitot",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              "Max Verstappen",
+              "Red Bull",
+              4,
+              45
+            ],
+            [
+              "Sergio Perez",
+              "Red Bull",
+              1,
+              25
+            ],
+            [
+              "Carlos Sainz",
+              "Ferrari",
+              0,
+              22
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              0,
+              21
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              0,
+              21
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              0,
+              18
+            ],
+            [
+              "Lewis Hamilton",
+              "Mercedes",
+              0,
+              17
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              1,
+              15
+            ],
+            [
+              "Fernando Alonso",
+              "Aston Martin",
+              0,
+              8
+            ],
+            [
+              "Pierre Gasly",
+              "Alpine",
+              0,
+              8
+            ],
+            [
+              "Lance Stroll",
+              "Aston Martin",
+              0,
+              6
+            ],
+            [
+              "Yuki Tsunoda",
+              "AlphaTauri",
+              0,
+              3
+            ],
+            [
+              "Nico Hulkenberg",
+              "Haas",
+              0,
+              3
+            ],
+            [
+              "Alexander Albon",
+              "Williams",
+              0,
+              2
+            ],
+            [
+              "Esteban Ocon",
+              "Alpine",
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-5",
+      "title": "Tallien maailmanmestaruus",
+      "description": "Paljonko pisteitä kukin talli saavutti kauden aikana.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "constructors-championship-2025-table",
+          "columns": [
+            "Sija",
+            "Talli",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              1,
+              "McLaren Mercedes",
+              833
+            ],
+            [
+              2,
+              "Mercedes",
+              469
+            ],
+            [
+              3,
+              "Red Bull Honda RBPT",
+              451
+            ],
+            [
+              4,
+              "Ferrari",
+              398
+            ],
+            [
+              5,
+              "Williams Mercedes",
+              137
+            ],
+            [
+              6,
+              "Racing Bulls Honda RBPT",
+              92
+            ],
+            [
+              7,
+              "Aston Martin Mercedes",
+              89
+            ],
+            [
+              8,
+              "Haas Ferrari",
+              79
+            ],
+            [
+              9,
+              "Sauber Ferrari",
+              70
+            ],
+            [
+              10,
+              "Alpine Renault",
+              22
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "constructors-championship-2024-table",
+          "columns": [
+            "Sija",
+            "Talli",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              1,
+              "McLaren Mercedes",
+              666
+            ],
+            [
+              2,
+              "Ferrari",
+              652
+            ],
+            [
+              3,
+              "Red Bull Honda RBPT",
+              589
+            ],
+            [
+              4,
+              "Mercedes",
+              468
+            ],
+            [
+              5,
+              "Aston Martin Mercedes",
+              94
+            ],
+            [
+              6,
+              "Alpine Renault",
+              65
+            ],
+            [
+              7,
+              "Haas Ferrari",
+              58
+            ],
+            [
+              8,
+              "RB Honda RBPT",
+              46
+            ],
+            [
+              9,
+              "Williams Mercedes",
+              17
+            ],
+            [
+              10,
+              "Sauber Ferrari",
+              4
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "constructors-championship-2023-table",
+          "columns": [
+            "Sija",
+            "Talli",
+            "Pisteet"
+          ],
+          "rows": [
+            [
+              1,
+              "Red Bull Honda RBPT",
+              860
+            ],
+            [
+              2,
+              "Mercedes",
+              409
+            ],
+            [
+              3,
+              "Ferrari",
+              406
+            ],
+            [
+              4,
+              "McLaren Mercedes",
+              302
+            ],
+            [
+              5,
+              "Aston Martin Mercedes",
+              280
+            ],
+            [
+              6,
+              "Alpine Renault",
+              120
+            ],
+            [
+              7,
+              "Williams Mercedes",
+              28
+            ],
+            [
+              8,
+              "AlphaTauri Honda RBPT",
+              25
+            ],
+            [
+              9,
+              "Alfa Romeo Ferrari",
+              16
+            ],
+            [
+              10,
+              "Haas Ferrari",
+              12
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-6",
+      "title": "Tallikaverit aika-ajoissa",
+      "description": "Kuinka tallikaverit pärjäsivät toisiaan vastaan aika-ajoissa kauden aikana.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "teammates-qualifying-2025-table",
+          "columns": [
+            "Talli",
+            "Kuljettaja",
+            "Tulos",
+            "Kuljettaja"
+          ],
+          "rows": [
+            [
+              "McLaren",
+              "Oscar Piastri",
+              "11:13",
+              "Lando Norris"
+            ],
+            [
+              "Ferrari",
+              "Charles Leclerc",
+              "19:5",
+              "Lewis Hamilton"
+            ],
+            [
+              "Red Bull",
+              "Max Verstappen",
+              "24:0",
+              "Liam Lawson, Yuki Tsunoda"
+            ],
+            [
+              "Mercedes",
+              "George Russell",
+              "21:3",
+              "Kimi Antonelli"
+            ],
+            [
+              "Aston Martin",
+              "Lance Stroll",
+              "0:24",
+              "Fernando Alonso"
+            ],
+            [
+              "Alpine",
+              "Pierre Gasly",
+              "18:6",
+              "Jack Doohan, Franco Colapinto"
+            ],
+            [
+              "Haas",
+              "Esteban Ocon",
+              "10:14",
+              "Oliver Bearman"
+            ],
+            [
+              "Racing Bulls",
+              "Isack Hadjar",
+              "17:7",
+              "Yuki Tsunoda, Liam Lawson"
+            ],
+            [
+              "Williams",
+              "Alex Albon",
+              "9:14",
+              "Carlos Sainz"
+            ],
+            [
+              "Sauber",
+              "Nico Hülkenberg",
+              "11:12",
+              "Gabriel Bortoleto"
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "teammates-qualifying-2024-table",
+          "columns": [
+            "Talli",
+            "Kuljettaja",
+            "Tulos",
+            "Kuljettaja"
+          ],
+          "rows": [
+            [
+              "McLaren",
+              "Oscar Piastri",
+              "3:21",
+              "Lando Norris"
+            ],
+            [
+              "Ferrari",
+              "Charles Leclerc",
+              "14:9",
+              "Carlos Sainz"
+            ],
+            [
+              "Red Bull",
+              "Max Verstappen",
+              "23:1",
+              "Sergio Perez"
+            ],
+            [
+              "Mercedes",
+              "George Russell",
+              "19:5",
+              "Lewis Hamilton"
+            ],
+            [
+              "Aston Martin",
+              "Lance Stroll",
+              "5:19",
+              "Fernando Alonso"
+            ],
+            [
+              "Alpine",
+              "Esteban Ocon",
+              "11:12",
+              "Pierre Gasly"
+            ],
+            [
+              "Haas",
+              "Kevin Magnussen",
+              "6:16",
+              "Nico Hülkenberg"
+            ],
+            [
+              "RB",
+              "Daniel Ricciardo, Liam Lawson",
+              "6:18",
+              "Yuki Tsunoda"
+            ],
+            [
+              "Williams",
+              "Alex Albon",
+              "21:2",
+              "Logan Sargeant, Franco Colapinto"
+            ],
+            [
+              "Sauber",
+              "Valtteri Bottas",
+              "21:3",
+              "Zhou Guanyu"
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "teammates-qualifying-2023-table",
+          "columns": [
+            "Talli",
+            "Kuljettaja",
+            "Tulos",
+            "Kuljettaja"
+          ],
+          "rows": [
+            [
+              "Red Bull",
+              "Max Verstappen",
+              "19:2",
+              "Sergio Perez"
+            ],
+            [
+              "Mercedes",
+              "George Russell",
+              "10:11",
+              "Lewis Hamilton"
+            ],
+            [
+              "Ferrari",
+              "Charles Leclerc",
+              "14:7",
+              "Carlos Sainz"
+            ],
+            [
+              "McLaren",
+              "Oscar Piastri",
+              "6:15",
+              "Lando Norris"
+            ],
+            [
+              "Aston Martin",
+              "Lance Stroll",
+              "3:18",
+              "Fernando Alonso"
+            ],
+            [
+              "Alpine",
+              "Esteban Ocon",
+              "9:12",
+              "Pierre Gasly"
+            ],
+            [
+              "Williams",
+              "Alex Albon",
+              "21:0",
+              "Logan Sargeant"
+            ],
+            [
+              "AlphaTauri",
+              "Nyck de Vries, Daniel Ricciardo, Liam Lawson",
+              "6:15",
+              "Yuki Tsunoda"
+            ],
+            [
+              "Alfa Romeo",
+              "Valtteri Bottas",
+              "14:7",
+              "Zhou Guanyu"
+            ],
+            [
+              "Haas",
+              "Kevin Magnussen",
+              "7:14",
+              "Nico Hülkenberg"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-7",
+      "title": "Tallikaverit kilpailuissa",
+      "description": "Kuinka tallikaverit pärjäsivät toisiaan vastaan kilpailuissa kauden aikana.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "teammates-race-2025-table",
+          "columns": [
+            "Talli",
+            "Kuljettaja",
+            "Tulos",
+            "Kuljettaja"
+          ],
+          "rows": [
+            [
+              "McLaren",
+              "Oscar Piastri",
+              "10:13",
+              "Lando Norris"
+            ],
+            [
+              "Ferrari",
+              "Charles Leclerc",
+              "18:3",
+              "Lewis Hamilton"
+            ],
+            [
+              "Red Bull",
+              "Max Verstappen",
+              "23:1",
+              "Liam Lawson, Yuki Tsunoda"
+            ],
+            [
+              "Mercedes",
+              "George Russell",
+              "21:3",
+              "Kimi Antonelli"
+            ],
+            [
+              "Aston Martin",
+              "Lance Stroll",
+              "8:16",
+              "Fernando Alonso"
+            ],
+            [
+              "Alpine",
+              "Pierre Gasly",
+              "15:8",
+              "Jack Doohan, Franco Colapinto"
+            ],
+            [
+              "Haas",
+              "Esteban Ocon",
+              "12:12",
+              "Oliver Bearman"
+            ],
+            [
+              "Racing Bulls",
+              "Isack Hadjar",
+              "14:8",
+              "Yuki Tsunoda, Liam Lawson"
+            ],
+            [
+              "Williams",
+              "Alex Albon",
+              "14:9",
+              "Carlos Sainz"
+            ],
+            [
+              "Sauber",
+              "Nico Hülkenberg",
+              "12:11",
+              "Gabriel Bortoleto"
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "teammates-race-2024-table",
+          "columns": [
+            "Talli",
+            "Kuljettaja",
+            "Tulos",
+            "Kuljettaja"
+          ],
+          "rows": [
+            [
+              "McLaren",
+              "Oscar Piastri",
+              "8:16",
+              "Lando Norris"
+            ],
+            [
+              "Ferrari",
+              "Charles Leclerc",
+              "14:8",
+              "Carlos Sainz"
+            ],
+            [
+              "Red Bull",
+              "Max Verstappen",
+              "23:1",
+              "Sergio Perez"
+            ],
+            [
+              "Mercedes",
+              "George Russell",
+              "15:9",
+              "Lewis Hamilton"
+            ],
+            [
+              "Aston Martin",
+              "Lance Stroll",
+              "6:18",
+              "Fernando Alonso"
+            ],
+            [
+              "Alpine",
+              "Esteban Ocon",
+              "13:10",
+              "Pierre Gasly"
+            ],
+            [
+              "Haas",
+              "Kevin Magnussen",
+              "5:16",
+              "Nico Hülkenberg"
+            ],
+            [
+              "RB",
+              "Daniel Ricciardo, Liam Lawson",
+              "11:13",
+              "Yuki Tsunoda"
+            ],
+            [
+              "Williams",
+              "Alex Albon",
+              "15:8",
+              "Logan Sargeant, Franco Colapinto"
+            ],
+            [
+              "Sauber",
+              "Valtteri Bottas",
+              "14:10",
+              "Zhou Guanyu"
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "teammates-race-2023-table",
+          "columns": [
+            "Talli",
+            "Kuljettaja",
+            "Tulos",
+            "Kuljettaja"
+          ],
+          "rows": [
+            [
+              "Red Bull",
+              "Max Verstappen",
+              "19:2",
+              "Sergio Perez"
+            ],
+            [
+              "Mercedes",
+              "George Russell",
+              "7:14",
+              "Lewis Hamilton"
+            ],
+            [
+              "Ferrari",
+              "Charles Leclerc",
+              "11:10",
+              "Carlos Sainz"
+            ],
+            [
+              "McLaren",
+              "Oscar Piastri",
+              "5:16",
+              "Lando Norris"
+            ],
+            [
+              "Aston Martin",
+              "Lance Stroll",
+              "3:17",
+              "Fernando Alonso"
+            ],
+            [
+              "Alpine",
+              "Esteban Ocon",
+              "9:11",
+              "Pierre Gasly"
+            ],
+            [
+              "Williams",
+              "Alex Albon",
+              "16:4",
+              "Logan Sargeant"
+            ],
+            [
+              "AlphaTauri",
+              "Nyck de Vries, Daniel Ricciardo, Liam Lawson",
+              "9:12",
+              "Yuki Tsunoda"
+            ],
+            [
+              "Alfa Romeo",
+              "Valtteri Bottas",
+              "13:8",
+              "Zhou Guanyu"
+            ],
+            [
+              "Haas",
+              "Kevin Magnussen",
+              "9:12",
+              "Nico Hülkenberg"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-8",
+      "title": "Keskeytykset",
+      "description": "Kuinka monta kertaa kukin kuljettaja keskeytti kilpailun kauden aikana.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "retirements-2025-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Keskeytykset"
+          ],
+          "rows": [
+            [
+              "Gabriel Bortoleto",
+              "Sauber",
+              5
+            ],
+            [
+              "Kimi Antonelli",
+              "Mercedes",
+              4
+            ],
+            [
+              "Fernando Alonso",
+              "Aston Martin",
+              4
+            ],
+            [
+              "Alexander Albon",
+              "Williams",
+              4
+            ],
+            [
+              "Carlos Sainz",
+              "Williams",
+              4
+            ],
+            [
+              "Liam Lawson",
+              "Racing Bulls",
+              4
+            ],
+            [
+              "Oliver Bearman",
+              "Haas",
+              3
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              2
+            ],
+            [
+              "Lewis Hamilton",
+              "Ferrari",
+              2
+            ],
+            [
+              "Pierre Gasly",
+              "Alpine",
+              2
+            ],
+            [
+              "Jack Doohan",
+              "Alpine",
+              2
+            ],
+            [
+              "Isack Hadjar",
+              "Racing Bulls",
+              2
+            ],
+            [
+              "Nico Hulkenberg",
+              "Sauber",
+              2
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              1
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              1
+            ],
+            [
+              "Max Verstappen",
+              "Red Bull",
+              1
+            ],
+            [
+              "Yuki Tsunoda",
+              "Red Bull",
+              1
+            ],
+            [
+              "Lance Stroll",
+              "Aston Martin",
+              1
+            ],
+            [
+              "Esteban Ocon",
+              "Haas",
+              1
+            ],
+            [
+              "Franco Colapinto",
+              "Alpine",
+              1
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              0
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "retirements-2024-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Keskeytykset"
+          ],
+          "rows": [
+            [
+              "Sergio Pérez",
+              "Red Bull",
+              6
+            ],
+            [
+              "Alexander Albon",
+              "Williams",
+              6
+            ],
+            [
+              "Yuki Tsunoda",
+              "RB",
+              5
+            ],
+            [
+              "Carlos Sainz",
+              "Ferrari",
+              3
+            ],
+            [
+              "Lance Stroll",
+              "Aston Martin",
+              3
+            ],
+            [
+              "Franco Colapinto",
+              "Williams",
+              3
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              2
+            ],
+            [
+              "Lewis Hamilton",
+              "Mercedes",
+              2
+            ],
+            [
+              "Pierre Gasly",
+              "Alpine",
+              2
+            ],
+            [
+              "Nico Hülkenberg",
+              "Haas",
+              2
+            ],
+            [
+              "Esteban Ocon",
+              "Alpine",
+              2
+            ],
+            [
+              "Kevin Magnussen",
+              "Haas",
+              2
+            ],
+            [
+              "Daniel Ricciardo",
+              "RB",
+              2
+            ],
+            [
+              "Zhou Guanyu",
+              "Sauber",
+              2
+            ],
+            [
+              "Logan Sargeant",
+              "Williams",
+              2
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              1
+            ],
+            [
+              "Fernando Alonso",
+              "Aston Martin",
+              1
+            ],
+            [
+              "Liam Lawson",
+              "RB",
+              1
+            ],
+            [
+              "Max Verstappen",
+              "Red Bull",
+              1
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              1
+            ],
+            [
+              "Valtteri Bottas",
+              "Sauber",
+              1
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              0
+            ],
+            [
+              "Oliver Bearman",
+              "Haas",
+              0
+            ],
+            [
+              "Jack Doohan",
+              "RB",
+              0
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "retirements-2023-table",
+          "columns": [
+            "Kuljettaja",
+            "Talli",
+            "Keskeytykset"
+          ],
+          "rows": [
+            [
+              "Logan Sargeant",
+              "Williams",
+              7
+            ],
+            [
+              "Esteban Ocon",
+              "Alpine",
+              7
+            ],
+            [
+              "Kevin Magnussen",
+              "Haas",
+              5
+            ],
+            [
+              "Charles Leclerc",
+              "Ferrari",
+              5
+            ],
+            [
+              "Lance Stroll",
+              "Aston Martin",
+              4
+            ],
+            [
+              "Alexander Albon",
+              "Williams",
+              4
+            ],
+            [
+              "George Russell",
+              "Mercedes",
+              4
+            ],
+            [
+              "Oscar Piastri",
+              "McLaren",
+              3
+            ],
+            [
+              "Carlos Sainz",
+              "Ferrari",
+              3
+            ],
+            [
+              "Pierre Gasly",
+              "Alpine",
+              3
+            ],
+            [
+              "Zhou Guanyu",
+              "Alfa Romeo",
+              3
+            ],
+            [
+              "Yuki Tsunoda",
+              "AlphaTauri",
+              3
+            ],
+            [
+              "Valtteri Bottas",
+              "Alfa Romeo",
+              3
+            ],
+            [
+              "Nick De Vries",
+              "AlphaTauri",
+              2
+            ],
+            [
+              "Nico Hülkenberg",
+              "Haas",
+              2
+            ],
+            [
+              "Sergio Perez",
+              "Red Bull",
+              2
+            ],
+            [
+              "Lewis Hamilton",
+              "Mercedes",
+              2
+            ],
+            [
+              "Fernando Alonso",
+              "Aston Martin",
+              2
+            ],
+            [
+              "Lando Norris",
+              "McLaren",
+              1
+            ],
+            [
+              "Max Verstappen",
+              "Red Bull",
+              0
+            ],
+            [
+              "Liam Lawson",
+              "AlphaTauri",
+              0
+            ],
+            [
+              "Daniel Ricciardo",
+              "AlphaTauri",
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-9",
+      "title": "Kuljettajien kehitys",
+      "description": "Kuinka kukin kuljettaja kehittyi edelliseen kauteen verrattuna.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "drivers-improvement-2025-table",
+          "columns": [
+            "Kuljettaja",
+            "Kehitys",
+            "Muutokset edellisestä kaudesta"
+          ],
+          "rows": [
+            [
+              "Alexander Albon",
+              "+508 %",
+              ""
+            ],
+            [
+              "Esteban Ocon",
+              "+65 %",
+              "eri talli (-2)"
+            ],
+            [
+              "Oscar Piastri",
+              "+40 %",
+              ""
+            ],
+            [
+              "Lance Stroll",
+              "+38 %",
+              ""
+            ],
+            [
+              "George Russell",
+              "+30 %",
+              ""
+            ],
+            [
+              "Nico Hulkenberg",
+              "+24 %",
+              "eri talli (-2)"
+            ],
+            [
+              "Lando Norris",
+              "+13 %",
+              ""
+            ],
+            [
+              "Yuki Tsunoda",
+              "+10 %",
+              "vaihtoi tallia kesken kauden"
+            ],
+            [
+              "Max Verstappen",
+              "-4 %",
+              ""
+            ],
+            [
+              "Fernando Alonso",
+              "-20 %",
+              ""
+            ],
+            [
+              "Lewis Hamilton",
+              "-30 %",
+              "eri talli (±0)"
+            ],
+            [
+              "Charles Leclerc",
+              "-32 %",
+              ""
+            ],
+            [
+              "Pierre Gasly",
+              "-48 %",
+              ""
+            ],
+            [
+              "Carlos Sainz",
+              "-78 %",
+              "eri talli (-3)"
+            ],
+            [
+              "Liam Lawson",
+              "+850 %",
+              "vaihtoi tallia kesken kauden (ei ajanut koko kautta)"
+            ],
+            [
+              "Oliver Bearman",
+              "+486 %",
+              "(ei ajanut koko kautta)"
+            ],
+            [
+              "Franco Colapinto",
+              "-100 %",
+              "eri talli (-1) (ei ajanut koko kautta)"
+            ],
+            [
+              "Jack Doohan",
+              "-",
+              "(ei ajanut koko kautta)"
+            ],
+            [
+              "Kimi Antonelli",
+              "-",
+              "tulokas"
+            ],
+            [
+              "Isack Hadjar",
+              "-",
+              "tulokas"
+            ],
+            [
+              "Gabriel Bortoleto",
+              "-",
+              "tulokas"
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "drivers-improvement-2024-table",
+          "columns": [
+            "Kuljettaja",
+            "Kehitys",
+            "Muutokset edellisestä kaudesta"
+          ],
+          "rows": [
+            [
+              "Kevin Magnussen",
+              "+433 %",
+              ""
+            ],
+            [
+              "Nico Hülkenberg",
+              "+356 %",
+              ""
+            ],
+            [
+              "Oscar Piastri",
+              "+201 %",
+              ""
+            ],
+            [
+              "Daniel Ricciardo",
+              "+100 %",
+              "(ei ajanut koko kautta)"
+            ],
+            [
+              "Lando Norris",
+              "+82 %",
+              ""
+            ],
+            [
+              "Yuki Tsunoda",
+              "+76 %",
+              ""
+            ],
+            [
+              "Charles Leclerc",
+              "+73 %",
+              ""
+            ],
+            [
+              "Carlos Sainz",
+              "+45 %",
+              ""
+            ],
+            [
+              "George Russell",
+              "+40 %",
+              ""
+            ],
+            [
+              "Lewis Hamilton",
+              "-5 %",
+              ""
+            ],
+            [
+              "Max Verstappen",
+              "-24 %",
+              ""
+            ],
+            [
+              "Pierre Gasly",
+              "-32 %",
+              ""
+            ],
+            [
+              "Zhou Guanyu",
+              "-33 %",
+              ""
+            ],
+            [
+              "Sergio Perez",
+              "-46 %",
+              ""
+            ],
+            [
+              "Alexander Albon",
+              "-56 %",
+              ""
+            ],
+            [
+              "Esteban Ocon",
+              "-60 %",
+              ""
+            ],
+            [
+              "Fernando Alonso",
+              "-66 %",
+              ""
+            ],
+            [
+              "Lance Stroll",
+              "-68 %",
+              ""
+            ],
+            [
+              "Logan Sargeant",
+              "-100 %",
+              "(ei ajanut koko kautta)"
+            ],
+            [
+              "Valtteri Bottas",
+              "-100 %",
+              ""
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "drivers-improvement-2023-table",
+          "columns": [
+            "Kuljettaja",
+            "Kehitys",
+            "Muutokset edellisestä kaudesta"
+          ],
+          "rows": [
+            [
+              "Alexander Albon",
+              "+575 %",
+              ""
+            ],
+            [
+              "Lance Stroll",
+              "+311 %",
+              ""
+            ],
+            [
+              "Pierre Gasly",
+              "+170 %",
+              "eri talli (+3)"
+            ],
+            [
+              "Fernando Alonso",
+              "+154 %",
+              "eri talli (-1)"
+            ],
+            [
+              "Lando Norris",
+              "+68 %",
+              ""
+            ],
+            [
+              "Yuki Tsunoda",
+              "+42 %",
+              ""
+            ],
+            [
+              "Max Verstappen",
+              "+27 %",
+              ""
+            ],
+            [
+              "Zhou Guanyu",
+              "+0 %",
+              ""
+            ],
+            [
+              "Lewis Hamilton",
+              "-3 %",
+              ""
+            ],
+            [
+              "Sergio Perez",
+              "-7 %",
+              ""
+            ],
+            [
+              "Carlos Sainz",
+              "-19 %",
+              ""
+            ],
+            [
+              "Charles Leclerc",
+              "-33 %",
+              ""
+            ],
+            [
+              "George Russell",
+              "-36 %",
+              ""
+            ],
+            [
+              "Esteban Ocon",
+              "-37 %",
+              ""
+            ],
+            [
+              "Valtteri Bottas",
+              "-80 %",
+              ""
+            ],
+            [
+              "Daniel Ricciardo",
+              "-84 %",
+              "eri talli (-3) (ei ajanut koko kautta)"
+            ],
+            [
+              "Kevin Magnussen",
+              "-88 %",
+              ""
+            ],
+            [
+              "Oscar Piastri",
+              "-",
+              ""
+            ],
+            [
+              "Nico Hülkenberg",
+              "-",
+              ""
+            ],
+            [
+              "Logan Sargeant",
+              "-",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kausitilasto-10",
+      "title": "Tallien kehitys",
+      "description": "Kuinka kukin talli kehittyi edelliseen kauteen verrattuna.",
+      "seasons": [
+        {
+          "year": 2025,
+          "tableClass": "constructors-improvement-2025-table",
+          "columns": [
+            "Talli",
+            "Kehitys",
+            "Muutokset edellisestä kaudesta"
+          ],
+          "rows": [
+            [
+              "Sauber",
+              "+1650 %",
+              "uudet kuljettajat (tulokas)"
+            ],
+            [
+              "Williams",
+              "+706 %",
+              "uusi kuljettaja"
+            ],
+            [
+              "Racing Bulls",
+              "+100 %",
+              "uusi kuljettaja (tulokas)"
+            ],
+            [
+              "Haas",
+              "+36 %",
+              "uudet kuljettajat (tulokas)"
+            ],
+            [
+              "McLaren",
+              "+25 %",
+              ""
+            ],
+            [
+              "Mercedes",
+              "+0 %",
+              "uusi kuljettaja (tulokas)"
+            ],
+            [
+              "Aston Martin",
+              "-5 %",
+              ""
+            ],
+            [
+              "Red Bull",
+              "-23 %",
+              "uusi kuljettaja"
+            ],
+            [
+              "Ferrari",
+              "-39 %",
+              "uusi kuljettaja"
+            ],
+            [
+              "Alpine",
+              "-66 %",
+              "uusi kuljettaja (tulokas)"
+            ]
+          ]
+        },
+        {
+          "year": 2024,
+          "tableClass": "constructors-improvement-2024-table",
+          "columns": [
+            "Talli",
+            "Kehitys",
+            "Muutokset edellisestä kaudesta"
+          ],
+          "rows": [
+            [
+              "Haas",
+              "+383 %",
+              ""
+            ],
+            [
+              "McLaren",
+              "+121 %",
+              ""
+            ],
+            [
+              "Racing Bulls",
+              "+84 %",
+              ""
+            ],
+            [
+              "Ferrari",
+              "+61 %",
+              ""
+            ],
+            [
+              "Mercedes",
+              "+14 %",
+              ""
+            ],
+            [
+              "Red Bull",
+              "-32 %",
+              ""
+            ],
+            [
+              "Williams",
+              "-39 %",
+              ""
+            ],
+            [
+              "Alpine",
+              "-46 %",
+              ""
+            ],
+            [
+              "Aston Martin",
+              "-66 %",
+              ""
+            ],
+            [
+              "Sauber",
+              "-75 %",
+              ""
+            ]
+          ]
+        },
+        {
+          "year": 2023,
+          "tableClass": "constructors-improvement-2023-table",
+          "columns": [
+            "Talli",
+            "Kehitys",
+            "Muutokset edellisestä kaudesta"
+          ],
+          "rows": [
+            [
+              "Aston Martin",
+              "+409 %",
+              "uusi kuljettaja"
+            ],
+            [
+              "Williams",
+              "+250 %",
+              "uusi kuljettaja (tulokas)"
+            ],
+            [
+              "McLaren",
+              "+90 %",
+              "uusi kuljettaja (tulokas)"
+            ],
+            [
+              "Red Bull",
+              "+13 %",
+              ""
+            ],
+            [
+              "Mercedes",
+              "-21 %",
+              ""
+            ],
+            [
+              "Ferrari",
+              "-28 %",
+              ""
+            ],
+            [
+              "AlphaTauri",
+              "-29 %",
+              "uusi kuljettaja (tulokas)"
+            ],
+            [
+              "Alpine",
+              "-31 %",
+              "uusi kuljettaja"
+            ],
+            [
+              "Haas",
+              "-68 %",
+              "uusi kuljettaja"
+            ],
+            [
+              "Alfa Romeo",
+              "-71 %",
+              ""
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
