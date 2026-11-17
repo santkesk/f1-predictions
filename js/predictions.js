@@ -50,18 +50,18 @@
     }
     config.stages.forEach((stage,index) => {
       const node=el('section',{id:stage.id,class:'prediction-stage'},
-        el('div',{class:'stage-kicker'},`OSIO ${String(index+1).padStart(2,'0')} / ${totalStages}`),el('h3',{tabindex:'-1'},stage.title),
+        el('div',{class:'stage-kicker'},`OSIO ${index+1} / ${totalStages}`),el('h2',{tabindex:'-1'},stage.title),
         el('div',{class:'section-content'},el('div',{class:'questions'},stage.questions.map(question))));
       bingo.before(node);
     });
-    bingo.querySelector('.stage-kicker').textContent=`OSIO ${String(totalStages).padStart(2,'0')} / ${totalStages}`;
+    bingo.querySelector('.stage-kicker').textContent=`OSIO ${totalStages} / ${totalStages}`;
     bingo.querySelector('.bingo-container>p').textContent=`${config.bingo.number}. ${config.bingo.instructions}`;
     bingo.querySelector('#bingo-event-list').replaceChildren(...config.bingo.scenarios.map(scenario=>el('button',{class:'bingo-event-option','data-scenario':scenario,type:'button'},scenario)));
     const bingoScore=bingo.querySelector('.points-info p');
     config.bingo.scoring.forEach((line,index)=>{if(index)bingoScore.append(el('br'));bingoScore.append(line);});
     bingo.removeAttribute('data-render');
     // Update visible season labels from the shared configuration.
-    document.querySelector('main>h2').textContent=`Ennustukset ${config.season}`;
+    document.querySelector('main>h1').textContent=`Ennustukset ${config.season}`;
     const intro=document.querySelector('main>p');intro.textContent=`Tee ennustuksesi Formula 1 -kaudesta ${config.season} vaihe vaiheelta. Voit siirtyä osioiden välillä vapaasti ja muuttaa vastauksiasi ennen tallennusta. Lopuksi saat vastauksesi tekstitiedostona.`;
     document.querySelector('.progress-heading .eyebrow').textContent=`YOUR RACE PLAN / ${config.season}`;
     setupPredictionUI(config,colors);
@@ -152,9 +152,8 @@ function setupPredictionUI(config, colors) {
   const stagePosition=document.getElementById('stage-position');
   const stageButtons=stages.map((stage,i)=>{
     const button=document.createElement('button');button.type='button';button.className='stage-button';button.setAttribute('aria-controls',stage.id);
-    const num=document.createElement('span');num.className='stage-number';num.textContent=String(i+1).padStart(2,'0');
-    const name=document.createElement('span');name.className='stage-name';name.textContent=stage.querySelector('h3').textContent;
-    const state=document.createElement('span');state.className='stage-state';button.append(num,name,state);list.append(button);button.addEventListener('click',()=>showStage(i,true));return button;
+    const name=document.createElement('span');name.className='stage-name';name.textContent=stage.querySelector('h2').textContent;
+    const state=document.createElement('span');state.className='stage-state';button.append(name,state);list.append(button);button.addEventListener('click',()=>showStage(i,true));return button;
   });
   function complete(question){
     const required=[...question.querySelectorAll('select[required],input[required]')];
@@ -168,7 +167,7 @@ function setupPredictionUI(config, colors) {
     document.getElementById('progress-label').textContent=`${done} / ${total} kysymystä vastattu`;
     document.getElementById('progress-percent').textContent=Math.round(done/total*100)+' %';
     document.getElementById('bingo-progress').textContent=`Bingo ${bingo}/9`;
-    stages.forEach((stage,i)=>{const qs=[...stage.querySelectorAll('.prediction-question')];const count=qs.length?qs.filter(complete).length:bingo;const max=qs.length||9;const btn=stageButtons[i];btn.querySelector('.stage-state').textContent=count===max?'✓':`${count}/${max}`;btn.classList.toggle('is-complete',count===max);btn.setAttribute('aria-label',`${stage.querySelector('h3').textContent}, ${count}/${max} ${qs.length?'kysymystä':'ruutua'}`);});
+    stages.forEach((stage,i)=>{const qs=[...stage.querySelectorAll('.prediction-question')];const count=qs.length?qs.filter(complete).length:bingo;const max=qs.length||9;const btn=stageButtons[i];btn.querySelector('.stage-state').textContent=count===max?'✓':`${count}/${max}`;btn.classList.toggle('is-complete',count===max);btn.setAttribute('aria-label',`${stage.querySelector('h2').textContent}, ${count}/${max} ${qs.length?'kysymystä':'ruutua'}`);});
     questions.forEach(q=>{if(complete(q)){q.classList.remove('invalid');q.querySelectorAll('[aria-invalid=true]').forEach(e=>e.removeAttribute('aria-invalid'));}});
   }
   function showStage(i,focus=false){
@@ -176,9 +175,9 @@ function setupPredictionUI(config, colors) {
     stages.forEach((stage,j)=>stage.hidden=j!==i);stageButtons.forEach((b,j)=>{if(j===i)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
     previous.disabled=i===0;next.hidden=i===stages.length-1;submit.hidden=i!==stages.length-1;
     stagePosition.textContent=`Osio ${i+1} / ${stages.length}`;
-    document.getElementById('current-stage').textContent=stagePosition.textContent+' · '+stages[i].querySelector('h3').textContent;
+    document.getElementById('current-stage').textContent=stagePosition.textContent+' · '+stages[i].querySelector('h2').textContent;
     error.hidden=true;
-    if(focus){stages[i].querySelector('h3').focus({preventScroll:true});stages[i].scrollIntoView({block:'start',behavior:'instant'});}
+    if(focus){stages[i].querySelector('h2').focus({preventScroll:true});stages[i].scrollIntoView({block:'start',behavior:'instant'});}
     updateProgress();
   }
   previous.addEventListener('click',()=>showStage(stageIndex-1,true));next.addEventListener('click',()=>showStage(stageIndex+1,true));
@@ -297,7 +296,7 @@ function processInput(input, answers, section) {
 // Create readable text for one section
 function collectSectionText(section) {
   let text = "";
-  const titleEl = section.querySelector("h3");
+  const titleEl = section.querySelector("h2");
   const title = titleEl ? titleEl.textContent.trim() : "(Ilman otsikkoa)";
   text += `=== ${title} ===\n`;
 

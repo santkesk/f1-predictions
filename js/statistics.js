@@ -177,8 +177,8 @@
   }
   function renderPlayers(model){
     document.querySelector('.stats-hero p').textContent=`${model.players.length} pelaajaa, ${model.seasons.length} päättynyttä kautta. Valitse pelaaja ja tutustu hänen ennustushistoriaansa.`;
-    render('players',el('div',{class:'players-grid'},model.players.map((p,i)=>el('a',{class:'player-card',href:url(`Players/${p.id}.html`),style:{'--player':playerToken(p.id)}},
-      el('div',{class:'player-card-top'},el('span',{class:'player-number'},String(i+1).padStart(2,'0')),el('span',{class:'player-monogram'},p.name[0])),el('h2',{},p.name),el('div',{class:'player-mini'},[[p.wins,'voittoa'],[p.points,'pistettä'],[p.count,'kautta']].map(([v,label])=>el('span',{},el('strong',{},v),label))),el('span',{class:'player-cta'},'Pelaajan tilastot →')))));
+    render('players',el('div',{class:'players-grid'},[...model.players].sort((a,b)=>a.name.localeCompare(b.name,'fi')).map(p=>el('a',{class:'player-card',href:url(`Players/${p.id}.html`),style:{'--player':playerToken(p.id)}},
+      el('div',{class:'player-card-top'},el('span',{class:'player-monogram'},p.name[0])),el('h2',{},p.name),el('div',{class:'player-mini'},[[p.wins,'voittoa'],[p.points,'pistettä'],[p.count,'kautta']].map(([v,label])=>el('span',{},el('strong',{},v),label))),el('span',{class:'player-cta'},'Pelaajan tilastot →')))));
   }
   function renderProfile(model){
     const p=model.players.find(p=>p.id===document.body.dataset.id);if(!p)throw new Error('Pelaajaa ei löydy');
@@ -206,16 +206,16 @@
     const team=data.teams.find(t=>t.id===document.body.dataset.id);if(!team)throw new Error('Tallia ei löydy');
     document.title=`F1 Ennustukset - ${team.name}`;
     const img=el('img',{src:url(team.image),alt:team.imageAlt,class:'team-hero-img'});img.addEventListener('error',()=>img.hidden=true);
-    const hero=el('section',{class:'team-hero'},img,el('h2',{},team.name),el('p',{class:'team-years'},team.activeYears));
-    const grid=el('div',{class:'team-grid'},el('section',{class:'team-card'},el('h3',{},'Moottori'),el('p',{class:'engine-chip'},team.engine),el('h3',{},'Kuljettajat'),el('ul',{class:'driver-list'},team.drivers.map(d=>el('li',{},d.profileName||d.name)))),el('section',{class:'team-card'},el('h3',{},team.achievementHeading),el('div',{class:'stat-tiles'},Object.entries(team.achievements).map(([label,value])=>el('div',{class:'stat-tile'},el('span',{class:'stat-value'},value),el('span',{class:'stat-label'},label))))));
-    const history=team.history?el('section',{class:'team-card team-history'},el('h3',{},'Tallin historia'),el('div',{class:'table-scroll'},makeTable(team.history.columns,team.history.rows,{class:'achievements-table'}))):null;
-    const switcher=el('div',{class:'team-switcher'},el('h3',{},'Muut tallit'),data.teams.map(t=>el('a',{href:url(`Teams/${t.id}.html`),class:t.id===team.id?'current':null,'aria-current':t.id===team.id?'page':null,style:{'--dot':teamToken(t.id)}},t.name)));
+    const hero=el('section',{class:'team-hero'},img,el('h1',{},team.name),el('p',{class:'team-years'},team.activeYears));
+    const grid=el('div',{class:'team-grid'},el('section',{class:'team-card'},el('h2',{},'Moottori'),el('p',{class:'engine-chip'},team.engine),el('h2',{},'Kuljettajat'),el('ul',{class:'driver-list'},team.drivers.map(d=>el('li',{},d.profileName||d.name)))),el('section',{class:'team-card'},el('h2',{},team.achievementHeading),el('div',{class:'stat-tiles'},Object.entries(team.achievements).map(([label,value])=>el('div',{class:'stat-tile'},el('span',{class:'stat-value'},value),el('span',{class:'stat-label'},label))))));
+    const history=team.history?el('section',{class:'team-card team-history'},el('h2',{},'Tallin historia'),el('div',{class:'table-scroll'},makeTable(team.history.columns,team.history.rows,{class:'achievements-table'}))):null;
+    const switcher=el('div',{class:'team-switcher'},el('h2',{},'Muut tallit'),data.teams.map(t=>el('a',{href:url(`Teams/${t.id}.html`),class:t.id===team.id?'current':null,'aria-current':t.id===team.id?'page':null,style:{'--dot':teamToken(t.id)}},t.name)));
     render('team-profile',hero,photoCredit(team),grid,history,switcher);
   }
   function renderHistory(data){
     const categories=data.historicalResults;
     document.querySelector('.section-index').replaceChildren(...categories.map(cat=>el('a',{href:`#${cat.id}`},cat.title)));
-    render('historical-results',categories.map(cat=>el('section',{class:'season-panel',id:cat.id},el('h3',{},cat.title),el('p',{},cat.description),el('div',{class:'championship-tables'},orderByYear(cat.seasons).filter(s=>s.year<data.referenceSeason).slice(0,3).map(season=>el('div',{class:'table-wrapper'},el('h4',{},season.year),makeTable(season.columns,season.rows,{class:season.tableClass})))))));
+    render('historical-results',categories.map(cat=>el('section',{class:'season-panel',id:cat.id},el('h2',{},cat.title),el('p',{},cat.description),el('div',{class:'championship-tables'},orderByYear(cat.seasons).filter(s=>s.year<data.referenceSeason).slice(0,3).map(season=>el('div',{class:'table-wrapper'},el('h3',{},season.year),makeTable(season.columns,season.rows,{class:season.tableClass})))))));
     if(location.hash)document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
   }
   try {
