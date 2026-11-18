@@ -447,7 +447,7 @@
         "questions": [
           {
             "number": 19,
-            "text": "Mikä talli kehittyy eniten kaudesta 2025?",
+            "text": "Mikä talli kehittyy eniten kaudesta 2026?",
             "scoring": "Talli +5 (toinen +3, kolmas +1)",
             "fields": [
               {
@@ -462,7 +462,7 @@
           },
           {
             "number": 20,
-            "text": "Ketkä kolme kuljettajaa kehittyvät eniten kaudesta 2025?",
+            "text": "Ketkä kolme kuljettajaa kehittyvät eniten kaudesta 2026?",
             "scoring": "Kuljettaja +3, sija +1",
             "fields": [
               {
@@ -493,7 +493,7 @@
           },
           {
             "number": 21,
-            "text": "Kuka kuljettajista kehittyy vähiten kaudesta 2025?",
+            "text": "Kuka kuljettajista kehittyy vähiten kaudesta 2026?",
             "scoring": "Kuljettaja +10 (1 ohi +8, 2: +5, 3: +3, 4: +3, 5: +1)",
             "fields": [
               {
@@ -545,7 +545,7 @@
           },
           {
             "number": 23,
-            "text": "Kuinka monta uutta kuljettajaa ajaa kauden 2026 jälkeen?",
+            "text": "Kuinka monta uutta kuljettajaa ajaa kauden 2027 jälkeen?",
             "scoring": "Oikein +5",
             "fields": [
               {
@@ -560,7 +560,7 @@
           },
           {
             "number": 24,
-            "text": "Kuinka monta eri kuljettajaa ajaa kaudella 2026?",
+            "text": "Kuinka monta eri kuljettajaa ajaa kaudella 2027?",
             "scoring": "Oikein +5",
             "fields": [
               {
@@ -666,7 +666,89 @@
         "Vähintään 1 täysin englantilainen podium.",
         "Molemmat Alpine kuskit saavat podiumin."
       ]
-    }
+    },
+    "schemaVersion": 1,
+    "revision": "2027-v2",
+    "optionLists": {
+      "drivers": [
+        "Kimi Antonelli",
+        "George Russell",
+        "Charles Leclerc",
+        "Lewis Hamilton",
+        "Max Verstappen",
+        "Isack Hadjar",
+        "Lando Norris",
+        "Oscar Piastri",
+        "Liam Lawson",
+        "Arvid Lindblad",
+        "Pierre Gasly",
+        "Franco Colapinto",
+        "Rafael Camara",
+        "Oliver Bearman",
+        "Gabriel Bortoleto",
+        "Nico Hülkenberg",
+        "Alexander Albon",
+        "Carlos Sainz",
+        "Fernando Alonso",
+        "Lance Stroll",
+        "Sergio Pérez",
+        "Valtteri Bottas"
+      ],
+      "driversByCheckboxOrder": [
+        "Kimi Antonelli",
+        "George Russell",
+        "Charles Leclerc",
+        "Lewis Hamilton",
+        "Max Verstappen",
+        "Isack Hadjar",
+        "Lando Norris",
+        "Oscar Piastri",
+        "Liam Lawson",
+        "Arvid Lindblad",
+        "Pierre Gasly",
+        "Franco Colapinto",
+        "Rafael Camara",
+        "Oliver Bearman",
+        "Gabriel Bortoleto",
+        "Nico Hülkenberg",
+        "Alexander Albon",
+        "Carlos Sainz",
+        "Fernando Alonso",
+        "Lance Stroll",
+        "Sergio Pérez",
+        "Valtteri Bottas"
+      ],
+      "midfieldDrivers": [
+        "Liam Lawson",
+        "Arvid Lindblad",
+        "Pierre Gasly",
+        "Franco Colapinto",
+        "Rafael Camara",
+        "Oliver Bearman",
+        "Gabriel Bortoleto",
+        "Nico Hülkenberg",
+        "Alexander Albon",
+        "Carlos Sainz",
+        "Fernando Alonso",
+        "Lance Stroll",
+        "Sergio Pérez",
+        "Valtteri Bottas"
+      ],
+      "teams": [
+        "Mercedes",
+        "Ferrari",
+        "Red Bull",
+        "McLaren",
+        "Racing Bulls",
+        "Alpine",
+        "Haas",
+        "Audi",
+        "Williams",
+        "Aston Martin",
+        "Cadillac"
+      ]
+    },
+    "collectionMode": "setup"
   },
   "players": [
     {
