@@ -753,35 +753,51 @@
   "players": [
     {
       "id": "camilla",
-      "name": "Camilla"
+      "name": "Camilla",
+      "overallPercent": 23,
+      "totalMaximumPoints": 538
     },
     {
       "id": "oskari",
-      "name": "Oskari"
+      "name": "Oskari",
+      "overallPercent": 29,
+      "totalMaximumPoints": 658
     },
     {
       "id": "ducky",
-      "name": "Ducky"
+      "name": "Ducky",
+      "overallPercent": 43,
+      "totalMaximumPoints": 894
     },
     {
       "id": "annika",
-      "name": "Annika"
+      "name": "Annika",
+      "overallPercent": 29,
+      "totalMaximumPoints": 452
     },
     {
       "id": "roope",
-      "name": "Roope"
+      "name": "Roope",
+      "overallPercent": 2,
+      "totalMaximumPoints": 195
     },
     {
       "id": "santeri",
-      "name": "Santeri"
+      "name": "Santeri",
+      "overallPercent": 44,
+      "totalMaximumPoints": 1295
     },
     {
       "id": "marjo",
-      "name": "Marjo"
+      "name": "Marjo",
+      "overallPercent": 37,
+      "totalMaximumPoints": 1295
     },
     {
       "id": "kalle",
-      "name": "Kalle"
+      "name": "Kalle",
+      "overallPercent": 31,
+      "totalMaximumPoints": 1295
     }
   ],
   "overallOrder": [

@@ -27,8 +27,41 @@
       "2026 has questions but no player answers or results in the supplied workbook.",
       "The workbook records a limitation for the 2020 retirements question; the documented points are retained.",
       "All-time points are sums of verified individual question scores; equal question scores produce shared countback placements.",
-      "Maximum possible points / per-season percentages are not fully determined by the workbook; percentages are intentionally omitted."
-    ]
+      "Maximum points for completed seasons 2020–2025 are user-confirmed; season and career percentages are derived from those values."
+    ],
+    "maximumPointsByYear": {
+      "2020": {
+        "base": 86,
+        "bingo": 0,
+        "total": 86
+      },
+      "2021": {
+        "base": 90,
+        "bingo": 30,
+        "total": 120
+      },
+      "2022": {
+        "base": 165,
+        "bingo": 30,
+        "total": 195
+      },
+      "2023": {
+        "base": 217,
+        "bingo": 40,
+        "total": 257
+      },
+      "2024": {
+        "base": 272,
+        "bingo": 49,
+        "total": 321
+      },
+      "2025": {
+        "base": 267,
+        "bingo": 49,
+        "total": 316
+      }
+    },
+    "percentRounding": "nearest integer percentage point (half up)"
   },
   "players": [
     {
@@ -70,7 +103,8 @@
           "publishedPoints": 30,
           "pointsDelta": 1,
           "originalWorkbookRank": 4,
-          "oldWorkbookVerifiedPoints": 31
+          "oldWorkbookVerifiedPoints": 31,
+          "percent": 16
         },
         {
           "year": 2023,
@@ -96,9 +130,12 @@
           "publishedPoints": 100,
           "pointsDelta": 0,
           "originalWorkbookRank": 2,
-          "oldWorkbookVerifiedPoints": 100
+          "oldWorkbookVerifiedPoints": 100,
+          "percent": 39
         }
-      ]
+      ],
+      "totalMaximumPoints": 452,
+      "overallPercent": 29
     },
     {
       "id": "camilla",
@@ -139,7 +176,8 @@
           "publishedPoints": 3,
           "pointsDelta": 13,
           "originalWorkbookRank": 5,
-          "oldWorkbookVerifiedPoints": 16
+          "oldWorkbookVerifiedPoints": 16,
+          "percent": 19
         },
         {
           "year": 2022,
@@ -165,7 +203,8 @@
           "publishedPoints": 20,
           "pointsDelta": 6,
           "originalWorkbookRank": 5,
-          "oldWorkbookVerifiedPoints": 26
+          "oldWorkbookVerifiedPoints": 26,
+          "percent": 13
         },
         {
           "year": 2023,
@@ -191,9 +230,12 @@
           "publishedPoints": 81,
           "pointsDelta": 0,
           "originalWorkbookRank": 6,
-          "oldWorkbookVerifiedPoints": 81
+          "oldWorkbookVerifiedPoints": 81,
+          "percent": 32
         }
-      ]
+      ],
+      "totalMaximumPoints": 538,
+      "overallPercent": 23
     },
     {
       "id": "ducky",
@@ -234,7 +276,8 @@
           "publishedPoints": 91,
           "pointsDelta": 0,
           "originalWorkbookRank": 4,
-          "oldWorkbookVerifiedPoints": 91
+          "oldWorkbookVerifiedPoints": 91,
+          "percent": 35
         },
         {
           "year": 2024,
@@ -260,7 +303,8 @@
           "publishedPoints": 101,
           "pointsDelta": 0,
           "originalWorkbookRank": 4,
-          "oldWorkbookVerifiedPoints": 101
+          "oldWorkbookVerifiedPoints": 101,
+          "percent": 31
         },
         {
           "year": 2025,
@@ -286,9 +330,12 @@
           "publishedPoints": 191,
           "pointsDelta": 1,
           "originalWorkbookRank": 1,
-          "oldWorkbookVerifiedPoints": 192
+          "oldWorkbookVerifiedPoints": 192,
+          "percent": 61
         }
-      ]
+      ],
+      "totalMaximumPoints": 894,
+      "overallPercent": 43
     },
     {
       "id": "kalle",
@@ -329,7 +376,8 @@
           "publishedPoints": 14,
           "pointsDelta": 10,
           "originalWorkbookRank": 1,
-          "oldWorkbookVerifiedPoints": 24
+          "oldWorkbookVerifiedPoints": 24,
+          "percent": 28
         },
         {
           "year": 2021,
@@ -355,7 +403,8 @@
           "publishedPoints": 9,
           "pointsDelta": 16,
           "originalWorkbookRank": 3,
-          "oldWorkbookVerifiedPoints": 25
+          "oldWorkbookVerifiedPoints": 25,
+          "percent": 21
         },
         {
           "year": 2022,
@@ -381,7 +430,8 @@
           "publishedPoints": 12,
           "pointsDelta": 0,
           "originalWorkbookRank": 6,
-          "oldWorkbookVerifiedPoints": 12
+          "oldWorkbookVerifiedPoints": 12,
+          "percent": 6
         },
         {
           "year": 2023,
@@ -407,7 +457,8 @@
           "publishedPoints": 64,
           "pointsDelta": 1,
           "originalWorkbookRank": 7,
-          "oldWorkbookVerifiedPoints": 65
+          "oldWorkbookVerifiedPoints": 65,
+          "percent": 25
         },
         {
           "year": 2024,
@@ -433,7 +484,8 @@
           "publishedPoints": 135,
           "pointsDelta": 0,
           "originalWorkbookRank": 3,
-          "oldWorkbookVerifiedPoints": 135
+          "oldWorkbookVerifiedPoints": 135,
+          "percent": 42
         },
         {
           "year": 2025,
@@ -459,9 +511,12 @@
           "publishedPoints": 136,
           "pointsDelta": 0,
           "originalWorkbookRank": 4,
-          "oldWorkbookVerifiedPoints": 136
+          "oldWorkbookVerifiedPoints": 136,
+          "percent": 43
         }
-      ]
+      ],
+      "totalMaximumPoints": 1295,
+      "overallPercent": 31
     },
     {
       "id": "marjo",
@@ -502,7 +557,8 @@
           "publishedPoints": 9,
           "pointsDelta": 11,
           "originalWorkbookRank": 3,
-          "oldWorkbookVerifiedPoints": 20
+          "oldWorkbookVerifiedPoints": 20,
+          "percent": 23
         },
         {
           "year": 2021,
@@ -528,7 +584,8 @@
           "publishedPoints": 5,
           "pointsDelta": 11,
           "originalWorkbookRank": 4,
-          "oldWorkbookVerifiedPoints": 16
+          "oldWorkbookVerifiedPoints": 16,
+          "percent": 13
         },
         {
           "year": 2022,
@@ -554,7 +611,8 @@
           "publishedPoints": 32,
           "pointsDelta": 0,
           "originalWorkbookRank": 3,
-          "oldWorkbookVerifiedPoints": 32
+          "oldWorkbookVerifiedPoints": 32,
+          "percent": 16
         },
         {
           "year": 2023,
@@ -580,7 +638,8 @@
           "publishedPoints": 92,
           "pointsDelta": 1,
           "originalWorkbookRank": 3,
-          "oldWorkbookVerifiedPoints": 93
+          "oldWorkbookVerifiedPoints": 93,
+          "percent": 36
         },
         {
           "year": 2024,
@@ -606,7 +665,8 @@
           "publishedPoints": 137,
           "pointsDelta": 0,
           "originalWorkbookRank": 2,
-          "oldWorkbookVerifiedPoints": 137
+          "oldWorkbookVerifiedPoints": 137,
+          "percent": 43
         },
         {
           "year": 2025,
@@ -632,9 +692,12 @@
           "publishedPoints": 183,
           "pointsDelta": 0,
           "originalWorkbookRank": 3,
-          "oldWorkbookVerifiedPoints": 183
+          "oldWorkbookVerifiedPoints": 183,
+          "percent": 58
         }
-      ]
+      ],
+      "totalMaximumPoints": 1295,
+      "overallPercent": 37
     },
     {
       "id": "oskari",
@@ -675,7 +738,8 @@
           "publishedPoints": 12,
           "pointsDelta": 12,
           "originalWorkbookRank": 2,
-          "oldWorkbookVerifiedPoints": 24
+          "oldWorkbookVerifiedPoints": 24,
+          "percent": 28
         },
         {
           "year": 2021,
@@ -701,7 +765,8 @@
           "publishedPoints": 33,
           "pointsDelta": 8,
           "originalWorkbookRank": 1,
-          "oldWorkbookVerifiedPoints": 41
+          "oldWorkbookVerifiedPoints": 41,
+          "percent": 34
         },
         {
           "year": 2022,
@@ -727,7 +792,8 @@
           "publishedPoints": 37,
           "pointsDelta": 0,
           "originalWorkbookRank": 2,
-          "oldWorkbookVerifiedPoints": 37
+          "oldWorkbookVerifiedPoints": 37,
+          "percent": 19
         },
         {
           "year": 2023,
@@ -753,9 +819,12 @@
           "publishedPoints": 93,
           "pointsDelta": -2,
           "originalWorkbookRank": 5,
-          "oldWorkbookVerifiedPoints": 91
+          "oldWorkbookVerifiedPoints": 91,
+          "percent": 35
         }
-      ]
+      ],
+      "totalMaximumPoints": 658,
+      "overallPercent": 29
     },
     {
       "id": "roope",
@@ -796,9 +865,12 @@
           "publishedPoints": 4,
           "pointsDelta": 0,
           "originalWorkbookRank": 7,
-          "oldWorkbookVerifiedPoints": 4
+          "oldWorkbookVerifiedPoints": 4,
+          "percent": 2
         }
-      ]
+      ],
+      "totalMaximumPoints": 195,
+      "overallPercent": 2
     },
     {
       "id": "santeri",
@@ -839,7 +911,8 @@
           "publishedPoints": 10,
           "pointsDelta": 10,
           "originalWorkbookRank": 4,
-          "oldWorkbookVerifiedPoints": 20
+          "oldWorkbookVerifiedPoints": 20,
+          "percent": 23
         },
         {
           "year": 2021,
@@ -865,7 +938,8 @@
           "publishedPoints": 32,
           "pointsDelta": 6,
           "originalWorkbookRank": 2,
-          "oldWorkbookVerifiedPoints": 38
+          "oldWorkbookVerifiedPoints": 38,
+          "percent": 32
         },
         {
           "year": 2022,
@@ -891,7 +965,8 @@
           "publishedPoints": 44,
           "pointsDelta": 0,
           "originalWorkbookRank": 1,
-          "oldWorkbookVerifiedPoints": 44
+          "oldWorkbookVerifiedPoints": 44,
+          "percent": 23
         },
         {
           "year": 2023,
@@ -917,7 +992,8 @@
           "publishedPoints": 134,
           "pointsDelta": 1,
           "originalWorkbookRank": 1,
-          "oldWorkbookVerifiedPoints": 135
+          "oldWorkbookVerifiedPoints": 135,
+          "percent": 53
         },
         {
           "year": 2024,
@@ -943,7 +1019,8 @@
           "publishedPoints": 152,
           "pointsDelta": 0,
           "originalWorkbookRank": 1,
-          "oldWorkbookVerifiedPoints": 152
+          "oldWorkbookVerifiedPoints": 152,
+          "percent": 47
         },
         {
           "year": 2025,
@@ -969,9 +1046,12 @@
           "publishedPoints": 187,
           "pointsDelta": 0,
           "originalWorkbookRank": 2,
-          "oldWorkbookVerifiedPoints": 187
+          "oldWorkbookVerifiedPoints": 187,
+          "percent": 59
         }
-      ]
+      ],
+      "totalMaximumPoints": 1295,
+      "overallPercent": 44
     }
   ],
   "seasons": [
@@ -2832,7 +2912,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 86,
+        "bingo": 0,
+        "total": 86
+      }
     },
     {
       "schemaVersion": 1,
@@ -4797,7 +4882,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 90,
+        "bingo": 30,
+        "total": 120
+      }
     },
     {
       "schemaVersion": 1,
@@ -8068,7 +8158,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 165,
+        "bingo": 30,
+        "total": 195
+      }
     },
     {
       "schemaVersion": 1,
@@ -11325,7 +11420,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 217,
+        "bingo": 40,
+        "total": 257
+      }
     },
     {
       "schemaVersion": 1,
@@ -13139,7 +13239,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 272,
+        "bingo": 49,
+        "total": 321
+      }
     },
     {
       "schemaVersion": 1,
@@ -14946,7 +15051,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 267,
+        "bingo": 49,
+        "total": 316
+      }
     },
     {
       "schemaVersion": 1,
@@ -15164,7 +15274,8 @@
           },
           "answers": []
         }
-      ]
+      ],
+      "maximumPoints": null
     }
   ]
 }
