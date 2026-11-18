@@ -753,52 +753,44 @@
   "players": [
     {
       "id": "camilla",
-      "name": "Camilla",
-      "overallPercent": 19
+      "name": "Camilla"
     },
     {
       "id": "oskari",
-      "name": "Oskari",
-      "overallPercent": 26
+      "name": "Oskari"
     },
     {
       "id": "ducky",
-      "name": "Ducky",
-      "overallPercent": 43
+      "name": "Ducky"
     },
     {
       "id": "annika",
-      "name": "Annika",
-      "overallPercent": 28
+      "name": "Annika"
     },
     {
       "id": "roope",
-      "name": "Roope",
-      "overallPercent": 2
+      "name": "Roope"
     },
     {
       "id": "santeri",
-      "name": "Santeri",
-      "overallPercent": 43
+      "name": "Santeri"
     },
     {
       "id": "marjo",
-      "name": "Marjo",
-      "overallPercent": 35
+      "name": "Marjo"
     },
     {
       "id": "kalle",
-      "name": "Kalle",
-      "overallPercent": 28
+      "name": "Kalle"
     }
   ],
   "overallOrder": [
     "Santeri",
-    "Oskari",
-    "Kalle",
     "Marjo",
-    "Annika",
+    "Kalle",
     "Ducky",
+    "Oskari",
+    "Annika",
     "Camilla",
     "Roope"
   ],
@@ -819,26 +811,82 @@
         {
           "player": "Ducky",
           "rank": 1,
-          "points": 191,
-          "percent": 60
+          "points": 192,
+          "percent": 61,
+          "countback": {
+            "first": 4,
+            "second": 3,
+            "third": 3,
+            "places": {
+              "1": 4,
+              "2": 3,
+              "3": 3,
+              "4": 1,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Santeri",
           "rank": 2,
           "points": 187,
-          "percent": 59
+          "percent": 59,
+          "countback": {
+            "first": 6,
+            "second": 1,
+            "third": 4,
+            "places": {
+              "1": 6,
+              "2": 1,
+              "3": 4,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Marjo",
           "rank": 3,
           "points": 183,
-          "percent": 58
+          "percent": 58,
+          "countback": {
+            "first": 2,
+            "second": 3,
+            "third": 1,
+            "places": {
+              "1": 2,
+              "2": 3,
+              "3": 1,
+              "4": 5,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Kalle",
           "rank": 4,
           "points": 136,
-          "percent": 43
+          "percent": 43,
+          "countback": {
+            "first": 3,
+            "second": 1,
+            "third": 3,
+            "places": {
+              "1": 3,
+              "2": 1,
+              "3": 3,
+              "4": 4,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         }
       ],
       "categories": [
@@ -877,7 +925,7 @@
                       },
                       "1. Piastri, 2. Verstappen, 3. Norris",
                       "Tsunoda",
-                      10
+                      11
                     ],
                     "player": "Ducky"
                   },
@@ -2154,7 +2202,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 267,
+        "bingo": 49,
+        "total": 316
+      }
     },
     {
       "year": 2024,
@@ -2162,26 +2215,82 @@
         {
           "player": "Santeri",
           "rank": 1,
-          "points": 153,
-          "percent": 48
+          "points": 152,
+          "percent": 47,
+          "countback": {
+            "first": 4,
+            "second": 5,
+            "third": 1,
+            "places": {
+              "1": 4,
+              "2": 5,
+              "3": 1,
+              "4": 1,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Marjo",
           "rank": 2,
           "points": 137,
-          "percent": 43
+          "percent": 43,
+          "countback": {
+            "first": 3,
+            "second": 2,
+            "third": 4,
+            "places": {
+              "1": 3,
+              "2": 2,
+              "3": 4,
+              "4": 2,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Kalle",
           "rank": 3,
           "points": 135,
-          "percent": 42
+          "percent": 42,
+          "countback": {
+            "first": 3,
+            "second": 3,
+            "third": 1,
+            "places": {
+              "1": 3,
+              "2": 3,
+              "3": 1,
+              "4": 4,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Ducky",
           "rank": 4,
           "points": 101,
-          "percent": 31
+          "percent": 31,
+          "countback": {
+            "first": 3,
+            "second": 3,
+            "third": 2,
+            "places": {
+              "1": 3,
+              "2": 3,
+              "3": 2,
+              "4": 3,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         }
       ],
       "categories": [
@@ -3410,7 +3519,7 @@
                       {
                         "player": "Kalle"
                       },
-                      10
+                      9
                     ],
                     "player": "Kalle"
                   }
@@ -3438,7 +3547,12 @@
           "player": "Ducky",
           "points": 101
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 272,
+        "bingo": 49,
+        "total": 321
+      }
     },
     {
       "year": 2023,
@@ -3446,44 +3560,142 @@
         {
           "player": "Santeri",
           "rank": 1,
-          "points": 133,
-          "percent": 51
+          "points": 135,
+          "percent": 53,
+          "countback": {
+            "first": 3,
+            "second": 3,
+            "third": 2,
+            "places": {
+              "1": 3,
+              "2": 3,
+              "3": 2,
+              "4": 3,
+              "5": 1,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Annika",
           "rank": 2,
           "points": 100,
-          "percent": 39
-        },
-        {
-          "player": "Oskari",
-          "rank": 3,
-          "points": 93,
-          "percent": 36
+          "percent": 39,
+          "countback": {
+            "first": 2,
+            "second": 2,
+            "third": 2,
+            "places": {
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 1,
+              "5": 1,
+              "6": 3,
+              "7": 1
+            }
+          }
         },
         {
           "player": "Marjo",
-          "rank": 4,
-          "points": 92,
-          "percent": 36
+          "rank": 3,
+          "points": 93,
+          "percent": 36,
+          "countback": {
+            "first": 1,
+            "second": 1,
+            "third": 2,
+            "places": {
+              "1": 1,
+              "2": 1,
+              "3": 2,
+              "4": 3,
+              "5": 2,
+              "6": 1,
+              "7": 2
+            }
+          }
         },
         {
           "player": "Ducky",
+          "rank": 4,
+          "points": 91,
+          "percent": 35,
+          "countback": {
+            "first": 3,
+            "second": 3,
+            "third": 0,
+            "places": {
+              "1": 3,
+              "2": 3,
+              "3": 0,
+              "4": 3,
+              "5": 3,
+              "6": 0,
+              "7": 0
+            }
+          }
+        },
+        {
+          "player": "Oskari",
           "rank": 5,
           "points": 91,
-          "percent": 35
+          "percent": 35,
+          "countback": {
+            "first": 3,
+            "second": 2,
+            "third": 2,
+            "places": {
+              "1": 3,
+              "2": 2,
+              "3": 2,
+              "4": 3,
+              "5": 2,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Camilla",
           "rank": 6,
           "points": 81,
-          "percent": 32
+          "percent": 32,
+          "countback": {
+            "first": 2,
+            "second": 0,
+            "third": 1,
+            "places": {
+              "1": 2,
+              "2": 0,
+              "3": 1,
+              "4": 3,
+              "5": 3,
+              "6": 1,
+              "7": 2
+            }
+          }
         },
         {
           "player": "Kalle",
           "rank": 7,
-          "points": 64,
-          "percent": 25
+          "points": 65,
+          "percent": 25,
+          "countback": {
+            "first": 1,
+            "second": 2,
+            "third": 1,
+            "places": {
+              "1": 1,
+              "2": 2,
+              "3": 1,
+              "4": 0,
+              "5": 3,
+              "6": 2,
+              "7": 3
+            }
+          }
         }
       ],
       "categories": [
@@ -3566,7 +3778,7 @@
                       },
                       "1. Leclerc, 2. Verstappen, 3. Russell",
                       55,
-                      1
+                      2
                     ],
                     "player": "Santeri"
                   },
@@ -3577,7 +3789,7 @@
                       },
                       "1. Leclerc, 2. Verstappen, 3. Sainz",
                       24,
-                      1
+                      2
                     ],
                     "player": "Marjo"
                   },
@@ -3588,7 +3800,7 @@
                       },
                       "1. Russell, 2. Leclerc, 3. Verstappen",
                       10,
-                      1
+                      2
                     ],
                     "player": "Kalle"
                   }
@@ -3809,7 +4021,7 @@
                       },
                       "Verstappen (18)",
                       "Verstappen, Perez, Leclerc, Sainz, Russell, Norris, Gasly",
-                      17
+                      15
                     ],
                     "player": "Oskari"
                   },
@@ -5366,7 +5578,7 @@
       "archiveTotals": [
         {
           "player": "Santeri",
-          "points": 134
+          "points": 135
         },
         {
           "player": "Annika",
@@ -5374,11 +5586,11 @@
         },
         {
           "player": "Oskari",
-          "points": 93
+          "points": 91
         },
         {
           "player": "Marjo",
-          "points": 92
+          "points": 93
         },
         {
           "player": "Ducky",
@@ -5390,9 +5602,14 @@
         },
         {
           "player": "Kalle",
-          "points": 64
+          "points": 65
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 217,
+        "bingo": 40,
+        "total": 257
+      }
     },
     {
       "year": 2022,
@@ -5401,43 +5618,141 @@
           "player": "Santeri",
           "rank": 1,
           "points": 44,
-          "percent": 21
+          "percent": 23,
+          "countback": {
+            "first": 4,
+            "second": 2,
+            "third": 2,
+            "places": {
+              "1": 4,
+              "2": 2,
+              "3": 2,
+              "4": 0,
+              "5": 1,
+              "6": 3,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Oskari",
           "rank": 2,
           "points": 37,
-          "percent": 18
+          "percent": 19,
+          "countback": {
+            "first": 3,
+            "second": 2,
+            "third": 2,
+            "places": {
+              "1": 3,
+              "2": 2,
+              "3": 2,
+              "4": 2,
+              "5": 1,
+              "6": 1,
+              "7": 1
+            }
+          }
         },
         {
           "player": "Marjo",
           "rank": 3,
           "points": 32,
-          "percent": 16
+          "percent": 16,
+          "countback": {
+            "first": 1,
+            "second": 7,
+            "third": 2,
+            "places": {
+              "1": 1,
+              "2": 7,
+              "3": 2,
+              "4": 1,
+              "5": 0,
+              "6": 1,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Annika",
           "rank": 4,
-          "points": 30,
-          "percent": 15
+          "points": 31,
+          "percent": 16,
+          "countback": {
+            "first": 3,
+            "second": 3,
+            "third": 1,
+            "places": {
+              "1": 3,
+              "2": 3,
+              "3": 1,
+              "4": 2,
+              "5": 1,
+              "6": 1,
+              "7": 1
+            }
+          }
         },
         {
           "player": "Camilla",
           "rank": 5,
-          "points": 20,
-          "percent": 10
+          "points": 26,
+          "percent": 13,
+          "countback": {
+            "first": 2,
+            "second": 1,
+            "third": 3,
+            "places": {
+              "1": 2,
+              "2": 1,
+              "3": 3,
+              "4": 0,
+              "5": 4,
+              "6": 2,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Kalle",
           "rank": 6,
           "points": 12,
-          "percent": 6
+          "percent": 6,
+          "countback": {
+            "first": 2,
+            "second": 2,
+            "third": 4,
+            "places": {
+              "1": 2,
+              "2": 2,
+              "3": 4,
+              "4": 0,
+              "5": 2,
+              "6": 2,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Roope",
           "rank": 7,
           "points": 4,
-          "percent": 2
+          "percent": 2,
+          "countback": {
+            "first": 3,
+            "second": 2,
+            "third": 1,
+            "places": {
+              "1": 3,
+              "2": 2,
+              "3": 1,
+              "4": 0,
+              "5": 1,
+              "6": 2,
+              "7": 3
+            }
+          }
         }
       ],
       "categories": [
@@ -6067,7 +6382,7 @@
                       },
                       "Hamilton (5)",
                       "Red Bull (9)",
-                      5
+                      6
                     ],
                     "player": "Annika"
                   },
@@ -7113,7 +7428,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 165,
+        "bingo": 30,
+        "total": 195
+      }
     },
     {
       "year": 2021,
@@ -7121,26 +7441,82 @@
         {
           "player": "Oskari",
           "rank": 1,
-          "points": 33,
-          "percent": 25
+          "points": 41,
+          "percent": 34,
+          "countback": {
+            "first": 5,
+            "second": 3,
+            "third": 2,
+            "places": {
+              "1": 5,
+              "2": 3,
+              "3": 2,
+              "4": 2,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Santeri",
           "rank": 2,
-          "points": 32,
-          "percent": 25
+          "points": 38,
+          "percent": 32,
+          "countback": {
+            "first": 7,
+            "second": 4,
+            "third": 1,
+            "places": {
+              "1": 7,
+              "2": 4,
+              "3": 1,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Kalle",
           "rank": 3,
-          "points": 9,
-          "percent": 7
+          "points": 25,
+          "percent": 21,
+          "countback": {
+            "first": 6,
+            "second": 2,
+            "third": 3,
+            "places": {
+              "1": 6,
+              "2": 2,
+              "3": 3,
+              "4": 1,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Marjo",
           "rank": 4,
-          "points": 5,
-          "percent": 4
+          "points": 16,
+          "percent": 13,
+          "countback": {
+            "first": 1,
+            "second": 4,
+            "third": 6,
+            "places": {
+              "1": 1,
+              "2": 4,
+              "3": 6,
+              "4": 1,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         }
       ],
       "categories": [
@@ -7284,7 +7660,7 @@
                       },
                       "Bottas (13)",
                       "Hamilton, Bottas, Verstappen, Perez, Ricciardo, Norris, Leclerc",
-                      2
+                      3
                     ],
                     "player": "Oskari"
                   },
@@ -7306,7 +7682,7 @@
                       },
                       "Hamilton (12)",
                       "Hamilton, Bottas, Verstappen, Ricciardo, Schumacher",
-                      2
+                      3
                     ],
                     "player": "Marjo"
                   },
@@ -7317,7 +7693,7 @@
                       },
                       "Bottas (16)",
                       "Hamilton, Bottas,Verstappen, Sainz",
-                      -1
+                      2
                     ],
                     "player": "Kalle"
                   }
@@ -7389,7 +7765,7 @@
                       },
                       "Bottas (18)",
                       "Hamilton, Bottas, Verstappen, Perez, Ricciardo, Norris, Alonso, Ocon, Leclerc, Schumacher",
-                      6
+                      10
                     ],
                     "player": "Oskari"
                   },
@@ -7400,7 +7776,7 @@
                       },
                       "Hamilton (17)",
                       "Hamilton, Bottas, Verstappen, Perez, Ricciardo, Norris, Alonso, Ocon, Leclerc, Sainz, Vettel",
-                      9
+                      11
                     ],
                     "player": "Santeri"
                   },
@@ -7411,7 +7787,7 @@
                       },
                       "Hamilton (15)",
                       "Hamilton, Bottas, Verstappen, Perez, Ricciardo, Vettel, Stroll, Schumacher",
-                      -3
+                      4
                     ],
                     "player": "Marjo"
                   },
@@ -7422,7 +7798,7 @@
                       },
                       "Bottas (20)",
                       "Hamilton, Bottas, Verstappen, Sainz",
-                      -4
+                      4
                     ],
                     "player": "Kalle"
                   }
@@ -7494,7 +7870,7 @@
                       },
                       "Bottas (15)",
                       "Hamilton, Bottas, Perez, Ricciardo",
-                      -2
+                      0
                     ],
                     "player": "Oskari"
                   },
@@ -7505,7 +7881,7 @@
                       },
                       "Bottas (7)",
                       "Hamilton, Bottas, Verstappen, Perez, Ricciardo",
-                      -1
+                      1
                     ],
                     "player": "Santeri"
                   },
@@ -7516,7 +7892,7 @@
                       },
                       "Hamilton (12)",
                       "Hamilton, Bottas, Verstappen, Ricciardo, Stroll",
-                      0
+                      1
                     ],
                     "player": "Marjo"
                   },
@@ -7527,7 +7903,7 @@
                       },
                       "Bottas (12)",
                       "Hamilton, Bottas, Verstappen, Sainz",
-                      1
+                      2
                     ],
                     "player": "Kalle"
                   }
@@ -7599,7 +7975,7 @@
                       },
                       "Bottas (9)",
                       "Hamilton, Bottas, Verstappen, Perez, Ricciardo, Norris",
-                      5
+                      6
                     ],
                     "player": "Oskari"
                   },
@@ -7610,7 +7986,7 @@
                       },
                       "Hamilton (6)",
                       "Hamilton, Bottas, Verstappen, Perez, Ricciardo, Alonso, Leclerc",
-                      4
+                      6
                     ],
                     "player": "Santeri"
                   },
@@ -7621,7 +7997,7 @@
                       },
                       "Hamilton (8)",
                       "Hamilton, Verstappen, Ricciardo, Norris, Stroll",
-                      2
+                      4
                     ],
                     "player": "Marjo"
                   },
@@ -7632,7 +8008,7 @@
                       },
                       "Bottas (6)",
                       "Hamilton, Bottas, Verstappen, Sainz",
-                      0
+                      4
                     ],
                     "player": "Kalle"
                   }
@@ -8372,7 +8748,12 @@
             }
           ]
         }
-      ]
+      ],
+      "maximumPoints": {
+        "base": 90,
+        "bingo": 30,
+        "total": 120
+      }
     },
     {
       "year": 2020,
@@ -8380,32 +8761,102 @@
         {
           "player": "Kalle",
           "rank": 1,
-          "points": 14,
-          "percent": 16
+          "points": 24,
+          "percent": 28,
+          "countback": {
+            "first": 5,
+            "second": 5,
+            "third": 1,
+            "places": {
+              "1": 5,
+              "2": 5,
+              "3": 1,
+              "4": 1,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Oskari",
           "rank": 2,
-          "points": 12,
-          "percent": 14
-        },
-        {
-          "player": "Santeri",
-          "rank": 3,
-          "points": 10,
-          "percent": 12
+          "points": 24,
+          "percent": 28,
+          "countback": {
+            "first": 4,
+            "second": 5,
+            "third": 3,
+            "places": {
+              "1": 4,
+              "2": 5,
+              "3": 3,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Marjo",
+          "rank": 3,
+          "points": 20,
+          "percent": 23,
+          "countback": {
+            "first": 3,
+            "second": 5,
+            "third": 3,
+            "places": {
+              "1": 3,
+              "2": 5,
+              "3": 3,
+              "4": 1,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            }
+          }
+        },
+        {
+          "player": "Santeri",
           "rank": 4,
-          "points": 9,
-          "percent": 10
+          "points": 20,
+          "percent": 23,
+          "countback": {
+            "first": 3,
+            "second": 3,
+            "third": 4,
+            "places": {
+              "1": 3,
+              "2": 3,
+              "3": 4,
+              "4": 1,
+              "5": 1,
+              "6": 0,
+              "7": 0
+            }
+          }
         },
         {
           "player": "Camilla",
           "rank": 5,
-          "points": 3,
-          "percent": 3
+          "points": 16,
+          "percent": 19,
+          "countback": {
+            "first": 2,
+            "second": 2,
+            "third": 3,
+            "places": {
+              "1": 2,
+              "2": 2,
+              "3": 3,
+              "4": 1,
+              "5": 4,
+              "6": 0,
+              "7": 0
+            }
+          }
         }
       ],
       "categories": [
@@ -8552,7 +9003,7 @@
                         ]
                       },
                       "Hamilton, Leclerc, Verstappen",
-                      0
+                      2
                     ],
                     "player": "Camilla"
                   },
@@ -8570,7 +9021,7 @@
                         ]
                       },
                       "Bottas, Hamilton, Vettel, Leclerc, Verstappen",
-                      -1
+                      1
                     ],
                     "player": "Oskari"
                   },
@@ -8588,7 +9039,7 @@
                         ]
                       },
                       "Hamilton, Bottas, Vettel, Leclerc, Verstappen, Albon",
-                      -1
+                      1
                     ],
                     "player": "Santeri"
                   },
@@ -8606,7 +9057,7 @@
                         ]
                       },
                       "Hamilton, Bottas, Leclerc, Verstappen, Räikkönen",
-                      1
+                      2
                     ],
                     "player": "Marjo"
                   },
@@ -8624,7 +9075,7 @@
                         ]
                       },
                       "Bottas, Hamilton, Vettel, Leclerc, Verstappen",
-                      -1
+                      1
                     ],
                     "player": "Kalle"
                   }
@@ -8696,7 +9147,7 @@
                       },
                       "Hamilton",
                       "Hamilton, Vettel, Leclerc, Verstappen",
-                      -2
+                      5
                     ],
                     "player": "Camilla"
                   },
@@ -8714,7 +9165,7 @@
                         ]
                       },
                       "Bottas, Hamilton, Vettel, Leclerc, Verstappen, Albon",
-                      0
+                      6
                     ],
                     "player": "Oskari"
                   },
@@ -8732,7 +9183,7 @@
                         ]
                       },
                       "Hamilton, Bottas, Vettel, Leclerc, Verstappen, Albon, Sainz, Ricciardo",
-                      5
+                      9
                     ],
                     "player": "Santeri"
                   },
@@ -8750,7 +9201,7 @@
                         ]
                       },
                       "Hamilton, Bottas, Leclerc, Verstappen, Albon, Perez, Norris, Räikkönen, Giovinazzi",
-                      1
+                      6
                     ],
                     "player": "Marjo"
                   },
@@ -8761,7 +9212,7 @@
                       },
                       "Bottas",
                       "Bottas, Hamilton, Vettel, Leclerc, Verstappen, Ricciardo",
-                      -1
+                      6
                     ],
                     "player": "Kalle"
                   }
@@ -8858,7 +9309,7 @@
                         ]
                       },
                       "Hamilton, Bottas, Leclerc, Verstappen",
-                      2
+                      3
                     ],
                     "player": "Oskari"
                   },
@@ -8876,7 +9327,7 @@
                         ]
                       },
                       "Bottas, Hamilton, Vettel, Leclerc, Verstappen",
-                      0
+                      1
                     ],
                     "player": "Santeri"
                   },
@@ -8894,7 +9345,7 @@
                         ]
                       },
                       "Hamilton, Bottas, Vettel, Leclerc, Verstappen, Räikkönen",
-                      0
+                      1
                     ],
                     "player": "Marjo"
                   },
@@ -8912,7 +9363,7 @@
                         ]
                       },
                       "Bottas, Hamilton, Vettel, Leclerc, Verstappen",
-                      0
+                      1
                     ],
                     "player": "Kalle"
                   }
@@ -8991,7 +9442,7 @@
                         ]
                       },
                       "Bottas, Verstappen, Norris",
-                      1
+                      5
                     ],
                     "player": "Camilla"
                   },
@@ -9009,7 +9460,7 @@
                         ]
                       },
                       "Bottas, Hamilton, Vettel, Leclerc, Verstappen",
-                      -3
+                      1
                     ],
                     "player": "Oskari"
                   },
@@ -9027,7 +9478,7 @@
                         ]
                       },
                       "Leclerc, Hamilton, Bottas, Vettel, Verstappen, Albon",
-                      -4
+                      0
                     ],
                     "player": "Santeri"
                   },
@@ -9045,7 +9496,7 @@
                         ]
                       },
                       "Bottas, Hamilton, Vettel, Verstappen, Räikkönen",
-                      -3
+                      1
                     ],
                     "player": "Marjo"
                   },
@@ -9063,7 +9514,7 @@
                         ]
                       },
                       "Verstappen, Hamilton, Bottas, Vettel",
-                      -2
+                      2
                     ],
                     "player": "Kalle"
                   }
@@ -9385,7 +9836,7 @@
                           }
                         ]
                       },
-                      1
+                      0
                     ],
                     "player": "Santeri"
                   },
@@ -9435,7 +9886,7 @@
                           }
                         ]
                       },
-                      3
+                      1
                     ],
                     "player": "Kalle"
                   }
@@ -9800,7 +10251,7 @@
                       },
                       "Stroll",
                       "McLaren",
-                      2
+                      1
                     ],
                     "player": "Oskari"
                   },
@@ -9833,7 +10284,7 @@
                       },
                       "Stroll",
                       "Racing Point",
-                      4
+                      2
                     ],
                     "player": "Kalle"
                   }
@@ -10110,7 +10561,44 @@
           ]
         }
       ],
-      "archiveIntro": "Kauden 2020 ennustuksissa ensimmäinen luku on alkuperäinen ennuste koko kaudelle ja kursivoitu luku kauden lyhenemisen jälkeen päivitetty ennuste."
+      "archiveIntro": "Kauden 2020 ennustuksissa ensimmäinen luku on alkuperäinen ennuste koko kaudelle ja kursivoitu luku kauden lyhenemisen jälkeen päivitetty ennuste.",
+      "maximumPoints": {
+        "base": 86,
+        "bingo": 0,
+        "total": 86
+      }
     }
-  ]
+  ],
+  "maximumPointsByYear": {
+    "2020": {
+      "base": 86,
+      "bingo": 0,
+      "total": 86
+    },
+    "2021": {
+      "base": 90,
+      "bingo": 30,
+      "total": 120
+    },
+    "2022": {
+      "base": 165,
+      "bingo": 30,
+      "total": 195
+    },
+    "2023": {
+      "base": 217,
+      "bingo": 40,
+      "total": 257
+    },
+    "2024": {
+      "base": 272,
+      "bingo": 49,
+      "total": 321
+    },
+    "2025": {
+      "base": 267,
+      "bingo": 49,
+      "total": 316
+    }
+  }
 }

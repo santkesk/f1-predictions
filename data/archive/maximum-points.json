@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "source": "User-confirmed 2026-11-18",
+  "seasons": {
+    "2020": {
+      "base": 86,
+      "bingo": 0,
+      "total": 86
+    },
+    "2021": {
+      "base": 90,
+      "bingo": 30,
+      "total": 120
+    },
+    "2022": {
+      "base": 165,
+      "bingo": 30,
+      "total": 195
+    },
+    "2023": {
+      "base": 217,
+      "bingo": 40,
+      "total": 257
+    },
+    "2024": {
+      "base": 272,
+      "bingo": 49,
+      "total": 321
+    },
+    "2025": {
+      "base": 267,
+      "bingo": 49,
+      "total": 316
+    }
+  }
+}

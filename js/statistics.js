@@ -58,7 +58,10 @@
       const second=history.filter(row=>row.rank===2).length;
       const third=history.filter(row=>row.rank===3).length;
       const points=history.reduce((sum,row)=>sum+row.points,0);
-      return {...p,history,wins,second,third,podiums:wins+second+third,points,count:history.length,average:history.length?Math.round(points/history.length):0,best:history.length?Math.min(...history.map(row=>row.rank)):null};
+      const questionWins=history.reduce((sum,row)=>sum+(row.countback?.first||0),0);
+      const questionSeconds=history.reduce((sum,row)=>sum+(row.countback?.second||0),0);
+      const questionThirds=history.reduce((sum,row)=>sum+(row.countback?.third||0),0);
+      return {...p,history,wins,second,third,podiums:wins+second+third,points,questionWins,questionSeconds,questionThirds,count:history.length,average:history.length?Math.round(points/history.length):0,best:history.length?Math.min(...history.map(row=>row.rank)):null};
     });
     playerByName=new Map(players.map(p=>[p.name,p]));
     return {data,seasons,completedYears,years,players,playerByName};
@@ -130,8 +133,8 @@
     const rankNote=document.querySelector('.stats-card .stats-note');
     if(rankNote&&completedYears.length)rankNote.textContent=`– Ei osallistunut · ✓ Osallistuminen merkitty, sijoitus ei saatavilla. Kaavio näyttää päättyneet kaudet ${completedYears[0]}–${completedYears.at(-1)}.`;
     render('rank-chart',chart(model,players,'rank',true));
-    const ordered=[...(data.overallOrder||[]).map(name=>model.playerByName.get(name)).filter(Boolean),...players.filter(p=>!(data.overallOrder||[]).includes(p.name))];
-    render('overall',makeTable(['Nimi','Voitot','2. sijat','3. sijat','Podiumit','Pisteet','Pisteet / Maksimipisteet','Pisteet / Vuosi','Vuodet'],ordered.map(p=>[playerLink(p.name),p.wins,p.second,p.third,p.podiums,p.points,percent(p.overallPercent),p.average,p.count]),{id:'statsTable','data-sortable':true}));
+    const ordered=[...players].sort((a,b)=>b.points-a.points||b.wins-a.wins||a.name.localeCompare(b.name,'fi'));
+    render('overall',makeTable(['Nimi','Voitot','2. sijat','3. sijat','Podiumit','Kysymysvoitot','Kys. 2. sijat','Kys. 3. sijat','Pisteet','Pisteet / Maksimipisteet','Pisteet / Vuosi','Vuodet'],ordered.map(p=>[playerLink(p.name),p.wins,p.second,p.third,p.podiums,p.questionWins,p.questionSeconds,p.questionThirds,p.points,percent(p.overallPercent),p.average,p.count]),{id:'statsTable','data-sortable':true}));
     render('annual-statistics',seasons.filter(s=>s.status!=='predictions').map(s=>{
       const standings=[...s.standings].sort((a,b)=>a.rank-b.rank);
       return el('details',{class:'stats-card season-stats',id:`stats-${s.year}`},summary(s.year,`${standings.length} pelaajaa · Voittaja: ${standings[0]?.player||'–'}`),
@@ -187,7 +190,7 @@
     document.title=`F1 Ennustukset - ${p.name}`;
     const years=p.history.map(r=>r.year);const subtitle=years.length?`${Math.min(...years)}–${Math.max(...years)} · Päättyneet kaudet`:'Ei päättyneitä kausia';
     const profile=el('div',{class:'profile-hero',style:color},el('span',{class:'eyebrow'},'PELAAJAPROFIILI'),el('div',{class:'profile-heading'},el('span',{class:'player-monogram'},p.name[0]),el('div',{},el('h1',{},p.name),el('p',{},subtitle))));
-    const playerMetrics=metrics([['Voitot',p.wins],['Podiumit',p.podiums],['Pisteet',p.points],['Osuus maksimipisteistä',percent(p.overallPercent)],['Pisteet / vuosi',p.average],['Kaudet',p.count],['Paras sijoitus',p.best===null?'–':`${p.best}.`],['2. / 3. sijat',`${p.second} / ${p.third}`]],'profile-metrics',color);
+    const playerMetrics=metrics([['Voitot',p.wins],['Podiumit',p.podiums],['Pisteet',p.points],['Osuus maksimipisteistä',percent(p.overallPercent)],['Pisteet / vuosi',p.average],['Kaudet',p.count],['Paras sijoitus',p.best===null?'–':`${p.best}.`],['2. / 3. sijat',`${p.second} / ${p.third}`],['Kysymysvoitot',p.questionWins],['Kys. 2. / 3. sijat',`${p.questionSeconds} / ${p.questionThirds}`]],'profile-metrics',color);
     const history=section('Kausihistoria',scroll(makeTable(['Kausi','Sijoitus','Pisteet','Osuus maksimipisteistä','Vastaukset'],p.history.map(row=>[row.year,`${row.rank}.`,row.points,percent(row.percent),el('a',{href:resultLink(`year=${row.year}&player=${encodeURIComponent(p.name)}`)},'Katso vastaukset →')]),{},(_,i)=>i===0?{tag:'th',scope:'row'}:{}),'Kausihistoria'));
     const ongoing=Object.entries(model.data.participation||{}).filter(([y,names])=>names.includes(p.name)&&!years.includes(Number(y))).map(([year])=>el('p',{class:'stats-note'},`${year}: osallistuminen merkitty alkuperäisiin tilastoihin; lopputulosta ei vielä ole aineistossa.`));
     const links=el('div',{class:'stats-links'},el('a',{href:resultLink(`player=${encodeURIComponent(p.name)}`)},el('span',{},'ARKISTO'),el('strong',{},'Kaikki pelaajan vastaukset →')),el('a',{href:url('players.html')},el('span',{},'PELAAJAT'),el('strong',{},'Takaisin pelaajiin →')));
