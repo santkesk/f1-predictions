@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
 
 
-<link href="css/style.css" rel="stylesheet"/><link href="css/predictions.css" rel="stylesheet"/><script defer="" src="js/main.js"></script><script defer="" src="js/predictions.js"></script></head>
+<link href="css/style.css" rel="stylesheet"/><link href="css/predictions.css" rel="stylesheet"/><script defer="" src="js/main.js"></script><script defer src="js/prediction-core.js"></script><script defer src="js/prediction-submission.js"></script><script defer="" src="js/predictions.js"></script></head>
 <body data-page="predictions">
 <header class="site-header"><div class="header-inner">
 <a aria-label="F1 Ennustukset – etusivu" class="brand" href="index.html"><span aria-hidden="true" class="brand-mark">F1<span></span></span><span class="brand-name">ENNUSTUKSET</span></a>
@@ -22,9 +22,9 @@
 </div></header>
 <main><noscript><p class="data-error" role="alert">Ota JavaScript käyttöön, jotta sivun tiedot ja toiminnot voidaan ladata.</p></noscript>
 <h1>Ennustukset 2027</h1>
-<p>Tee ennustuksesi Formula 1 -kaudesta 2027 vaihe vaiheelta. Voit siirtyä osioiden välillä vapaasti ja muuttaa vastauksiasi ennen tallennusta. Lopuksi saat vastauksesi tekstitiedostona.</p>
-<p>Tarvitsetko apua? Tutustu <a href="teams.html" rel="noopener" target="_blank">talleihin ja kuljettajiin</a> tai <a href="seasonsinfo.html" rel="noopener" target="_blank">viime kausien tilastoihin</a> (avautuvat uuteen välilehteen). Älä sulje lomaketta ennen tallennusta.</p><br/>
-<div class="prediction-progress" hidden="" id="prediction-progress"><div class="progress-heading"><div><span class="eyebrow">YOUR RACE PLAN / 2027</span><strong id="progress-label">0 / 25 kysymystä vastattu</strong></div><strong id="progress-percent">0 %</strong></div><progress aria-label="Vastatut kysymykset" id="prediction-meter" max="25" value="0"></progress><div class="progress-bottom"><span id="current-stage"></span><span id="bingo-progress"></span></div></div><div aria-live="polite" data-render="prediction-status">Ladataan tietoja…</div><form hidden="" id="predictionForm"><div hidden="" id="stage-navigation"><nav aria-label="Ennustusten osiot" id="stage-list"></nav></div><div class="prediction-error" hidden="" id="prediction-error" role="alert"></div>
+<p>Tee ennustuksesi Formula 1 -kaudesta 2027 vaihe vaiheelta. Voit siirtyä osioiden välillä vapaasti ja muuttaa vastauksiasi ennen tallennusta. Luonnos tallentuu tähän selaimeen. Lähetä valmis ennustus viimeisessä vaiheessa.</p>
+<p>Tarvitsetko apua? Tutustu <a href="teams.html" rel="noopener" target="_blank">talleihin ja kuljettajiin</a> tai <a href="seasonsinfo.html" rel="noopener" target="_blank">viime kausien tilastoihin</a> (avautuvat uuteen välilehteen). Lähetys vahvistetaan erikseen vastaanottokuitilla.</p><br/>
+<p id="draft-status" role="status"></p><p id="submission-availability" role="status"></p><div class="prediction-progress" hidden="" id="prediction-progress"><div class="progress-heading"><div><span class="eyebrow">KISASUUNNITELMA / 2027</span><strong id="progress-label">0 / 25 kysymystä vastattu</strong></div><strong id="progress-percent">0 %</strong></div><progress aria-label="Vastatut kysymykset" id="prediction-meter" max="25" value="0"></progress><div class="progress-bottom"><span id="current-stage"></span><span id="bingo-progress"></span></div></div><div aria-live="polite" data-render="prediction-status">Ladataan tietoja…</div><form hidden="" id="predictionForm"><div hidden="" id="stage-navigation"><nav aria-label="Ennustusten osiot" id="stage-list"></nav></div><div class="prediction-error" hidden="" id="prediction-error" role="alert"></div>
 <!-- Championship -->
 
 <!-- Wins -->
@@ -74,19 +74,19 @@
 </div>
 </div>
 </section>
-<div class="prediction-actions"><button class="secondary-action" hidden="" id="previous-stage" type="button">← Edellinen</button><span hidden="" id="stage-position"></span><button class="primary-action" hidden="" id="next-stage" type="button">Seuraava →</button><button type="submit">Tallenna ennustukset</button></div>
+<div class="prediction-actions"><button class="secondary-action" hidden="" id="previous-stage" type="button">← Edellinen</button><span hidden="" id="stage-position"></span><button class="primary-action" hidden="" id="next-stage" type="button">Seuraava →</button><button type="submit">Lähetä ennustus</button></div>
 <p class="save-status" hidden="" id="saveStatus" role="status"></p>
 </form>
 <!-- Name dialog: shown after pressing Tallenna -->
 <div class="modal-overlay" hidden="" id="nameModal">
 <div aria-labelledby="nameModalTitle" aria-modal="true" class="modal-box" role="dialog">
 <h3 id="nameModalTitle">Kuka olet?</h3>
-<p>Kirjoita vielä nimesi, jotta vastaukset tallentuvat oikealle henkilölle.</p>
-<input autocomplete="name" id="playerName" maxlength="40" placeholder="Nimesi" type="text"/>
+<p>Valitse pelaaja ja kirjoita järjestäjältä saamasi henkilökohtainen koodi. Uusi lähetys korvaa aiemman ennustuksesi tuloksissa määräaikaan asti.</p>
+<label for="playerName">Pelaaja</label><select id="playerName"><option value="">Valitse pelaaja</option></select><label for="playerCode">Henkilökohtainen koodi</label><input id="playerCode" type="password" autocomplete="off" spellcheck="false" maxlength="100"/><p>Koodia ei tallenneta selaimeen. Älä käytä tässä muiden palveluiden salasanaa.</p>
 <p class="modal-error" hidden="" id="nameError">Kirjoita nimesi ennen tallennusta.</p>
 <div class="modal-buttons">
 <button class="btn-secondary" id="nameCancel" type="button">Takaisin lomakkeeseen</button>
-<button id="nameConfirm" type="button">Tallenna ennustukset</button>
+<button id="nameConfirm" type="button">Lähetä ennustus</button>
 </div>
 </div>
 </div>

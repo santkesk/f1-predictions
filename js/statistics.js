@@ -49,10 +49,11 @@
   function gameModel(data){
     playerByName=new Map(data.players.map(p=>[p.name,p]));
     const seasons=orderByYear(data.seasons);
-    const completedYears=seasons.map(s=>s.year).sort((a,b)=>a-b);
+    const completedSeasons=seasons.filter(s=>s.status!=='predictions');
+    const completedYears=completedSeasons.map(s=>s.year).sort((a,b)=>a-b);
     const years=[...new Set([...completedYears,...Object.keys(data.participation||{}).map(Number),data.prediction.season])].sort((a,b)=>a-b);
     const players=data.players.map(p=>{
-      const history=seasons.flatMap(s=>s.standings.filter(row=>row.player===p.name).map(row=>({...row,year:s.year})));
+      const history=completedSeasons.flatMap(s=>s.standings.filter(row=>row.player===p.name).map(row=>({...row,year:s.year})));
       const wins=history.filter(row=>row.rank===1).length;
       const second=history.filter(row=>row.rank===2).length;
       const third=history.filter(row=>row.rank===3).length;
@@ -123,7 +124,7 @@
   }
   function renderStatistics(model){
     const {players,seasons,years,completedYears,data}=model;
-    render('summary-metrics',metrics([['Päättyneet kaudet',String(seasons.length).padStart(2,'0')],['Pelaajat',String(players.length).padStart(2,'0')],['Eniten voittoja',Math.max(0,...players.map(p=>p.wins))]]));
+    render('summary-metrics',metrics([['Päättyneet kaudet',String(completedYears.length)],['Pelaajat',String(players.length).padStart(2,'0')],['Eniten voittoja',Math.max(0,...players.map(p=>p.wins))]]));
     const rankingRows=players.map(p=>[playerLink(p.name),...years.map(y=>p.history.find(h=>h.year===y)?.rank??((data.participation?.[y]||[]).includes(p.name)?'✓':'–'))]);
     render('rankings',makeTable(['Pelaaja',...years],rankingRows,{id:'mainTable'},(value,i)=>i&&typeof value==='number'&&value<=3?{class:`rank-${value}`}:value==='✓'?{title:'Osallistuminen merkitty; sijoitus ei vielä saatavilla'}:{}));
     const rankNote=document.querySelector('.stats-card .stats-note');
@@ -131,7 +132,7 @@
     render('rank-chart',chart(model,players,'rank',true));
     const ordered=[...(data.overallOrder||[]).map(name=>model.playerByName.get(name)).filter(Boolean),...players.filter(p=>!(data.overallOrder||[]).includes(p.name))];
     render('overall',makeTable(['Nimi','Voitot','2. sijat','3. sijat','Podiumit','Pisteet','Pisteet / Maksimipisteet','Pisteet / Vuosi','Vuodet'],ordered.map(p=>[playerLink(p.name),p.wins,p.second,p.third,p.podiums,p.points,percent(p.overallPercent),p.average,p.count]),{id:'statsTable','data-sortable':true}));
-    render('annual-statistics',seasons.map(s=>{
+    render('annual-statistics',seasons.filter(s=>s.status!=='predictions').map(s=>{
       const standings=[...s.standings].sort((a,b)=>a.rank-b.rank);
       return el('details',{class:'stats-card season-stats',id:`stats-${s.year}`},summary(s.year,`${standings.length} pelaajaa · Voittaja: ${standings[0]?.player||'–'}`),
         el('div',{class:'season-content'},el('div',{class:'season-grid'},scroll(makeTable(['Nimi','Pisteet','%'],standings.map(r=>[playerLink(r.player),r.points,percent(r.percent)]))),barChart(standings)),el('a',{class:'stats-text-link',href:resultLink(`year=${s.year}`)},'Katso kauden vastaukset →')));
@@ -147,7 +148,7 @@
       const groups=s.categories.map(c=>el('details',{class:'archive-category','data-category':c.name,'data-questions':JSON.stringify(c.questions)},el('summary',{},c.name),
         el('div',{class:'table-wrap',role:'region',tabindex:'0','aria-label':`${c.name} – taulukot`},c.blocks.map(b=>b.table?makeTable(b.table.columns,b.table.rows,{class:b.table.type==='answers'?'answer-table':'correct-table','aria-label':b.table.label,caption:b.table.caption},(_,i)=>b.table.type==='answers'&&i===b.table.columns.length-1?{class:'points'}:{}):el('p',{},b.note)))));
       const totals=s.archiveTotals||s.standings.map(r=>({player:r.player,points:r.points}));
-      return el('details',{class:'results-section archive-season','data-year':s.year,id:`results-${s.year}`},summary(s.year,`${s.categories.length} kategoriaa`),s.archiveIntro?el('p',{},s.archiveIntro):null,groups,el('p',{class:'results-total'},'Kokonaistulokset: '+totals.map(r=>`${r.player} ${r.points}`).join(' • ')));
+      return el('details',{class:'results-section archive-season','data-year':s.year,id:`results-${s.year}`},summary(s.year,`${s.categories.length} kategoriaa`),s.archiveIntro?el('p',{},s.archiveIntro):null,groups,el('p',{class:'results-total'},(s.status==='predictions'?'Pisteytys odottaa vahvistusta. ':'Kokonaistulokset: ')+totals.map(r=>`${r.player} ${r.points}`).join(' • ')));
     });
     render('archive',seasonNodes);document.querySelector('.filter-panel').hidden=false;
     // Filter logic works on the generated data-backed table nodes.
@@ -197,10 +198,21 @@
     return el('p',{class:'photo-credit'},'© ',el('a',{href:c.authorUrl},c.author),' · ',el('a',{href:c.source,title:c.title},'Wikimedia Commons'),' · ',el('a',{href:c.licenseUrl},c.license),el('span',{class:'photo-modifications'},c.modifications));
   }
   function renderTeams(data){
-    render('teams',el('div',{class:'team-container'},data.teams.map(team=>{
-      const rows=Object.entries(team.overviewStats).map(([label,v])=>[label,v,...team.drivers.map(d=>d.careerStats[label])]);
+    render('teams',statsSources(data),el('div',{class:'team-container'},data.teams.map(team=>{
+      const rows=Object.entries(team.overviewStats).map(([label,v])=>[label,v,...team.drivers.map(d=>d.careerStats?.[label])]);
       return el('div',{class:`team-row team-${team.id}`},el('div',{class:'team-img-container'},el('a',{href:url(`Teams/${team.id}.html`)},el('img',{class:'team-img',src:url(team.image),alt:team.imageAlt,loading:'lazy'}),el('h3',{class:'team-name-overlay'},team.name))),el('div',{class:'team-info'},makeTable(['',team.name,...team.drivers.map(d=>d.name)],rows,{class:'driver-stats'})));
     })));
+  }
+  function statsSources(data,team){
+    const meta=data.statistics;if(!meta)return null;
+    const sources=team?team.statSources:meta.sources;
+    return el('aside',{class:'stats-card stats-provenance','aria-label':'Tilastojen lähteet ja rajaus'},
+      el('p',{},el('strong',{},`Tilastot tarkistettu ${meta.checkedLabel}`),` · ${meta.throughLabel}`),
+      el('p',{class:'stats-note'},meta.method),
+      team?.historyNote?el('p',{class:'stats-note'},team.historyNote):null,
+      el('details',{},el('summary',{},'Lähteet ja laskentatapa'),
+        el('p',{class:'stats-note'},meta.detail),
+        el('ul',{},(sources||[]).map(s=>el('li',{},el('a',{href:s.url},s.label))))));
   }
   function renderTeam(data){
     const team=data.teams.find(t=>t.id===document.body.dataset.id);if(!team)throw new Error('Tallia ei löydy');
@@ -210,7 +222,8 @@
     const grid=el('div',{class:'team-grid'},el('section',{class:'team-card'},el('h2',{},'Moottori'),el('p',{class:'engine-chip'},team.engine),el('h2',{},'Kuljettajat'),el('ul',{class:'driver-list'},team.drivers.map(d=>el('li',{},d.profileName||d.name)))),el('section',{class:'team-card'},el('h2',{},team.achievementHeading),el('div',{class:'stat-tiles'},Object.entries(team.achievements).map(([label,value])=>el('div',{class:'stat-tile'},el('span',{class:'stat-value'},value),el('span',{class:'stat-label'},label))))));
     const history=team.history?el('section',{class:'team-card team-history'},el('h2',{},'Tallin historia'),el('div',{class:'table-scroll'},makeTable(team.history.columns,team.history.rows,{class:'achievements-table'}))):null;
     const switcher=el('div',{class:'team-switcher'},el('h2',{},'Muut tallit'),data.teams.map(t=>el('a',{href:url(`Teams/${t.id}.html`),class:t.id===team.id?'current':null,'aria-current':t.id===team.id?'page':null,style:{'--dot':teamToken(t.id)}},t.name)));
-    render('team-profile',hero,photoCredit(team),grid,history,switcher);
+    const driverStats=el('section',{class:'team-card'},el('h2',{},'Kuljettajien uratilastot'),scroll(makeTable(['',...team.drivers.map(d=>d.name)],Object.keys(team.overviewStats).map(label=>[label,...team.drivers.map(d=>d.careerStats?.[label])]),{class:'achievements-table'},(_,i)=>i===0?{tag:'th',scope:'row'}:{})));
+    render('team-profile',hero,photoCredit(team),statsSources(data,team),grid,driverStats,history,switcher);
   }
   function renderHistory(data){
     const categories=data.historicalResults;

@@ -1,265 +1,52 @@
 {
   "schemaVersion": 1,
-  "source": "Existing website snapshot, not a live Formula 1 feed. Historical figures and roster spellings preserved.",
-  "referenceSeason": 2026,
+  "source": "Career and constructor statistics checked against Formula1.com on 2026-11-18, through 2026 Sao Paulo GP. Team history uses explicitly separated constructor eras. Owner-supplied 2027 roster retained.",
+  "referenceSeason": 2027,
   "teams": [
-    {
-      "id": "mclaren",
-      "name": "McLaren",
-      "image": "images/mclaren.webp",
-      "imageAlt": "McLaren – F1-auto Itävallan GP:ssä 2026",
-      "engine": "Mercedes",
-      "activeYears": "Formula 1:ssä 1966–",
-      "overviewStats": {
-        "Maailmanmestaruudet": 10,
-        "Voitot": 201,
-        "Podiumit": 551,
-        "Paalupaikat": 173,
-        "Nopeimmat kierrokset": 183
-      },
-      "achievementHeading": "Saavutukset",
-      "achievements": {
-        "Maailmanmestaruudet": 9,
-        "Voitot": 201,
-        "Podiumit": 551,
-        "Paalupaikat": 173,
-        "Nopeimmat kierrokset": 183
-      },
-      "drivers": [
-        {
-          "name": "Oscar Piastri",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 9,
-            "Podiumit": 23,
-            "Paalupaikat": 5,
-            "Nopeimmat kierrokset": 8
-          }
-        },
-        {
-          "name": "Lando Norris",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 9,
-            "Podiumit": 39,
-            "Paalupaikat": 13,
-            "Nopeimmat kierrokset": 18
-          }
-        }
-      ],
-      "imageCredit": {
-        "title": "FIA F1 Austria 2026 Nr. 81 Piastri (1).jpg",
-        "author": "Lukas Raich",
-        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
-        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._81_Piastri_(1).jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
-    },
-    {
-      "id": "ferrari",
-      "name": "Ferrari",
-      "image": "images/ferrari.webp",
-      "imageAlt": "Ferrari – F1-auto Itävallan GP:ssä 2026",
-      "engine": "Ferrari",
-      "activeYears": "Formula 1:ssä 1950–",
-      "overviewStats": {
-        "Maailmanmestaruudet": 16,
-        "Voitot": 248,
-        "Podiumit": 834,
-        "Paalupaikat": 254,
-        "Nopeimmat kierrokset": 263
-      },
-      "achievementHeading": "Saavutukset",
-      "achievements": {
-        "Maailmanmestaruudet": 16,
-        "Voitot": 247,
-        "Podiumit": 829,
-        "Paalupaikat": 254,
-        "Nopeimmat kierrokset": 262
-      },
-      "drivers": [
-        {
-          "name": "Charles Leclerc",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 7,
-            "Podiumit": 35,
-            "Paalupaikat": 23,
-            "Nopeimmat kierrokset": 9
-          }
-        },
-        {
-          "name": "Lewis Hamilton",
-          "careerStats": {
-            "Maailmanmestaruudet": 7,
-            "Voitot": 103,
-            "Podiumit": 197,
-            "Paalupaikat": 104,
-            "Nopeimmat kierrokset": 65
-          }
-        }
-      ],
-      "imageCredit": {
-        "title": "FIA F1 Austria 2026 Nr. 44 Hamilton (1).jpg",
-        "author": "Lukas Raich",
-        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
-        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._44_Hamilton_(1).jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
-    },
-    {
-      "id": "redbull",
-      "name": "Red Bull",
-      "image": "images/redbull.webp",
-      "imageAlt": "Red Bull – F1-auto Itävallan GP:ssä 2026",
-      "engine": "Red Bull Ford",
-      "activeYears": "Formula 1:ssä 1997–",
-      "overviewStats": {
-        "Maailmanmestaruudet": 6,
-        "Voitot": 126,
-        "Podiumit": 290,
-        "Paalupaikat": 109,
-        "Nopeimmat kierrokset": 101
-      },
-      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
-      "achievements": {
-        "Maailmanmestaruudet": 8,
-        "Voitot": 131,
-        "Podiumit": 313,
-        "Paalupaikat": 148,
-        "Nopeimmat kierrokset": 117
-      },
-      "drivers": [
-        {
-          "name": "Max Verstappen",
-          "careerStats": {
-            "Maailmanmestaruudet": 3,
-            "Voitot": 61,
-            "Podiumit": 103,
-            "Paalupaikat": 39,
-            "Nopeimmat kierrokset": 32
-          }
-        },
-        {
-          "name": "Yuki Tsunoda",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 0,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          }
-        }
-      ],
-      "history": {
-        "columns": [
-          "",
-          "Red Bull",
-          "Jaguar",
-          "Stewart",
-          "Kaikki"
-        ],
-        "rows": [
-          [
-            "Vuodet",
-            "2010–",
-            "2000–2004",
-            "1997–1999",
-            "1997–"
-          ],
-          [
-            "Maailmanmestaruudet",
-            8,
-            0,
-            0,
-            8
-          ],
-          [
-            "Voitot",
-            130,
-            0,
-            1,
-            131
-          ],
-          [
-            "Podiumit",
-            306,
-            2,
-            5,
-            313
-          ],
-          [
-            "Paalupaikat",
-            142,
-            5,
-            1,
-            148
-          ],
-          [
-            "Nopeimmat kierrokset",
-            113,
-            4,
-            0,
-            117
-          ]
-        ]
-      },
-      "imageCredit": {
-        "title": "FIA F1 Austria 2026 Nr. 3 Verstappen (1).jpg",
-        "author": "Lukas Raich",
-        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
-        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._3_Verstappen_(1).jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
-    },
     {
       "id": "mercedes",
       "name": "Mercedes",
       "image": "images/mercedes.webp",
       "imageAlt": "Mercedes – F1-auto Itävallan GP:ssä 2026",
       "engine": "Mercedes",
-      "activeYears": "Formula 1:ssä 1970–",
+      "activeYears": "Mercedes 2010– · tallihistoria 1970–",
       "overviewStats": {
-        "Maailmanmestaruudet": 8,
-        "Voitot": 130,
-        "Podiumit": 306,
-        "Paalupaikat": 142,
-        "Nopeimmat kierrokset": 113
+        "Maailmanmestaruudet": 9,
+        "Voitot": 134,
+        "Podiumit": 317,
+        "Paalupaikat": 147,
+        "Nopeimmat kierrokset": 116
       },
-      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
+      "achievementHeading": "Saavutukset (tallihistoria yhteensä)",
       "achievements": {
-        "Maailmanmestaruudet": 10,
-        "Voitot": 163,
-        "Podiumit": 413,
-        "Paalupaikat": 164,
-        "Nopeimmat kierrokset": 137
+        "Maailmanmestaruudet": 11,
+        "Voitot": 166,
+        "Podiumit": 428,
+        "Paalupaikat": 169,
+        "Nopeimmat kierrokset": 140
       },
       "drivers": [
+        {
+          "name": "Kimi Antonelli",
+          "careerStats": {
+            "Maailmanmestaruudet": 1,
+            "Voitot": 9,
+            "Podiumit": 19,
+            "Paalupaikat": 7,
+            "Nopeimmat kierrokset": 11
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/kimi-antonelli"
+        },
         {
           "name": "George Russell",
           "careerStats": {
             "Maailmanmestaruudet": 0,
-            "Voitot": 1,
-            "Podiumit": 11,
-            "Paalupaikat": 1,
-            "Nopeimmat kierrokset": 6
-          }
-        },
-        {
-          "name": "Kimi Antonelli",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 0,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          }
+            "Voitot": 8,
+            "Podiumit": 32,
+            "Paalupaikat": 12,
+            "Nopeimmat kierrokset": 13
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/george-russell"
         }
       ],
       "history": {
@@ -270,13 +57,13 @@
           "Honda",
           "BAR",
           "Tyrrell",
-          "Kaikki"
+          "Yhteensä"
         ],
         "rows": [
           [
             "Vuodet",
             "2010–",
-            2009,
+            "2009",
             "2006–2008",
             "1999–2005",
             "1970–1998",
@@ -284,48 +71,48 @@
           ],
           [
             "Maailmanmestaruudet",
-            8,
+            9,
             1,
             0,
             0,
             1,
-            10
+            11
           ],
           [
             "Voitot",
-            130,
+            134,
             8,
             1,
             0,
-            24,
-            163
+            23,
+            166
           ],
           [
             "Podiumit",
-            306,
+            317,
             15,
             4,
             15,
-            73,
-            413
+            77,
+            428
           ],
           [
             "Paalupaikat",
-            142,
+            147,
             5,
             1,
             2,
             14,
-            164
+            169
           ],
           [
             "Nopeimmat kierrokset",
-            113,
+            116,
             4,
             0,
             0,
             20,
-            137
+            140
           ]
         ]
       },
@@ -337,7 +124,766 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ],
+      "historyNote": "Mercedes-luvut koskevat nykyistä tallia vuodesta 2010. Vuosien 1954–1955 tehdastalli ei kuulu tähän talliketjuun. Historia alkaa Tyrrellin omista F1-autoista vuonna 1970."
+    },
+    {
+      "id": "ferrari",
+      "name": "Ferrari",
+      "image": "images/ferrari.webp",
+      "imageAlt": "Ferrari – F1-auto Itävallan GP:ssä 2026",
+      "engine": "Ferrari",
+      "activeYears": "Formula 1:ssä 1950–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 16,
+        "Voitot": 250,
+        "Podiumit": 849,
+        "Paalupaikat": 255,
+        "Nopeimmat kierrokset": 271
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 16,
+        "Voitot": 250,
+        "Podiumit": 849,
+        "Paalupaikat": 255,
+        "Nopeimmat kierrokset": 271
+      },
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 9,
+            "Podiumit": 56,
+            "Paalupaikat": 27,
+            "Nopeimmat kierrokset": 15
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/charles-leclerc"
+        },
+        {
+          "name": "Lewis Hamilton",
+          "careerStats": {
+            "Maailmanmestaruudet": 7,
+            "Voitot": 106,
+            "Podiumit": 209,
+            "Paalupaikat": 105,
+            "Nopeimmat kierrokset": 70
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/lewis-hamilton"
+        }
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 44 Hamilton (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._44_Hamilton_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ]
+    },
+    {
+      "id": "redbull",
+      "name": "Red Bull",
+      "image": "images/redbull.webp",
+      "imageAlt": "Red Bull – F1-auto Itävallan GP:ssä 2026",
+      "engine": "Red Bull Ford",
+      "activeYears": "Red Bull 2005– · tallihistoria 1997–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 6,
+        "Voitot": 133,
+        "Podiumit": 312,
+        "Paalupaikat": 113,
+        "Nopeimmat kierrokset": 104
+      },
+      "achievementHeading": "Saavutukset (tallihistoria yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 6,
+        "Voitot": 134,
+        "Podiumit": 319,
+        "Paalupaikat": 114,
+        "Nopeimmat kierrokset": 104
+      },
+      "drivers": [
+        {
+          "name": "Max Verstappen",
+          "careerStats": {
+            "Maailmanmestaruudet": 4,
+            "Voitot": 74,
+            "Podiumit": 139,
+            "Paalupaikat": 50,
+            "Nopeimmat kierrokset": 38
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/max-verstappen"
+        },
+        {
+          "name": "Isack Hadjar",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 4,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/isack-hadjar"
+        }
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Red Bull",
+          "Jaguar",
+          "Stewart",
+          "Yhteensä"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2005–",
+            "2000–2004",
+            "1997–1999",
+            "1997–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            6,
+            0,
+            0,
+            6
+          ],
+          [
+            "Voitot",
+            133,
+            0,
+            1,
+            134
+          ],
+          [
+            "Podiumit",
+            312,
+            2,
+            5,
+            319
+          ],
+          [
+            "Paalupaikat",
+            113,
+            0,
+            1,
+            114
+          ],
+          [
+            "Nopeimmat kierrokset",
+            104,
+            0,
+            0,
+            104
+          ]
+        ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 3 Verstappen (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._3_Verstappen_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ],
+      "historyNote": "Red Bull aloitti vuonna 2005. Jaguarin ja Stewartin tulokset on eritelty omiin sarakkeisiinsa."
+    },
+    {
+      "id": "mclaren",
+      "name": "McLaren",
+      "image": "images/mclaren.webp",
+      "imageAlt": "McLaren – F1-auto Itävallan GP:ssä 2026",
+      "engine": "Mercedes",
+      "activeYears": "Formula 1:ssä 1966–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 10,
+        "Voitot": 206,
+        "Podiumit": 566,
+        "Paalupaikat": 181,
+        "Nopeimmat kierrokset": 186
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 10,
+        "Voitot": 206,
+        "Podiumit": 566,
+        "Paalupaikat": 181,
+        "Nopeimmat kierrokset": 186
+      },
+      "drivers": [
+        {
+          "name": "Lando Norris",
+          "careerStats": {
+            "Maailmanmestaruudet": 1,
+            "Voitot": 14,
+            "Podiumit": 50,
+            "Paalupaikat": 20,
+            "Nopeimmat kierrokset": 20
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/lando-norris"
+        },
+        {
+          "name": "Oscar Piastri",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 9,
+            "Podiumit": 28,
+            "Paalupaikat": 6,
+            "Nopeimmat kierrokset": 9
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/oscar-piastri"
+        }
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 81 Piastri (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._81_Piastri_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ]
+    },
+    {
+      "id": "racingbulls",
+      "name": "Racing Bulls",
+      "image": "images/racingbulls.webp",
+      "imageAlt": "Racing Bulls – F1-auto Itävallan GP:ssä 2026",
+      "engine": "Red Bull Ford",
+      "activeYears": "Racing Bulls 2025– · tallihistoria 1985–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 1,
+        "Paalupaikat": 0,
+        "Nopeimmat kierrokset": 0
+      },
+      "achievementHeading": "Saavutukset (tallihistoria yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 2,
+        "Podiumit": 6,
+        "Paalupaikat": 1,
+        "Nopeimmat kierrokset": 4
+      },
+      "drivers": [
+        {
+          "name": "Liam Lawson",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/liam-lawson"
+        },
+        {
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          },
+          "name": "Arvid Lindblad",
+          "statsSource": "https://www.formula1.com/en/drivers/arvid-lindblad"
+        }
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Racing Bulls",
+          "RB",
+          "AlphaTauri",
+          "Toro Rosso",
+          "Minardi",
+          "Yhteensä"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2025–",
+            "2024",
+            "2020–2023",
+            "2006–2019",
+            "1985–2005",
+            "1985–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "Voitot",
+            0,
+            0,
+            1,
+            1,
+            0,
+            2
+          ],
+          [
+            "Podiumit",
+            1,
+            0,
+            2,
+            3,
+            0,
+            6
+          ],
+          [
+            "Paalupaikat",
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            "Nopeimmat kierrokset",
+            0,
+            1,
+            2,
+            1,
+            0,
+            4
+          ]
+        ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 41 Lindblad (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._41_Lindblad_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ],
+      "historyNote": "Vuoden 2024 RB ja vuodesta 2025 käytetty Racing Bulls on erotettu. Toro Rosson ja AlphaTaurin voitot näkyvät historiassa."
+    },
+    {
+      "id": "alpine",
+      "name": "Alpine",
+      "image": "images/alpine.webp",
+      "imageAlt": "Alpine – F1-auto Itävallan GP:ssä 2026",
+      "engine": "Mercedes",
+      "activeYears": "Alpine 2021– · tallihistoria 1981–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 1,
+        "Podiumit": 6,
+        "Paalupaikat": 1,
+        "Nopeimmat kierrokset": 1
+      },
+      "achievementHeading": "Saavutukset (tallihistoria yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 3,
+        "Voitot": 50,
+        "Podiumit": 198,
+        "Paalupaikat": 37,
+        "Nopeimmat kierrokset": 59
+      },
+      "drivers": [
+        {
+          "name": "Pierre Gasly",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 1,
+            "Podiumit": 5,
+            "Paalupaikat": 1,
+            "Nopeimmat kierrokset": 3
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/pierre-gasly"
+        },
+        {
+          "name": "Franco Colapinto",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/franco-colapinto"
+        }
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Alpine",
+          "Renault",
+          "Lotus F1",
+          "Benetton",
+          "Toleman",
+          "Yhteensä"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2021–",
+            "2002–2011, 2016–2020",
+            "2012–2015",
+            "1986–2001",
+            "1981–1985",
+            "1981–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            0,
+            2,
+            0,
+            1,
+            0,
+            3
+          ],
+          [
+            "Voitot",
+            1,
+            20,
+            2,
+            27,
+            0,
+            50
+          ],
+          [
+            "Podiumit",
+            6,
+            62,
+            25,
+            102,
+            3,
+            198
+          ],
+          [
+            "Paalupaikat",
+            1,
+            20,
+            0,
+            15,
+            1,
+            37
+          ],
+          [
+            "Nopeimmat kierrokset",
+            1,
+            15,
+            5,
+            36,
+            2,
+            59
+          ]
+        ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 10 Gasly (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._10_Gasly_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ],
+      "historyNote": "Renault-luvut sisältävät vain Enstonen tallin kaudet. Alkuperäinen Renault 1977–1985 ja Team Lotus 1958–1994 eivät kuulu yhteissummaan."
+    },
+    {
+      "id": "haas",
+      "name": "Haas",
+      "image": "images/haas.webp",
+      "imageAlt": "Haas – F1-auto Itävallan GP:ssä 2026",
+      "engine": "Ferrari",
+      "activeYears": "Formula 1:ssä 2016–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 0,
+        "Paalupaikat": 1,
+        "Nopeimmat kierrokset": 3
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 0,
+        "Paalupaikat": 1,
+        "Nopeimmat kierrokset": 3
+      },
+      "drivers": [
+        {
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          },
+          "name": "Rafael Camara",
+          "statsSource": "https://www.formula1.com/en/drivers/rafael-camara"
+        },
+        {
+          "name": "Oliver Bearman",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/oliver-bearman"
+        }
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 87 Bearman (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._87_Bearman_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ],
+      "historyNote": "Haasin tilastot alkavat vuodesta 2016. Aiempi Haas Lola -talli ei kuulu samoihin tilastoihin."
+    },
+    {
+      "id": "audi",
+      "name": "Audi",
+      "image": "images/audi.webp",
+      "imageAlt": "Audi – F1-auto Itävallan GP:ssä 2026",
+      "engine": "Audi",
+      "activeYears": "Audi 2026– · tallihistoria 1993–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 0,
+        "Podiumit": 0,
+        "Paalupaikat": 0,
+        "Nopeimmat kierrokset": 0
+      },
+      "achievementHeading": "Saavutukset (tallihistoria yhteensä)",
+      "achievements": {
+        "Maailmanmestaruudet": 0,
+        "Voitot": 1,
+        "Podiumit": 28,
+        "Paalupaikat": 1,
+        "Nopeimmat kierrokset": 7
+      },
+      "drivers": [
+        {
+          "name": "Gabriel Bortoleto",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 0,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 0
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/gabriel-bortoleto"
+        },
+        {
+          "name": "Nico Hülkenberg",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 1,
+            "Paalupaikat": 1,
+            "Nopeimmat kierrokset": 2
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/nico-hulkenberg"
+        }
+      ],
+      "aliases": [
+        "Sauber"
+      ],
+      "history": {
+        "columns": [
+          "",
+          "Audi",
+          "Sauber",
+          "Alfa Romeo",
+          "BMW Sauber",
+          "Yhteensä"
+        ],
+        "rows": [
+          [
+            "Vuodet",
+            "2026–",
+            "1993–2005, 2010–2018, 2024–2025",
+            "2019–2023",
+            "2006–2009",
+            "1993–"
+          ],
+          [
+            "Maailmanmestaruudet",
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "Voitot",
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            "Podiumit",
+            0,
+            11,
+            0,
+            17,
+            28
+          ],
+          [
+            "Paalupaikat",
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            "Nopeimmat kierrokset",
+            0,
+            3,
+            2,
+            2,
+            7
+          ]
+        ]
+      },
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 27 Hülkenberg (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._27_H%C3%BClkenberg_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ],
+      "historyNote": "Sauberin ja BMW Sauberin tulokset on erotettu, joten BMW-kauden saavutukset lasketaan vain kerran. Alfa Romeo tarkoittaa tässä Sauberin vuosia 2019–2023."
+    },
+    {
+      "id": "williams",
+      "name": "Williams",
+      "image": "images/williams.webp",
+      "imageAlt": "Williams – F1-auto Itävallan GP:ssä 2026",
+      "engine": "Mercedes",
+      "activeYears": "Formula 1:ssä 1977– · oma auto 1978–",
+      "overviewStats": {
+        "Maailmanmestaruudet": 9,
+        "Voitot": 114,
+        "Podiumit": 314,
+        "Paalupaikat": 128,
+        "Nopeimmat kierrokset": 136
+      },
+      "achievementHeading": "Saavutukset",
+      "achievements": {
+        "Maailmanmestaruudet": 9,
+        "Voitot": 114,
+        "Podiumit": 314,
+        "Paalupaikat": 128,
+        "Nopeimmat kierrokset": 136
+      },
+      "drivers": [
+        {
+          "name": "Alexander Albon",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 0,
+            "Podiumit": 2,
+            "Paalupaikat": 0,
+            "Nopeimmat kierrokset": 1
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/alexander-albon"
+        },
+        {
+          "name": "Carlos Sainz",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 4,
+            "Podiumit": 29,
+            "Paalupaikat": 6,
+            "Nopeimmat kierrokset": 4
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/carlos-sainz"
+        }
+      ],
+      "imageCredit": {
+        "title": "FIA F1 Austria 2026 Nr. 23 Albon (1).jpg",
+        "author": "Lukas Raich",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
+        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._23_Albon_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ],
+      "historyNote": "Williamsin omien autojen tilastot alkavat vuodesta 1978. Vuonna 1977 talli käytti Marchin autoa."
     },
     {
       "id": "astonmartin",
@@ -345,7 +891,7 @@
       "image": "images/astonmartin.webp",
       "imageAlt": "Aston Martin – F1-auto Itävallan GP:ssä 2026",
       "engine": "Honda",
-      "activeYears": "Formula 1:ssä 1991–",
+      "activeYears": "Aston Martin 2021– · tallihistoria 1991–",
       "overviewStats": {
         "Maailmanmestaruudet": 0,
         "Voitot": 0,
@@ -353,7 +899,7 @@
         "Paalupaikat": 0,
         "Nopeimmat kierrokset": 3
       },
-      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
+      "achievementHeading": "Saavutukset (tallihistoria yhteensä)",
       "achievements": {
         "Maailmanmestaruudet": 0,
         "Voitot": 5,
@@ -363,6 +909,17 @@
       },
       "drivers": [
         {
+          "name": "Fernando Alonso",
+          "careerStats": {
+            "Maailmanmestaruudet": 2,
+            "Voitot": 32,
+            "Podiumit": 106,
+            "Paalupaikat": 22,
+            "Nopeimmat kierrokset": 26
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/fernando-alonso"
+        },
+        {
           "name": "Lance Stroll",
           "careerStats": {
             "Maailmanmestaruudet": 0,
@@ -370,17 +927,8 @@
             "Podiumit": 3,
             "Paalupaikat": 1,
             "Nopeimmat kierrokset": 0
-          }
-        },
-        {
-          "name": "Fernando Alonso",
-          "careerStats": {
-            "Maailmanmestaruudet": 2,
-            "Voitot": 32,
-            "Podiumit": 106,
-            "Paalupaikat": 22,
-            "Nopeimmat kierrokset": 23
-          }
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/lance-stroll"
         }
       ],
       "history": {
@@ -392,16 +940,16 @@
           "Spyker",
           "Midland",
           "Jordan",
-          "Kaikki"
+          "Yhteensä"
         ],
         "rows": [
           [
             "Vuodet",
             "2021–",
-            "2019–2020",
+            "2018–2020",
             "2008–2018",
-            2007,
-            2006,
+            "2007",
+            "2006",
             "1991–2005",
             "1991–"
           ],
@@ -465,468 +1013,14 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
-    },
-    {
-      "id": "alpine",
-      "name": "Alpine",
-      "image": "images/alpine.webp",
-      "imageAlt": "Alpine – F1-auto Itävallan GP:ssä 2026",
-      "engine": "Mercedes",
-      "activeYears": "Formula 1:ssä 1981–",
-      "overviewStats": {
-        "Maailmanmestaruudet": 0,
-        "Voitot": 1,
-        "Podiumit": 6,
-        "Paalupaikat": 0,
-        "Nopeimmat kierrokset": 1
       },
-      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
-      "achievements": {
-        "Maailmanmestaruudet": 3,
-        "Voitot": 65,
-        "Podiumit": 236,
-        "Paalupaikat": 66,
-        "Nopeimmat kierrokset": 75
-      },
-      "drivers": [
+      "statSources": [
         {
-          "name": "Pierre Gasly",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 1,
-            "Podiumit": 4,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 1
-          }
-        },
-        {
-          "name": "Franco Colapinto",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 0,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          }
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
         }
       ],
-      "history": {
-        "columns": [
-          "",
-          "Alpine",
-          "Renault",
-          "Lotus",
-          "Benetton",
-          "Toleman",
-          "Kaikki"
-        ],
-        "rows": [
-          [
-            "Vuodet",
-            "2021–",
-            "2002–2011, 2016–2020",
-            "2012–2015",
-            "1986–2001",
-            "1981–1985",
-            "1981–"
-          ],
-          [
-            "Maailmanmestaruudet",
-            0,
-            2,
-            0,
-            1,
-            0,
-            3
-          ],
-          [
-            "Voitot",
-            1,
-            35,
-            2,
-            27,
-            0,
-            65
-          ],
-          [
-            "Podiumit",
-            6,
-            103,
-            25,
-            102,
-            0,
-            236
-          ],
-          [
-            "Paalupaikat",
-            0,
-            51,
-            0,
-            15,
-            0,
-            66
-          ],
-          [
-            "Nopeimmat kierrokset",
-            1,
-            33,
-            5,
-            36,
-            0,
-            75
-          ]
-        ]
-      },
-      "imageCredit": {
-        "title": "FIA F1 Austria 2026 Nr. 10 Gasly (1).jpg",
-        "author": "Lukas Raich",
-        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
-        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._10_Gasly_(1).jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
-    },
-    {
-      "id": "haas",
-      "name": "Haas",
-      "image": "images/haas.webp",
-      "imageAlt": "Haas – F1-auto Itävallan GP:ssä 2026",
-      "engine": "Ferrari",
-      "activeYears": "Formula 1:ssä 2016–",
-      "overviewStats": {
-        "Maailmanmestaruudet": 0,
-        "Voitot": 0,
-        "Podiumit": 0,
-        "Paalupaikat": 1,
-        "Nopeimmat kierrokset": 3
-      },
-      "achievementHeading": "Saavutukset",
-      "achievements": {
-        "Maailmanmestaruudet": 0,
-        "Voitot": 0,
-        "Podiumit": 0,
-        "Paalupaikat": 1,
-        "Nopeimmat kierrokset": 3
-      },
-      "drivers": [
-        {
-          "name": "Esteban Ocon",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 1,
-            "Podiumit": 4,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 1
-          }
-        },
-        {
-          "name": "Oliver Bearman",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 0,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          }
-        }
-      ],
-      "imageCredit": {
-        "title": "FIA F1 Austria 2026 Nr. 87 Bearman (1).jpg",
-        "author": "Lukas Raich",
-        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
-        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._87_Bearman_(1).jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
-    },
-    {
-      "id": "racingbulls",
-      "name": "Racing Bulls",
-      "image": "images/racingbulls.webp",
-      "imageAlt": "Racing Bulls – F1-auto Itävallan GP:ssä 2026",
-      "engine": "Red Bull Ford",
-      "activeYears": "Formula 1:ssä 1985–",
-      "overviewStats": {
-        "Maailmanmestaruudet": 0,
-        "Voitot": 0,
-        "Podiumit": 1,
-        "Paalupaikat": 0,
-        "Nopeimmat kierrokset": 0
-      },
-      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
-      "achievements": {
-        "Maailmanmestaruudet": 0,
-        "Voitot": 2,
-        "Podiumit": 6,
-        "Paalupaikat": 1,
-        "Nopeimmat kierrokset": 4
-      },
-      "drivers": [
-        {
-          "name": "Isack Hadjar",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 1,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          }
-        },
-        {
-          "name": "Liam Lawson",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 0,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          }
-        }
-      ],
-      "history": {
-        "columns": [
-          "",
-          "Racing Bulls",
-          "AlphaTauri",
-          "Toro Rosso",
-          "Minardi",
-          "Kaikki"
-        ],
-        "rows": [
-          [
-            "Vuodet",
-            "2024–",
-            "2020–2023",
-            "2006–2019",
-            "1985–2005",
-            "1985–"
-          ],
-          [
-            "Maailmanmestaruudet",
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          [
-            "Voitot",
-            0,
-            1,
-            1,
-            0,
-            2
-          ],
-          [
-            "Podiumit",
-            1,
-            2,
-            3,
-            0,
-            6
-          ],
-          [
-            "Paalupaikat",
-            0,
-            0,
-            1,
-            0,
-            1
-          ],
-          [
-            "Nopeimmat kierrokset",
-            1,
-            2,
-            1,
-            0,
-            4
-          ]
-        ]
-      },
-      "imageCredit": {
-        "title": "FIA F1 Austria 2026 Nr. 41 Lindblad (1).jpg",
-        "author": "Lukas Raich",
-        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
-        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._41_Lindblad_(1).jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
-    },
-    {
-      "id": "williams",
-      "name": "Williams",
-      "image": "images/williams.webp",
-      "imageAlt": "Williams – F1-auto Itävallan GP:ssä 2026",
-      "engine": "Mercedes",
-      "activeYears": "Formula 1:ssä 1978–",
-      "overviewStats": {
-        "Maailmanmestaruudet": 9,
-        "Voitot": 114,
-        "Podiumit": 314,
-        "Paalupaikat": 128,
-        "Nopeimmat kierrokset": 133
-      },
-      "achievementHeading": "Saavutukset",
-      "achievements": {
-        "Maailmanmestaruudet": 9,
-        "Voitot": 114,
-        "Podiumit": 314,
-        "Paalupaikat": 128,
-        "Nopeimmat kierrokset": 133
-      },
-      "drivers": [
-        {
-          "name": "Alex Albon",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 2,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          },
-          "profileName": "Alexander Albon"
-        },
-        {
-          "name": "Carlos Sainz",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 4,
-            "Podiumit": 28,
-            "Paalupaikat": 6,
-            "Nopeimmat kierrokset": 4
-          }
-        }
-      ],
-      "imageCredit": {
-        "title": "FIA F1 Austria 2026 Nr. 23 Albon (1).jpg",
-        "author": "Lukas Raich",
-        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
-        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._23_Albon_(1).jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
-    },
-    {
-      "id": "audi",
-      "name": "Audi",
-      "image": "images/audi.webp",
-      "imageAlt": "Audi – F1-auto Itävallan GP:ssä 2026",
-      "engine": "Audi",
-      "activeYears": "Formula 1:ssä 1993–",
-      "overviewStats": {
-        "Maailmanmestaruudet": 0,
-        "Voitot": 0,
-        "Podiumit": 1,
-        "Paalupaikat": 0,
-        "Nopeimmat kierrokset": 0
-      },
-      "achievementHeading": "Saavutukset (kaikki nimet yhteensä)",
-      "achievements": {
-        "Maailmanmestaruudet": 0,
-        "Voitot": 2,
-        "Podiumit": 45,
-        "Paalupaikat": 2,
-        "Nopeimmat kierrokset": 7
-      },
-      "drivers": [
-        {
-          "name": "Nico Hülkenberg",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 1,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          }
-        },
-        {
-          "name": "Gabriel Bortoleto",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 0,
-            "Podiumit": 0,
-            "Paalupaikat": 0,
-            "Nopeimmat kierrokset": 0
-          }
-        }
-      ],
-      "aliases": [
-        "Sauber"
-      ],
-      "history": {
-        "columns": [
-          "",
-          "Audi",
-          "Sauber",
-          "Alfa Romeo",
-          "BMW",
-          "Kaikki"
-        ],
-        "rows": [
-          [
-            "Vuodet",
-            "2026–",
-            "1993–2005, 2010–2018, 2024–2025",
-            "2019–2023",
-            "2006–2009",
-            "1993–"
-          ],
-          [
-            "Maailmanmestaruudet",
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          [
-            "Voitot",
-            0,
-            1,
-            0,
-            1,
-            2
-          ],
-          [
-            "Podiumit",
-            0,
-            28,
-            0,
-            17,
-            45
-          ],
-          [
-            "Paalupaikat",
-            0,
-            1,
-            0,
-            1,
-            2
-          ],
-          [
-            "Nopeimmat kierrokset",
-            0,
-            5,
-            0,
-            2,
-            7
-          ]
-        ]
-      },
-      "imageCredit": {
-        "title": "FIA F1 Austria 2026 Nr. 27 Hülkenberg (1).jpg",
-        "author": "Lukas Raich",
-        "authorUrl": "https://commons.wikimedia.org/wiki/User:Lukas_Raich",
-        "source": "https://commons.wikimedia.org/wiki/File:FIA_F1_Austria_2026_Nr._27_H%C3%BClkenberg_(1).jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
+      "historyNote": "Mukana on Jordanista alkanut talliketju. Racing Pointin vuosiin sisältyy vuoden 2018 loppukauden uusi Racing Point Force India -talli. Aston Martin 1959–1960 ei kuulu tähän ketjuun."
     },
     {
       "id": "cadillac",
@@ -952,16 +1046,6 @@
       },
       "drivers": [
         {
-          "name": "Valtteri Bottas",
-          "careerStats": {
-            "Maailmanmestaruudet": 0,
-            "Voitot": 10,
-            "Podiumit": 67,
-            "Paalupaikat": 20,
-            "Nopeimmat kierrokset": 19
-          }
-        },
-        {
           "name": "Sergio Pérez",
           "careerStats": {
             "Maailmanmestaruudet": 0,
@@ -969,7 +1053,19 @@
             "Podiumit": 39,
             "Paalupaikat": 3,
             "Nopeimmat kierrokset": 12
-          }
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/sergio-perez"
+        },
+        {
+          "name": "Valtteri Bottas",
+          "careerStats": {
+            "Maailmanmestaruudet": 0,
+            "Voitot": 10,
+            "Podiumit": 67,
+            "Paalupaikat": 20,
+            "Nopeimmat kierrokset": 19
+          },
+          "statsSource": "https://www.formula1.com/en/drivers/valtteri-bottas"
         }
       ],
       "imageCredit": {
@@ -980,42 +1076,48 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä rajaus ja tummennus."
-      }
+      },
+      "statSources": [
+        {
+          "label": "Formula 1 – tulosarkisto",
+          "url": "https://www.formula1.com/en/results/2026/races"
+        }
+      ]
     }
   ],
   "driverTeamOrder": [
-    "mclaren",
-    "redbull",
-    "ferrari",
     "mercedes",
-    "astonmartin",
+    "ferrari",
+    "redbull",
+    "mclaren",
+    "racingbulls",
     "alpine",
     "haas",
-    "racingbulls",
-    "williams",
     "audi",
+    "williams",
+    "astonmartin",
     "cadillac"
   ],
   "midfieldTeams": [
-    "astonmartin",
+    "racingbulls",
     "alpine",
     "haas",
-    "racingbulls",
-    "williams",
     "audi",
+    "williams",
+    "astonmartin",
     "cadillac"
   ],
   "checkboxTeamOrder": [
-    "mclaren",
+    "mercedes",
     "ferrari",
     "redbull",
-    "mercedes",
-    "astonmartin",
+    "mclaren",
+    "racingbulls",
     "alpine",
     "haas",
-    "racingbulls",
-    "williams",
     "audi",
+    "williams",
+    "astonmartin",
     "cadillac"
   ],
   "historicalResults": [
@@ -3803,5 +3905,18 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "modifications": "Pienennetty ja muunnettu WebP-muotoon; esityksessä tummennus ja responsiivinen rajaus."
+  },
+  "statistics": {
+    "checkedAt": "2026-11-18",
+    "checkedLabel": "18.11.2026",
+    "throughLabel": "São Paulon GP 8.11.2026 asti",
+    "method": "Vain Formula 1:n MM-sarjan Grand Prix -tilastot. Tallien mestaruudet ovat valmistajien mestaruuksia, kuljettajien mestaruudet henkilökohtaisia. Podiumit tarkoittavat yksittäisiä sijoituksia kolmen parhaan joukkoon.",
+    "detail": "Tallien luvut on laskettu Formula1.comin kilpailutuloksista ja paalupaikka- sekä nopein kierros -arkistoista. Kaksoispodium on kaksi podiumia. Sprinttien voittoja ja podiumeja ei lasketa mukaan. Kuljettajien uratilastot perustuvat F1:n kuljettajaprofiileihin; nopeimmat kierrokset on laskettu tulosarkistosta. Tallin historian yhteissumma sisältää vain taulukossa mainitut nimet ja vuodet. Jaetulla autolla saavutettu tulos lasketaan tallille kerran. Saman tallin jakama nopein kierros lasketaan kerran kilpailua kohti. Tallien luvut perustuvat kilpailukohtaiseen arkistoon, joten ne voivat poiketa F1:n profiilien koontiluvuista.",
+    "sources": [
+      {
+        "label": "Formula 1 – tulosarkisto",
+        "url": "https://www.formula1.com/en/results/2026/races"
+      }
+    ]
   }
 }

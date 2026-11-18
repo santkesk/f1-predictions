@@ -1,0 +1,749 @@
+{
+  "season": 2027,
+  "deadline": "2027-03-12T16:00:00+02:00",
+  "stages": [
+    {
+      "id": "championship-questions",
+      "title": "Maailmanmestaruus",
+      "questions": [
+        {
+          "number": 1,
+          "text": "Ketkä ovat kolme parasta kuljettajaa järjestyksessä?",
+          "scoring": "Kuljettaja +3, sija +1, kaikki kuljettajat oikein +1",
+          "fields": [
+            {
+              "name": "top1",
+              "label": "1. sija:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "top2",
+              "label": "2. sija:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "top3",
+              "label": "3. sija:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Kuka on kymmenes kuljettaja loppupisteissä?",
+          "scoring": "Kuljettaja +5 (1 ohi +3, 2 ohi +1)",
+          "fields": [
+            {
+              "name": "top10",
+              "label": "10. sija:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "win-questions",
+      "title": "Voitot",
+      "questions": [
+        {
+          "number": 3,
+          "text": "Kuka voittaa eniten kilpailuja ja kuinka monta?",
+          "scoring": "Kuljettaja +1, voittojen määrä +5 (lähin +1)",
+          "fields": [
+            {
+              "name": "wins",
+              "label": "Eniten voittoja:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "maxWins",
+              "label": "Voittojen määrä:",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 24
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Ketkä kaikki voittavat vähintään yhden kilpailun?",
+          "scoring": "Oikea +3, väärä -1, puuttuva -2",
+          "fields": [
+            {
+              "type": "checkboxes",
+              "name": "winners",
+              "options": "driversByCheckboxOrder",
+              "required": true
+            }
+          ],
+          "help": "Valitse kaikki sopivat kuljettajat."
+        }
+      ]
+    },
+    {
+      "id": "podium-questions",
+      "title": "Podiumit",
+      "questions": [
+        {
+          "number": 5,
+          "text": "Kuka saa eniten podiumeja ja kuinka monta?",
+          "scoring": "Kuljettaja +1, podiumien määrä +5 (lähin +1)",
+          "fields": [
+            {
+              "name": "podiums",
+              "label": "Eniten podiumeja:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "maxPodiums",
+              "label": "Podiumien määrä:",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 24
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Ketkä kaikki ovat vähintään kerran podiumilla?",
+          "scoring": "Oikea +3, väärä -1, puuttuva -2",
+          "fields": [
+            {
+              "type": "checkboxes",
+              "name": "podiumDrivers",
+              "options": "driversByCheckboxOrder",
+              "required": true
+            }
+          ],
+          "help": "Valitse kaikki sopivat kuljettajat."
+        }
+      ]
+    },
+    {
+      "id": "pole-questions",
+      "title": "Paalupaikat",
+      "questions": [
+        {
+          "number": 7,
+          "text": "Ketkä kolme saavat eniten paalupaikkoja?",
+          "scoring": "Jokainen kuljettajan ajama paalupaikka +1",
+          "fields": [
+            {
+              "name": "poles1",
+              "label": "Valinta 1",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "poles2",
+              "label": "Valinta 2",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "poles3",
+              "label": "Valinta 3",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Kuka keskikastin kuljettajista pääsee lähimmäs paalupaikkaa?",
+          "scoring": "Kuljettaja +5 (1 ohi +3, 2 ohi +1)",
+          "fields": [
+            {
+              "name": "midfieldpole",
+              "label": "Valitse vastaus",
+              "type": "select",
+              "required": true,
+              "options": "midfieldDrivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fastestlap_and_sprint-questions",
+      "title": "Nopeimmat kierrokset ja sprintit",
+      "questions": [
+        {
+          "number": 9,
+          "text": "Ketkä kolme ajavat eniten nopeimpia kierroksia?",
+          "scoring": "Jokainen kuljettajan ajama nopein kierros +1",
+          "fields": [
+            {
+              "name": "fastestlaps1",
+              "label": "Valinta 1",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "fastestlaps2",
+              "label": "Valinta 2",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "fastestlaps3",
+              "label": "Valinta 3",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "text": "Ketkä ovat kolme parasta sprinteissä järjestyksessä?",
+          "scoring": "Kuljettaja +3, sija +1",
+          "fields": [
+            {
+              "name": "sprints1",
+              "label": "1. sija:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "sprints2",
+              "label": "2. sija:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "sprints3",
+              "label": "3. sija:",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "team-questions",
+      "title": "Tallit",
+      "questions": [
+        {
+          "number": 11,
+          "text": "Mitkä ovat kolme parasta tallia järjestyksessä?",
+          "scoring": "Talli +2, sija +1",
+          "fields": [
+            {
+              "name": "teams-top1",
+              "label": "1. sija:",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            },
+            {
+              "name": "teams-top2",
+              "label": "2. sija:",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            },
+            {
+              "name": "teams-top3",
+              "label": "3. sija:",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Mikä talli saa vähiten pisteitä ja montako?",
+          "scoring": "Talli +5 (1 ohi +3, 2 ohi +1), pisteet +5 (lähin +1)",
+          "fields": [
+            {
+              "name": "teams-top11",
+              "label": "11. sija:",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            },
+            {
+              "name": "minTeamPoints",
+              "label": "Pisteiden määrä:",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teammates-questions",
+      "title": "Tallikaverit",
+      "questions": [
+        {
+          "number": 13,
+          "text": "Kuka voittaa tallikaverinsa useimmin aika-ajoissa?",
+          "scoring": "Voitot – häviöt = (-24 - +24)",
+          "fields": [
+            {
+              "name": "headtohead-qualifying",
+              "label": "Valitse vastaus",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Kuka voittaa tallikaverinsa useimmin kilpailuissa?",
+          "scoring": "Voitot – häviöt = (-24 - +24)",
+          "fields": [
+            {
+              "name": "headtohead-race",
+              "label": "Valitse vastaus",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Minkä tallin kuljettajien piste-ero on suurin?",
+          "scoring": "Talli +5 (toinen +3, kolmas +1)",
+          "fields": [
+            {
+              "name": "pointsdifference",
+              "label": "Valitse vastaus",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retirement-questions",
+      "title": "Keskeytykset",
+      "questions": [
+        {
+          "number": 16,
+          "text": "Ketkä kolme keskeyttävät useimmin?",
+          "scoring": "Jokainen kuljettajan keskeytys +1",
+          "fields": [
+            {
+              "name": "retirements1",
+              "label": "Valinta 1",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "retirements2",
+              "label": "Valinta 2",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "retirements3",
+              "label": "Valinta 3",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Kuinka monta kilpailua ajetaan ilman yhtäkään keskeytystä?",
+          "scoring": "Oikein +3 (lähin +1)",
+          "fields": [
+            {
+              "name": "racesWithoutRetirements",
+              "label": "Kilpailuja ilman keskeytyksiä:",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 24
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "text": "Mikä on suurin määrä keskeytyksiä yhdessä kilpailussa?",
+          "scoring": "Oikein +3 (lähin +1)",
+          "fields": [
+            {
+              "name": "maxRetirementsInARace",
+              "label": "Eniten keskeytyksiä yhdessä kilpailussa:",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "improvement-questions",
+      "title": "Kehitys",
+      "questions": [
+        {
+          "number": 19,
+          "text": "Mikä talli kehittyy eniten kaudesta 2026?",
+          "scoring": "Talli +5 (toinen +3, kolmas +1)",
+          "fields": [
+            {
+              "name": "mostImprovedTeam",
+              "label": "Valitse vastaus",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "text": "Ketkä kolme kuljettajaa kehittyvät eniten kaudesta 2026?",
+          "scoring": "Kuljettaja +3, sija +1",
+          "fields": [
+            {
+              "name": "mostImprovedDrivers1",
+              "label": "Valinta 1",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "mostImprovedDrivers2",
+              "label": "Valinta 2",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            },
+            {
+              "name": "mostImprovedDrivers3",
+              "label": "Valinta 3",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "text": "Kuka kuljettajista kehittyy vähiten kaudesta 2026?",
+          "scoring": "Kuljettaja +10 (1 ohi +8, 2: +5, 3: +3, 4: +3, 5: +1)",
+          "fields": [
+            {
+              "name": "leastImprovedDriver",
+              "label": "Valitse vastaus",
+              "type": "select",
+              "required": true,
+              "options": "drivers",
+              "placeholder": "-- Valitse kuljettaja --"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "changes-questions",
+      "title": "Muutokset",
+      "questions": [
+        {
+          "number": 22,
+          "text": "Mitkä kolmen tallin kuljettajat vaihtuvat?",
+          "scoring": "Jokainen vaihtunut kuljettaja +3",
+          "fields": [
+            {
+              "name": "changedTeams1",
+              "label": "Valinta 1",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            },
+            {
+              "name": "changedTeams2",
+              "label": "Valinta 2",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            },
+            {
+              "name": "changedTeams3",
+              "label": "Valinta 3",
+              "type": "select",
+              "required": true,
+              "options": "teams",
+              "placeholder": "-- Valitse talli --"
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "text": "Kuinka monta uutta kuljettajaa ajaa kauden 2027 jälkeen?",
+          "scoring": "Oikein +5",
+          "fields": [
+            {
+              "name": "newDrivers",
+              "label": "Uusia kuljettajia:",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 22
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "text": "Kuinka monta eri kuljettajaa ajaa kaudella 2027?",
+          "scoring": "Oikein +5",
+          "fields": [
+            {
+              "name": "differentDrivers",
+              "label": "Eri kuljettajia:",
+              "type": "number",
+              "required": true,
+              "min": 0,
+              "max": 44
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exclusiveGroups": [
+    {
+      "fields": [
+        "top1",
+        "top2",
+        "top3",
+        "top10"
+      ],
+      "message": "Maailmanmestaruus: sama kuljettaja on valittu useampaan kohtaan."
+    },
+    {
+      "fields": [
+        "poles1",
+        "poles2",
+        "poles3"
+      ],
+      "message": "Paalupaikat: sama kuljettaja on valittu useammin kuin kerran."
+    },
+    {
+      "fields": [
+        "fastestlaps1",
+        "fastestlaps2",
+        "fastestlaps3"
+      ],
+      "message": "Nopeimmat kierrokset: sama kuljettaja on valittu useammin kuin kerran."
+    },
+    {
+      "fields": [
+        "sprints1",
+        "sprints2",
+        "sprints3"
+      ],
+      "message": "Sprintit: sama kuljettaja on valittu useammin kuin kerran."
+    },
+    {
+      "fields": [
+        "teams-top1",
+        "teams-top2",
+        "teams-top3",
+        "teams-top11"
+      ],
+      "message": "Tallit: sama talli on valittu useampaan kohtaan."
+    },
+    {
+      "fields": [
+        "retirements1",
+        "retirements2",
+        "retirements3"
+      ],
+      "message": "Keskeytykset: sama kuljettaja on valittu useammin kuin kerran."
+    },
+    {
+      "fields": [
+        "mostImprovedDrivers1",
+        "mostImprovedDrivers2",
+        "mostImprovedDrivers3",
+        "leastImprovedDriver"
+      ],
+      "message": "Kehitys: sama kuljettaja on valittu useampaan kohtaan."
+    },
+    {
+      "fields": [
+        "changedTeams1",
+        "changedTeams2",
+        "changedTeams3"
+      ],
+      "message": "Muutokset: sama talli on valittu useammin kuin kerran."
+    }
+  ],
+  "bingo": {
+    "number": 25,
+    "instructions": "Valitse tapahtuma ja arvioi, tapahtuuko se. Ruudukko täyttyy automaattisesti. Voit muokata valintoja klikkaamalla ruutua.",
+    "scoring": [
+      "Jokainen oikein valittu tapahtuma +1",
+      "Yhden rivin (vaaka/pysty/vino) kaikki oikein +5"
+    ],
+    "scenarios": [
+      "Joku voittaa kisan 10 parhaan lähtöruudun ulkopuolelta.",
+      "Verstappen voittaa Lawsonin kaikissa kisoissa.",
+      "Vähintään 1 tulokas voittaa tallikaverinsa pisteissä.",
+      "Hamilton tekee hattutempun (paalu, voitto, nopein).",
+      "Jokin talli vaihtaa kuskia kesken kauden.",
+      "Audi on viimeinen loppupisteissä.",
+      "Joku keskeyttää lämmittelykierroksen aikana.",
+      "Kimi saa enemmän pisteitä kuin Räikkönen 2018.",
+      "Kaikki kuskit saavat vähintään yhden pisteen.",
+      "Mercedes voittaa kaikki asiakastallinsa pisteissä.",
+      "Vähintään 1 täysin englantilainen podium.",
+      "Molemmat Alpine kuskit saavat podiumin."
+    ]
+  },
+  "schemaVersion": 1,
+  "revision": "2027-v2",
+  "optionLists": {
+    "drivers": [
+      "Kimi Antonelli",
+      "George Russell",
+      "Charles Leclerc",
+      "Lewis Hamilton",
+      "Max Verstappen",
+      "Isack Hadjar",
+      "Lando Norris",
+      "Oscar Piastri",
+      "Liam Lawson",
+      "Arvid Lindblad",
+      "Pierre Gasly",
+      "Franco Colapinto",
+      "Rafael Camara",
+      "Oliver Bearman",
+      "Gabriel Bortoleto",
+      "Nico Hülkenberg",
+      "Alexander Albon",
+      "Carlos Sainz",
+      "Fernando Alonso",
+      "Lance Stroll",
+      "Sergio Pérez",
+      "Valtteri Bottas"
+    ],
+    "driversByCheckboxOrder": [
+      "Kimi Antonelli",
+      "George Russell",
+      "Charles Leclerc",
+      "Lewis Hamilton",
+      "Max Verstappen",
+      "Isack Hadjar",
+      "Lando Norris",
+      "Oscar Piastri",
+      "Liam Lawson",
+      "Arvid Lindblad",
+      "Pierre Gasly",
+      "Franco Colapinto",
+      "Rafael Camara",
+      "Oliver Bearman",
+      "Gabriel Bortoleto",
+      "Nico Hülkenberg",
+      "Alexander Albon",
+      "Carlos Sainz",
+      "Fernando Alonso",
+      "Lance Stroll",
+      "Sergio Pérez",
+      "Valtteri Bottas"
+    ],
+    "midfieldDrivers": [
+      "Liam Lawson",
+      "Arvid Lindblad",
+      "Pierre Gasly",
+      "Franco Colapinto",
+      "Rafael Camara",
+      "Oliver Bearman",
+      "Gabriel Bortoleto",
+      "Nico Hülkenberg",
+      "Alexander Albon",
+      "Carlos Sainz",
+      "Fernando Alonso",
+      "Lance Stroll",
+      "Sergio Pérez",
+      "Valtteri Bottas"
+    ],
+    "teams": [
+      "Mercedes",
+      "Ferrari",
+      "Red Bull",
+      "McLaren",
+      "Racing Bulls",
+      "Alpine",
+      "Haas",
+      "Audi",
+      "Williams",
+      "Aston Martin",
+      "Cadillac"
+    ]
+  },
+  "collectionMode": "setup"
+}

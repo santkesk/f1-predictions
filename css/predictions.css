@@ -1046,3 +1046,14 @@ form section {
 }
 
 }
+
+/* Submission dialog and local-draft status. */
+#draft-status, #submission-availability {
+  padding: 12px 16px;
+  border-left: 3px solid var(--accent, #ed1c24);
+  background: rgba(255,255,255,.04);
+}
+#draft-status:empty { display: none; }
+#nameModal label { display: block; margin-top: 16px; font-weight: 700; }
+#nameModal select { width: 100%; padding: 12px; margin: 8px 0; background: #18202c; color: #fff; border: 1px solid #657084; border-radius: 8px; }
+#nameModal button:disabled { opacity: .55; cursor: not-allowed; }

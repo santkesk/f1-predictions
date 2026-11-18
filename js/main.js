@@ -67,7 +67,8 @@
   // Homepage: deadline comes from results.json, not hard-coded JavaScript.
   const countdown = document.getElementById('countdown');
   if (countdown) {
-    load('results').then(data => {
+    load('submission').then(connection => load(connection.seasonFile)).then(prediction => {
+      const data = {prediction};
       const season = data.prediction.season;
       const kicker = document.querySelector('.hero-kicker');
       const heading = document.querySelector('#hero-heading em');
